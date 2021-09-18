@@ -1,0 +1,109 @@
+<h2 class="font-medium" mat-dialog-title><strong>{{action}}</strong></h2>
+<mat-dialog-content class="pb-3" style="width: 500px;" *ngIf="action != 'Delete'; else elseTemplate">
+    <form [formGroup]='form'>
+        <div fxLayout="row wrap" class="align-items-center">
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                            <input
+                            matInput
+                            type="text"
+                            name="firstName"
+                            formControlName="firstName"
+                            placeholder=" first name  (required) *"
+                          />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="text"
+                        name="lastName"
+                        formControlName="lastName"
+                        placeholder=" last name  (required) *"
+                      />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="text"
+                        name="phone"
+                        formControlName="phone"
+                        placeholder=" phone  (required) *"
+                      />
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="number"
+                        name="wagePerDay"
+                        formControlName="wagePerDay"
+                        placeholder=" wage Per Day  (required) *"
+                      />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="number"
+                        name="bankAccount"
+                        formControlName="bankAccount"
+                        placeholder=" bank Account number  (required) *"
+                      />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="text"
+                        name="bankBranch"
+                        formControlName="bankBranch"
+                        placeholder=" Bank Branch  (required) *"
+                      />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                       <input
+                        matInput
+                        type="text"
+                        name="createdAt"
+                        formControlName="createdAt"
+                        placeholder=" start at  (required) *"
+                      />
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <button mat-button (click)="doAction()" mat-flat-button color="warn"
+            [disabled]="!form.valid">{{action}}</button>
+        <button mat-button (click)="closeDialog()">Cancel</button>
+    </form>
+</mat-dialog-content>
+<ng-template #elseTemplate>
+    <p>Sure to delete <b>{{local_data.firstName}}  {{local_data.lastName}}</b> ?</p>
+    <div mat-dialog-actions align="end" class="pt-3">
+        <button mat-button (click)="doAction()" mat-flat-button color="warn">{{action}}</button>
+        <button mat-button (click)="closeDialog()">Cancel</button>
+    </div>
+</ng-template>

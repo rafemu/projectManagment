@@ -1,0 +1,7 @@
+<h2 class="font-medium" mat-dialog-title><strong>{{local_data.projectName}}</strong></h2>
+<mat-dialog-content class="pb-3">
+   <img [src]="imgPath +'/'+local_data.agreement"/>
+   <div mat-dialog-actions align="end" class="pt-3">
+    <button mat-button (click)="closeDialog()">Cancel</button>
+</div>
+</mat-dialog-content>

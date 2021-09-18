@@ -1,0 +1,18 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { TimeSheetComponent } from './time-sheet.component';
+
+const routes: Routes = [{
+  path:'',
+  component:TimeSheetComponent,
+  data:{
+    title: 'timeSheet',
+    urls: [{ title: 'לוח הבקרה', url: '/dashboard' }, { title: 'Time Sheet' } ],
+  }
+}];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class TimeSheetRoutingModule { }

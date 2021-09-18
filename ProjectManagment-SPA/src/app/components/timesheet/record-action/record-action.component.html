@@ -1,0 +1,143 @@
+
+<h2 class="font-medium" mat-dialog-title><strong>add record</strong></h2>
+<mat-dialog-content class="pb-3 mat-typography" style="width: 500px;">
+    <form [formGroup]="form">
+        <div fxLayout="row wrap" class="align-items-center">
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <!-- <mat-form-field>
+                            <input
+                            matInput
+                            type="text"
+                            name="date"
+                           
+                          /> -->
+                          <ejs-datepicker  formControlName="date"
+                          placeholder=" date  (required) *" [value]='dateValue' placeholder='Enter date'></ejs-datepicker>
+                    <!-- </mat-form-field> -->
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <!-- <mat-form-field>
+                        <input
+                        matInput
+                        type="text"
+                        name="employeeId"
+                        formControlName="employeeId"
+                        placeholder=" Employee name  (required) *"
+                      />
+                    </mat-form-field> -->
+                    <!-- <mat-form-field class="example-full-width"> -->
+                        <mat-select-autocomplete
+                        [placeholder]="'Select Options'"
+                        [options]="optionsEmployee"
+                        [multiple]='true'
+                        name="optionsSelector"
+                        ngDefaultControl
+                        formControlName="employeeId" ></mat-select-autocomplete>
+                        <!-- <input type="text" placeholder="Employee name" aria-label="Number" matInput formControlName="employeeId"  
+                            [matAutocomplete]="employeeAuto">
+                        <mat-autocomplete #employeeAuto="matAutocomplete">
+                            <mat-option *ngFor="let employee of employees" [value]="employee.firstName">
+                                {{employee.firstName}}
+                            </mat-option>
+                        </mat-autocomplete> -->
+                    <!-- </mat-form-field> -->
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-select-autocomplete
+                        [placeholder]="'Select Options'"
+                        [options]="optionsProjects"
+                        [multiple]='true'
+                        name="optionsSelector"
+                        ngDefaultControl
+                        formControlName="projectId" >
+                    </mat-select-autocomplete>
+                    <!-- <mat-form-field class="example-full-width">
+                        <input type="text" placeholder="Project" aria-label="Number" matInput formControlName="projectId"  
+                            [matAutocomplete]="projectAuto">
+                        <mat-autocomplete #projectAuto="matAutocomplete">
+                            <mat-option *ngFor="let project of projects" [value]="project.projectName">
+                                {{project.projectName}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field> -->
+                </div>
+
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <!-- <mat-form-field>
+                        <input
+                        matInput
+                        type="number"
+                        name="startAt"
+                        formControlName="startAt"
+                        placeholder=" Start At  (required) *"
+                      />
+                    </mat-form-field> -->
+                    <ejs-timepicker formControlName="startAt"
+                    placeholder=" Start At  (required) *"  [value]='startAt' [min]='minValue' [max]='maxValue'></ejs-timepicker>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <!-- <mat-form-field>
+                        <input
+                        matInput
+                        type="number"
+                        name="endAt"
+                        formControlName="endAt"
+                        placeholder=" End At  (required) *"
+                      />
+                    </mat-form-field> -->
+                    <ejs-timepicker formControlName="endAt"
+                    placeholder=" End At  (required) *"  [value]='startAt' [min]='minValue' [max]='maxValue'></ejs-timepicker>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="text"
+                        name="notes"
+                        formControlName="notes"
+                        placeholder=" Notes"
+                      />
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- <div fxFlex="100" fxFlex.gt-md="50">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                       <input
+                        matInput
+                        type="text"
+                        name="createdAt"
+                        formControlName="createdAt"
+                        placeholder=" start at  (required) *"
+                      />
+                    </mat-form-field>
+                </div>
+            </div> -->
+        </div>
+        <button mat-button (click)="doAction()" mat-flat-button color="warn"
+            [disabled]="!form.valid">{{action}}</button>
+        <button mat-button (click)="closeDialog()">Cancel</button>
+    </form>
+
+    <div>
+    </div>
+</mat-dialog-content>
+<!-- <ng-template #elseTemplate>
+    <p>Sure to delete <b>{{local_data.firstName}}  {{local_data.lastName}}</b> ?</p>
+    <div mat-dialog-actions align="end" class="pt-3">
+        <button mat-button (click)="doAction()" mat-flat-button color="warn">{{action}}</button>
+        <button mat-button (click)="closeDialog()">Cancel</button>
+    </div>
+</ng-template> -->
+
