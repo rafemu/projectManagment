@@ -1,4 +1,10 @@
-import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -9,26 +15,26 @@ import { MatDialog } from '@angular/material/dialog';
 import { ProjectsActionsComponent } from './projects-actions/projects-actions.component';
 import { BaseURL } from './../../_services';
 import { ImageViewComponent } from './image-view/image-view.component';
-import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SelectAutocompleteComponent } from 'mat-select-autocomplete';
-
+import { filter } from 'rxjs/operators';
 
 @Component({
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent implements OnInit {
-  @ViewChild(SelectAutocompleteComponent) multiSelect!: SelectAutocompleteComponent ;
+export class ProjectsComponent implements OnInit, OnDestroy {
+  @ViewChild(SelectAutocompleteComponent)
+  multiSelect!: SelectAutocompleteComponent;
 
   projects: IProject[] = [];
   projectPerPage = 5;
   currentPage = 1;
   pageSizeOptions = [5, 10, 25, 50];
   totalProjects = 0;
-  dataSource: MatTableDataSource<IProject>;
+  dataSourceProjects: MatTableDataSource<IProject>;
   imgPath = BaseURL;
   public subProject$: Subscription | undefined;
 
@@ -54,16 +60,19 @@ export class ProjectsComponent implements OnInit {
     private _projectServices: ProjectsService,
     public dialog: MatDialog
   ) {
-    this.dataSource = new MatTableDataSource<IProject>(this.projects);
+    this.dataSourceProjects = new MatTableDataSource<IProject>(this.projects);
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this._projectServices.projects$
+      .subscribe((projects) => {
+        this.projects = projects.projects;
+        this.totalProjects = projects.totalProjects;
+        this.dataSourceProjects = new MatTableDataSource<IProject>(
+          this.projects
+        );
+      });
     this._projectServices.getAllProjects(this.projectPerPage, this.currentPage);
-    this.subProject$ = this._projectServices.projects$.subscribe((projects) => {
-      this.projects = projects.projects;
-      this.totalProjects = projects.totalProjects;
-      this.dataSource = new MatTableDataSource<IProject>(this.projects);
-    });
   }
 
   onChangedPage(pageData: PageEvent) {
@@ -72,7 +81,7 @@ export class ProjectsComponent implements OnInit {
     this._projectServices.getAllProjects(this.projectPerPage, this.currentPage);
     this.subProject$ = this._projectServices.projects$.subscribe((projects) => {
       this.projects = projects.projects;
-      this.dataSource = new MatTableDataSource<IProject>(this.projects);
+      this.dataSourceProjects = new MatTableDataSource<IProject>(this.projects);
     });
   }
   onToggleDropdown() {
@@ -80,7 +89,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    this.dataSourceProjects.filter = filterValue.trim().toLowerCase();
   }
 
   openDialog(action: string, obj: any) {

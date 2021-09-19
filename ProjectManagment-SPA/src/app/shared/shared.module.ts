@@ -35,7 +35,7 @@ import { ProjectsService } from '../_services/projects.service';
     ReactiveFormsModule,
   ],
   providers: [
-    TokenService,MenuItems,HorizontalMenuItems,EmployeesService,ProjectsService,
+    TokenService,MenuItems,HorizontalMenuItems,
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
     // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ],

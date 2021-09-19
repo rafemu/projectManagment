@@ -5,6 +5,7 @@ import { EmployeesRoutingModule } from './employees-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { EmployeesComponent } from './employees.component';
 import { EmployeeActionsComponent } from './employee-actions/employee-actions.component';
+import { EmployeesService } from 'src/app/_services/employees.service';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { EmployeeActionsComponent } from './employee-actions/employee-actions.co
     EmployeeActionsComponent
   ],
   providers:[
-    DatePipe
+    DatePipe,EmployeesService
   ]
 })
 export class EmployeesModule { }

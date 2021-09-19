@@ -50,6 +50,7 @@ export class EmployeesComponent implements OnInit {
     );
    this.subEmployee$ =  this._employeeService.employee$.subscribe((employee) => {
       this.employee = employee.employee;
+      console.log(this.employee)
       this.totalEmployees = employee.totalemployee;
       this.dataSource = new MatTableDataSource<IEmployee>(this.employee);
     });

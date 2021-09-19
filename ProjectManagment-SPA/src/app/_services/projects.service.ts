@@ -25,6 +25,7 @@ export class ProjectsService {
       .get(`${BaseURL}/projects` + queryParams)
       .pipe(
         map((projects: any) => {
+          console.log(projects)
           return {
             projects: projects.result.map((project: IProject) => {
               const img = project.agreement ==null ? project.agreement= 'default/default-placeholder-150x150.png' : project.agreement.split("/")[1]; 
@@ -47,11 +48,12 @@ export class ProjectsService {
           };
         })
       )
-      .subscribe((transformData) => {
-        this.projectsArray = transformData.projects;
+      .subscribe((projects) => {
+        this.projectsArray = projects.projects;
+        // console.log(projects)
         this.projectsSubject.next({
           projects: [...this.projectsArray],
-          totalProjects: transformData.totalProjects,
+          totalProjects: projects.totalProjects,
         });
       });
   }

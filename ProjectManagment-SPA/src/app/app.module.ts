@@ -60,6 +60,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     // LoginComponent
   ],
   imports: [
+    SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
@@ -67,7 +68,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     FlexLayoutModule,
     PerfectScrollbarModule,
     HttpClientModule,
-    SharedModule,
     RouterModule.forRoot(AppRoutes),
 
     HttpClientModule,

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { EmployeesService } from 'src/app/_services/employees.service';
+import { ProjectsService } from 'src/app/_services/projects.service';
 import { RecordActionComponent } from './record-action/record-action.component';
 
 @Component({
@@ -9,9 +11,12 @@ import { RecordActionComponent } from './record-action/record-action.component';
 })
 export class TimeSheetComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog,private employeeService: EmployeesService,
+    private projectsService: ProjectsService,) { }
 
   ngOnInit(): void {
+    this.employeeService.getAllemployee()
+    this.projectsService.getAllProjects()
   }
 
   openDialog(action: string, obj: any) {

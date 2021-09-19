@@ -8,7 +8,8 @@ import { EmployeesService } from 'src/app/_services/employees.service';
 import { ProjectsService } from 'src/app/_services/projects.service';
 import { IEmployee } from 'src/app/_interfaces/emplyee.interface';
 import { IProject } from 'src/app/_interfaces/project.interface';
-import { combineLatest, Subscription, zip } from 'rxjs';
+import { combineLatest, forkJoin, Subscription, zip } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 enableRipple(true);
 
@@ -63,8 +64,8 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     private formBuilder: FormBuilder,
     public datePipe: DatePipe,
     public dialogRef: MatDialogRef<RecordActionComponent>,
-    private _employeeService: EmployeesService,
-    private _projectsService: ProjectsService,
+    private employeeService: EmployeesService,
+    private projectsService: ProjectsService,
     @Optional() @Inject(MAT_DIALOG_DATA) public data: IRecord
   ) {
     this.local_data = { ...data };
@@ -81,34 +82,32 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   getEmployees() {
-    this._employeeService.getAllemployee();
-    this.subEmployee$ = this._employeeService.employee$.subscribe(
+    this.subEmployee$ = this.employeeService.employee$.pipe(filter((v)=>v!==undefined)).subscribe(
       (employees) => {
-        console.log(employees)
         this.employees = employees.employee;
         this.employees.map((emp) => {
-          let obj = {
+          const obj = {
             display: emp.firstName + ' ' + emp.lastName,
             value: emp.id,
           };
-          return obj
-          // return this.optionsEmployee.push(obj);
+          this.optionsEmployee.push(obj)
+
+          // return obj
         });
-        this.optionsEmployee.push(this.employees)
+        // this.optionsEmployee.push(this.employees)
       }
     );
   }
 
   getProjects() {
-    this._projectsService.getAllProjects();
-    this.subProject$ = this._projectsService.projects$.subscribe((projec) => {
-      console.log(projec)
+    this.subProject$ = this.projectsService.projects$.pipe(filter((v)=>v!==undefined)).subscribe((projec) => {
       this.projects = projec.projects;
       this.projects.map((proj) => {
-        let obj = { display: proj.projectName, value: proj.id };
-        return obj;
+        const obj = { display: proj.projectName, value: proj.id };
+        // return obj;
+        this.optionsProjects.push(obj);
+
       });
-      this.optionsProjects.push(this.projects);
     });
   }
 
@@ -125,7 +124,6 @@ export class RecordActionComponent implements OnInit, OnDestroy {
         validators: [Validators.required],
       }),
       endAt: new FormControl(this.endAt, { validators: [Validators.required] }),
-      // payPerDay: new FormControl('', { validators: [Validators.required] }),
       notes: new FormControl(''),
     });
   }
@@ -137,7 +135,6 @@ export class RecordActionComponent implements OnInit, OnDestroy {
       projectId: this.local_data['projectId'],
       startAt: this.local_data['startAt'],
       endAt: this.local_data['endAt'],
-      // payPerDay: this.local_data['payPerDay'],
       notes: this.local_data['notes'],
     });
   }

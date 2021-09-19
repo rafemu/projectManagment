@@ -22,7 +22,7 @@
     <mat-card>
       <mat-card-content>
         <div class="table-responsive">
-          <table mat-table [dataSource]="dataSource" class="table employee-list no-wrap">
+          <table mat-table *ngIf="dataSourceProjects" [dataSource]="dataSourceProjects" class="table employee-list no-wrap">
 
             <ng-container matColumnDef="id">
               <th mat-header-cell *matHeaderCellDef> # </th>

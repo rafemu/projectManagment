@@ -46,13 +46,13 @@ router.get("/", async (req, res, next) => {
   // console.log('employee')
   try {
     currentPage
-      ? (result = await getEmployees(pageSize, currentPage))
-      : (result = await getEmployees());
-    if (!result) throw new Error("no employees");
+      ? (employees = await getEmployees(pageSize, currentPage))
+      : (employees = await getEmployees());
+    if (!employees) throw new Error("no employees");
     const total = await getEmployeesCount();
     if (!total) throw new Error("error occured");
     // console.log('employee',result)
-    res.json({ result, total: total });
+    res.json({ result: employees, total: total });
   } catch (error) {
     return next({ message: error.message, status: 400 });
   }
@@ -71,7 +71,6 @@ router.get("/:id", async (req, res, next) => {
 
 router.put(
   "/:employeeId",
-  // getValidationFunction("project"),
   async (req, res, next) => {
     try {
       const employeeId = req.params.employeeId;

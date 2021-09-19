@@ -46,13 +46,13 @@ router.get("/", async (req, res, next) => {
   const currentPage = +req.query.page;
   try {
     currentPage
-      ? (result = await getProjects(pageSize, currentPage))
-      : (result = await getProjects());
-    if (!result) throw new Error("No Projects");
+      ? (projects = await getProjects(pageSize, currentPage))
+      : (projects = await getProjects());
+    if (!projects) throw new Error("No Projects");
     const total = await getProjectsCount();
     if (!total) throw new Error("error occured");
     // console.log('projdfsects',result)
-    res.json({ result, total: total });
+    res.json({ result:projects, total: total });
   } catch (error) {
     return next({ message: error.message, status: 400 });
   }

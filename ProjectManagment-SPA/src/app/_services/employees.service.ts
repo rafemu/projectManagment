@@ -28,6 +28,7 @@ export class EmployeesService {
       .get(`${BaseURL}/employee` + queryParams)
       .pipe(
         map((employee: any) => {
+          console.log(employee)
           return {
             employee: employee.result.map((employee: IEmployee) => {
               return {
@@ -45,11 +46,12 @@ export class EmployeesService {
           };
         })
       )
-      .subscribe((transformData) => {
-        this.employeeArray = transformData.employee;
+      .subscribe((employees) => {
+        this.employeeArray = employees.employee;
+        // console.log(employees)
         this.employeeSubject.next({
           employee: [...this.employeeArray],
-          totalemployee: transformData.totalemployee,
+          totalemployee: employees.totalemployee,
         });
       });
   }
