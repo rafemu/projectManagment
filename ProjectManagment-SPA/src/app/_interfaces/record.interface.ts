@@ -8,7 +8,7 @@ export interface IRecord {
     projectId: IProject;
     startAt: Date;
     endAt: Date;
-    payPerDay: number;
+    payPerDay?: number;
     notes: string;
     createdAt: any;
   }

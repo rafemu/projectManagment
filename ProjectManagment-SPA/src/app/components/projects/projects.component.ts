@@ -17,7 +17,6 @@ import { BaseURL } from './../../_services';
 import { ImageViewComponent } from './image-view/image-view.component';
 import { Subscription } from 'rxjs';
 import { SelectAutocompleteComponent } from 'mat-select-autocomplete';
-import { filter } from 'rxjs/operators';
 
 @Component({
   // changeDetection: ChangeDetectionStrategy.OnPush,

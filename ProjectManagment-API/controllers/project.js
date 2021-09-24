@@ -101,7 +101,6 @@ ${process.env.DB_SCHEMA}.projects
        ${limitQuery}
   `
   const [rows] = await (await connection()).execute(getProjectsQuery);
-  console.log('projects',rows)
   return rows;
 }
 

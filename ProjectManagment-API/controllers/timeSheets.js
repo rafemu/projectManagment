@@ -38,33 +38,44 @@ ORDER BY date `;
   return rows;
 }
 
-async function addEmployeeHr(employeeDetails, data) {
-  const { projectId, notes } = data;
-  const date = moment(data.date).format("yyyy-M-D");
-  const startAt = moment(data.startAt); //.format("HH:mm");
-  const endAt = moment(data.endAt); //.format("HH:mm");
-  const duration = moment.duration(endAt.diff(startAt));
-  const hours = parseFloat(duration.asHours()).toFixed(2);
-  const payPerDay = ((employeeDetails.wagePerDay / 8.5) * hours).toFixed(2);
-  const values = [
-    date,
-    employeeDetails.id,
-    projectId,
-    startAt.format("HH:mm"),
-    endAt.format("HH:mm"),
-    hours,
-    payPerDay,
-    notes,
-  ];
+async function addEmployeeRecord(record) {
+  record.map(async (rec) => {
+    const { date, startAt, endAt, employeeId, projectId, notes, payPerDay } =
+      rec;
+    const duration = moment.duration(moment(endAt).diff(moment(startAt)));
+    var hours = duration.asHours();
+    const dailyWageFixed = ((payPerDay / 9) * hours).toFixed(2);
 
-  const addEmployeeHrQuery =
-    `INSERT INTO ${process.env.DB_SCHEMA}.employeesTimeSheet (date, employeeId, projectId, startAt, endAt, duration, payPerDay,notes) VALUES (?,?,?,?,?,?,?,?);`;
-  const [rows] = await (await connection()).execute(addEmployeeHrQuery, values);
-  return rows;
+    const values = [
+      date,
+      employeeId,
+      projectId,
+      startAt,
+      endAt,
+      (hours = parseFloat(duration.asHours()).toFixed(2)),
+      // dailyWageFixed,
+      notes,
+    ];
+console.log({
+  'date':date,
+      'employeeId':employeeId,
+      'projectId':projectId,
+      'startAt':startAt,
+      'endAt':endAt,
+      'hours':(hours = parseFloat(duration.asHours()).toFixed(2)),
+      'notes':notes,
+})
+    const addEmployeeHrQuery = `INSERT INTO ${process.env.DB_SCHEMA}.employeesTimeSheet (date, employeeId, projectId, startAt, endAt, duration,notes) VALUES (?,?,?,?,?,?,?);`;
+    const [rows] = await (
+      await connection()
+    ).execute(addEmployeeHrQuery, values);
+    return rows;
+  });
+  return record;
 }
 
 module.exports = {
   getProjectWithEmoloyeeTimeSheet,
   getEmoloyeeTimeSheet,
-  addEmployeeHr,
+  addEmployeeRecord,
 };

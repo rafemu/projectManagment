@@ -25,23 +25,23 @@ export class ProjectsService {
       .get(`${BaseURL}/projects` + queryParams)
       .pipe(
         map((projects: any) => {
-          console.log(projects)
           return {
             projects: projects.result.map((project: IProject) => {
               const img = project.agreement ==null ? project.agreement= 'default/default-placeholder-150x150.png' : project.agreement.split("/")[1]; 
+              const {id,projectName,clientFullName,clientPhone,location,quotation,paid,unPaid,haregem,createdAt,updatedAt} = project
               return {
-                id: project.id,
-                projectName: project.projectName,
-                clientFullName: project.clientFullName,
-                clientPhone: project.clientPhone,
-                location: project.location,
-                quotation: project.quotation,
-                paid: project.paid,
-                unPaid: project.unPaid,
-                haregem: project.haregem,
+                id: id,
+                projectName: projectName,
+                clientFullName: clientFullName,
+                clientPhone: clientPhone,
+                location: location,
+                quotation: quotation,
+                paid: paid,
+                unPaid: unPaid,
+                haregem: haregem,
                 agreement: img,
-                createdAt: project.createdAt,
-                updatedAt: project.updatedAt,
+                createdAt: createdAt,
+                updatedAt: updatedAt,
               };
             }),
             totalProjects: projects.total,
@@ -50,7 +50,6 @@ export class ProjectsService {
       )
       .subscribe((projects) => {
         this.projectsArray = projects.projects;
-        // console.log(projects)
         this.projectsSubject.next({
           projects: [...this.projectsArray],
           totalProjects: projects.totalProjects,

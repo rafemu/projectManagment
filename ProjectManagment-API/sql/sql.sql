@@ -81,3 +81,17 @@ FROM
         JOIN
     projects_managment.projects ON projects_managment.employeesTimeSheet.projectId = projects_managment.projects.id
 ORDER BY date
+
+
+
+CREATE TABLE `projects_managment`.`employeeDailyWage` (
+  `id` INT NOT NULL,
+  `employeeId` INT NULL,
+  `dailyWage` INT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `id_idx` (`employeeId` ASC),
+  CONSTRAINT `id`
+    FOREIGN KEY (`employeeId`)
+    REFERENCES `projects_managment`.`employee` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);

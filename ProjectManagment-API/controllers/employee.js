@@ -1,7 +1,23 @@
 const connection = require("../database/index");
 
 async function getEmployeeById(employeeId) {
-  const getEmployeeQuery = `SELECT * FROM ${process.env.DB_SCHEMA}.employee where ${process.env.DB_SCHEMA}.employee.id = ?`;
+  const getEmployeeQuery = `
+SELECT ${process.env.DB_SCHEMA}.employee.id,
+  ${process.env.DB_SCHEMA}.employee.firstName,
+  ${process.env.DB_SCHEMA}.employee.lastName,
+  ${process.env.DB_SCHEMA}.employee.phone,
+  ${process.env.DB_SCHEMA}.employee.bankBranch,
+  ${process.env.DB_SCHEMA}.employee.createdAt,
+  ${process.env.DB_SCHEMA}.employee.updatedAt,
+  ${process.env.DB_SCHEMA}.employeeDailyWage.dailyWage
+ FROM ${process.env.DB_SCHEMA}.employee 
+ join ${process.env.DB_SCHEMA}.employeeDailyWage
+ on ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id 
+ where ${process.env.DB_SCHEMA}.employee.id = ?
+  order by ${process.env.DB_SCHEMA}.employeeDailyWage.dailyWage
+desc
+LIMIT 1
+  `; 
   const [rows] = await (
     await connection()
   ).execute(getEmployeeQuery, [employeeId]);
@@ -28,10 +44,9 @@ async function getEmployees(pageSize, currentPage) {
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";
-    console.log(limitQuery)
+  console.log(limitQuery);
   const getEmployeeQuery = `SELECT * FROM ${process.env.DB_SCHEMA}.employee ${limitQuery};`;
   const [rows] = await (await connection()).execute(getEmployeeQuery);
-  console.log('getEmployees',rows)
   return rows;
 }
 

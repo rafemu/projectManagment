@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { EmployeesService } from 'src/app/_services/employees.service';
 import { ProjectsService } from 'src/app/_services/projects.service';
+import { RecordsService } from 'src/app/_services/records.service';
 import { RecordActionComponent } from './record-action/record-action.component';
 
 @Component({
@@ -12,7 +13,7 @@ import { RecordActionComponent } from './record-action/record-action.component';
 export class TimeSheetComponent implements OnInit {
 
   constructor(public dialog: MatDialog,private employeeService: EmployeesService,
-    private projectsService: ProjectsService,) { }
+    private projectsService: ProjectsService,private recordsService:RecordsService) { }
 
   ngOnInit(): void {
     this.employeeService.getAllemployee()
@@ -26,17 +27,11 @@ export class TimeSheetComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(result)
       if (typeof result === 'undefined') return;
       if (result.event === 'Add') {
-        // this._employeeService.addEmployee(result.data).subscribe((result) => {
-        //   if (result) {
-        //     this._employeeService.getAllemployee(
-        //       this.employeesPerPage,
-        //       this.currentPage
-        //     );
-        //   }
-        // });
+         this.recordsService.addNewRecord(result.data).subscribe(result=>{
+           console.log(result)
+         })
       } else if (result.event === 'Update') {
         // this._employeeService
         //   .updateEmployee(result.data, obj.id)
