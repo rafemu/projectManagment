@@ -1,0 +1,71 @@
+<div fxLayout="row wrap" class="course-app">
+
+
+  <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
+    <mat-card style="height: 87%;">
+        <mat-card-header class="course-header" style="background-color: #fc4b6c">
+        <mat-card-title>
+          <span class="course-name">Filter by Month</span>
+          <span class="course-duration">
+            <mat-icon class="m-r-10">access_time</mat-icon>
+          </span>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="text-center">
+        <p class="m-b-5">Please Choose Month</p>
+        <ejs-datepicker
+          start="Year"
+          [value]="currentDate"
+          format="MM/yyyy"
+          depth="Year"
+          placeholder="Enter date"
+          (change)="getSelectedDate($event)"
+        ></ejs-datepicker>
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <button mat-button (click)="submit()">Get Records</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
+    <mat-card style="height: 87%;">
+      <mat-card-header class="course-header" style="background-color: #1e88e5">
+        <mat-card-title>
+          <span class="course-name">Filter By Name</span>
+          <span class="course-duration">
+            <mat-icon class="m-r-10">access_time</mat-icon>
+          </span>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="text-center">
+        <p class="m-b-5">Enter Employee Name</p>
+        <input matInput [value]="filterValue" (keyup)="applyFilter($event.target.value)" placeholder="Search Employee">
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <button mat-button (click)="clear()">Clear</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
+    <mat-card style="height: 87%;">
+      <mat-card-header class="course-header" style="background-color: #ffb22b">
+        <mat-card-title>
+          <span class="course-name">Add Record</span>
+          <span class="course-duration">
+            <mat-icon class="m-r-10">access_time</mat-icon>
+          </span>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="text-center">
+        <p class="m-b-5">Add New Record</p>
+        
+        
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <button mat-button (click)="addRecord()">Add Record</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

@@ -21,7 +21,6 @@ import { ProjectsService } from 'src/app/_services/projects.service';
   imports: [
     CommonModule,
     ProjectsRoutingModule,
-    FlexLayoutModule,
     SharedModule,
   ],
   providers:[

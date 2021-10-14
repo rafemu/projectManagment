@@ -12,19 +12,20 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from '../_services/token-interceptor';
 import { DemoMaterialModule } from '../demo-material-module';
 import { HorizontalMenuItems } from './menu-items/horizontal-menu-items';
-import { EmployeesService } from '../_services/employees.service';
-import { ProjectsService } from '../_services/projects.service';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AccordionAnchorDirective,
     AccordionLinkDirective,
-    AccordionDirective
+    AccordionDirective,
+    
   ],
   imports:[
     DemoMaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    FlexLayoutModule
   ],
   exports: [
     DemoMaterialModule,
@@ -33,6 +34,7 @@ import { ProjectsService } from '../_services/projects.service';
     AccordionDirective,
     FormsModule,
     ReactiveFormsModule,
+    FlexLayoutModule
   ],
   providers: [
     TokenService,MenuItems,HorizontalMenuItems,

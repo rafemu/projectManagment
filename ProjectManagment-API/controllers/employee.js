@@ -30,13 +30,23 @@ async function createEmployee(employeeValues) {
     firstName,
     lastName,
     phone,
-    wagePerDay,
     bankAccount,
     bankBranch,
   ];
 
-  const createProjectQuery = `INSERT INTO ${process.env.DB_SCHEMA}.employee (firstName, lastName, phone, wagePerDay, bankAccount,bankBranch) VALUES (?,?,?,?,?,?);`;
+  const createProjectQuery = `INSERT INTO ${process.env.DB_SCHEMA}.employee (firstName, lastName, phone, bankAccount,bankBranch) VALUES (?,?,?,?,?);`;
   const [rows] = await (await connection()).execute(createProjectQuery, values);
+  return rows.insertId;
+}
+
+async function addDailyWage(id,wagePerDay) {
+
+  const values = [
+    id,
+    wagePerDay,
+  ];
+  const insertDailyWage = `INSERT INTO ${process.env.DB_SCHEMA}.employeeDailyWage (employeeId, dailyWage) VALUES (?,?);`;
+  const [rows] = await (await connection()).execute(insertDailyWage, values);
   return rows;
 }
 
@@ -44,7 +54,6 @@ async function getEmployees(pageSize, currentPage) {
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";
-  console.log(limitQuery);
   const getEmployeeQuery = `SELECT * FROM ${process.env.DB_SCHEMA}.employee ${limitQuery};`;
   const [rows] = await (await connection()).execute(getEmployeeQuery);
   return rows;
@@ -71,7 +80,7 @@ async function editEmployee(employeeValues, employeeId) {
   const updateQuery =
     "UPDATE `employee` SET `firstName` = ?, `lastName` = ?, `phone` = ?, `wagePerDay` = ?, `bankAccount` = ? , `bankBranch` = ? WHERE (`id` = ?);  ";
   const [rows] = await (await connection()).execute(updateQuery, values);
-  return rows.affectedRows;
+  return rows;
 }
 
 async function deleteEmployeeById(employeeId) {
@@ -131,4 +140,5 @@ module.exports = {
   getEmployeesCount,
   deleteEmployeeById,
   editEmployee,
+  addDailyWage
 };

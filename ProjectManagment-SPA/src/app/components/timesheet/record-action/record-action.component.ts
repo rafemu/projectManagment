@@ -39,46 +39,13 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   private subEmployee$: Subscription | undefined;
   private subProject$: Subscription | undefined;
 
-  // public recordDate: Date = new Date();//datevalue
-
-  // public month: number = new Date().getMonth();
-  // public fullYear: number = this.recordDate.getFullYear();
-  // public date: number = this.recordDate.getDate();
-
-  // public startAt: Date = new Date(
-  //   this.fullYear,
-  //   this.month,
-  //   this.date,
-  //   10,
-  //   0,
-  //   0
-  // );
-
-  // public endAt: Date = new Date(this.fullYear, this.month, this.date, 16, 0, 0);
-  // public minValue: Date = new Date(
-  //   this.fullYear,
-  //   this.month,
-  //   this.date,
-  //   7,
-  //   0,
-  //   0
-  // );
-  // public maxValue: Date = new Date(
-  //   this.fullYear,
-  //   this.month,
-  //   this.date,
-  //   16,
-  //   0,
-  //   0
-  // );
   public recordDate?: Date; //datevalue
   public month?: number;
   public fullYear?: number;
   public date?: number;
   public startAt?: Date;
   public endAt?: Date;
-  // public minValue?: Date;
-  // public maxValue?: Date;
+  private newDate?:Date;
 
   optionsEmployee: any = [];
   optionsProjects: any = [];
@@ -93,14 +60,16 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   ) {
     this.local_data = { ...data };
     this.action = this.local_data.action;
-      this.reChangeDates(new Date())
   }
+
 
   ngOnInit(): void {
     this.getProjects();
     this.getEmployees();
    
     this.initForm();
+    this.reChangeDates(new Date())
+
     if (this.local_data.action === 'Update') {
       this.filForm();
     }
@@ -161,38 +130,33 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     });
   }
 
-    reChangeDates(newDate:Date) {
+  getRecordDate(event: any) {
+    this.reChangeDates(event.value)
+    this.newDate = event.value;
+  }
+
+  reChangeDates(newDate:Date) {
+    console.log(newDate)
     this.recordDate = newDate
-    this.month = new Date().getMonth();
+    this.month = this.recordDate.getMonth();
     this.fullYear = this.recordDate.getFullYear();
     this.date = this.recordDate.getDate();
     this.startAt = new Date(this.fullYear, this.month, this.date, 7, 0, 0);
     this.endAt = new Date(this.fullYear, this.month, this.date, 16, 0, 0);
-    // this.minValue = new Date(this.fullYear, this.month, this.date, 6, 0, 0);
-    // this.maxValue = new Date( this.fullYear, this.month, this.date, 24, 0, 0 );
+    this.form.get('date').setValue(this.recordDate);
+    this.form.get('startAt').setValue(this.startAt);
+    this.form.get('endAt').setValue(this.endAt);
 
-    console.log('start',this.startAt)
-    console.log('endat',this.endAt) 
+    console.log(this.recordDate)
+    console.log(this.startAt)
+    console.log(this.endAt)
 
-    // this.form.setValue({
-    //   date:this.recordDate,
-    //   startAt: this.startAt,
-    //   endAt: this.endAt,
-    // });
-  }
-
-  getRecordDate(event: any) {
-    this.reChangeDates(event.value)
-    // console.log('this.date', this.date);
-    // console.log('this.startAt', this.startAt);
-    // this.recordDate = event.value;
-    // console.log('this.recordDate', this.recordDate);
   }
 
   doAction() {
-    console.log(this.form.value.startAt);
+    // console.log(this.form.value.startAt);
     const record: IRecord = {
-      date: this.form.value.date, //.format('YYYY-MM-DD'),
+      date: this.form.value.date.toISOString().split('T')[0], //.format('YYYY-MM-DD'),
       employeeId: this.form.value.employeeId,
       projectId: this.form.value.projectId,
       startAt: this.form.value.startAt, // moment(this.form.value.startAt).format('HH:mm'),
@@ -200,6 +164,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
       notes: this.form.value.notes,
       createdAt: moment().format('YYYY-MM-DD'),
     };
+    console.log(record)
     if (this.form.invalids) return;
     this.dialogRef.close({ event: this.action, data: record });
   }

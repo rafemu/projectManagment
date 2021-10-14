@@ -8,14 +8,26 @@ const {
   getEmployeesCount,
   editEmployee,
   deleteEmployeeById,
+  addDailyWage
 } = require("../controllers/employee");
 
 // create employee
 router.post("/", async (req, res, next) => {
   console.log(req.body);
+
+  // firstName: 'בהאא',
+  // lastName: 'אבו גנב',
+  // phone: '0532810466',
+  // wagePerDay: 400,
+  // bankAccount: 0,
+  // bankBranch: '0',
+  // createdAt: '01-09-2021'
   try {
     const createEmployeeResult = await createEmployee(req.body);
+    if(!createEmployeeResult) throw new Error('something went worng')
     console.log("createEmployee", createEmployeeResult);
+    const dailyWage = await addDailyWage(createEmployeeResult,req.body.wagePerDay);
+    if(!dailyWage) throw new Error('something went wrong on insert daily wage to employee ')
     // const { type } = req.body;
     // const result = await isUserExist(req.body.users[0]);
     // if (!result) throw new Error("Invalid User");
@@ -32,7 +44,7 @@ router.post("/", async (req, res, next) => {
     //   throw new Error("User Account was not created");
     res.json({ message: "employee created" });
   } catch (ex) {
-    return next({ message: "global error", status: 500 });
+    return next({ message: ex.message, status: 500 });
   }
 
   function _generateAccountId() {

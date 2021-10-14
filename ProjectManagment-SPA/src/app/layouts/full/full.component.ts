@@ -23,7 +23,7 @@ export class FullComponent implements OnDestroy {
 	dir = 'rtl';
 	dark = true;
 	minisidebar = false;
-	boxed = true;
+	boxed = false;
 	horizontal = true;
 
 	green = false;

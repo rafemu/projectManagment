@@ -1,18 +1,19 @@
-const { getEmployeeById } = require("../controllers/employee");
-const { getEmoloyeeTimeSheet } = require("../controllers/timeSheets");
-const moment = require("moment");
-async function calc(id) {
-  const result = await getEmoloyeeTimeSheet(id);
-  const calcday = result.map((day) => {
-    return {
-      id: day.id,
-      startAt: day.startAt,
-      endAt: moment(day.endAt, "HH:mm:ss"),
-      wagePerDay: moment(day.wagePerDay, "HH:mm:ss"),
-      calc: moment.duration(day.endAt.diff(day.startAt)),
-      //* day.wagePerDay,
-    };
+const connection = require("../database/index");
+
+async function calc(employeeRecords, employeeDetials) {
+  const { dailyWage } = employeeDetials;
+  employeeRecords.map(async(record) => {
+    const dailyWageFixed = Math.round(
+      ((dailyWage / 8.5) * record.duration).toFixed(2)
+    );
+const values = [dailyWageFixed,record.id]
+const updateDailyWage = "UPDATE `employeesTimeSheet` SET `payPerDay` = ? WHERE (`id` = ?);";
+    const [rows] = await (
+      await connection()
+    ).execute(updateDailyWage, values);
+    return rows;
   });
-  console.log("calcday", calcday);
+  return employeeRecords;
+
 }
 module.exports = { calc };

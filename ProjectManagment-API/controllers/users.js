@@ -24,7 +24,6 @@ async function createUser(userValues) {
   const values = [email, firstName, lastName, hashPassword, role];
   const insertQuery = `INSERT INTO ${process.env.DB_SCHEMA}.users(email,firstName,lastName,password,role) VALUES (?,?,?,?,?)`;
   const [rows] = await (await connection()).execute(insertQuery, values);
-  console.log('rows',rows);
   return rows.affectedRows;
 }       
 

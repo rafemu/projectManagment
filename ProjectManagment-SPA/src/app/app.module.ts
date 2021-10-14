@@ -20,7 +20,6 @@ import { AppBreadcrumbComponent } from './layouts/full/breadcrumb/breadcrumb.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoMaterialModule } from './demo-material-module';
 
-import { LoginComponent } from './login/login.component';  
 import { AuthGuard } from './auth.guard';
 
 import { SharedModule } from './shared/shared.module';
@@ -57,7 +56,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     HorizontalAppSidebarComponent,
     VerticalAppHeaderComponent,
     VerticalAppSidebarComponent
-    // LoginComponent
   ],
   imports: [
     SharedModule,

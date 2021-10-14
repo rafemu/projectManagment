@@ -2,29 +2,58 @@ const express = require("express");
 const {
   getProjectWithEmoloyeeTimeSheet,
   addEmployeeRecord,
+  getEmployeeMothRecords,
+  getAllRecordsByMonth,
+  getRecordsCount,
+  addWorkedProject,
 } = require("../controllers/timeSheets");
 const { getEmployeeById } = require("../controllers/employee");
 const { calc } = require("../_helper/timesheetCalc");
 const router = express.Router();
 const moment = require("moment");
 
+router.get("/", async (req, res, next) => {
+  const pageSize = +req.query.pagesize;
+  const currentPage = +req.query.page;
+  const currentMonth = req.query.currentMonth;
+  try {
+    // currentPage
+    // ? (projects = await getProjects(pageSize, currentPage))
+    // : (projects = await getProjects());
+    const records = await getAllRecordsByMonth(
+      currentMonth,
+      pageSize,
+      currentPage
+    );
+    console.log(currentMonth)
+    if (!records)
+      throw new Error("something wen wrong when get Records by month");
+    const totalOfRecords = await getRecordsCount(currentMonth);
+    console.log(totalOfRecords)
+    if ((totalOfRecords == null) | undefined)
+      throw new Error("somthing went wrong get records count ");
+    res.json({ result: records, total: totalOfRecords });
+  } catch (ex) {
+    return next({ message: ex.message, status: 400 });
+  }
+});
+
 router.get("/:projectId", async (req, res, next) => {
+  console.log("gett");
   const { projectId } = req.params;
+
   try {
     const result = await getProjectWithEmoloyeeTimeSheet(projectId);
     res.json(result);
   } catch (ex) {
-    return next({ message: "GENERAL ERROR", status: 400 });
+    return next({ message: ex.message, status: 400 });
   }
 });
 
 router.get("/employee/:employeeId", async (req, res, next) => {
   const { employeeId } = req.params;
-
-  // const result = await calc(employeeId);
   try {
     const employeeDetails = await getEmployeeById(employeeId);
-    console.log(employeeDetails);
     res.json(employeeDetails);
   } catch (ex) {
     return next({ message: ex.message, status: 401 });
@@ -34,11 +63,13 @@ router.get("/employee/:employeeId", async (req, res, next) => {
 router.post("/addRecords", async (req, res, next) => {
   const { employeeId, projectId } = req.body;
   try {
+    console.log(req.body)
     if (!Array.isArray(employeeId)) throw new Error("something went wrong");
     const getEmployeeObj = await getEmployeesDataFromClient(req.body);
+    console.log('getEmployeeObj',getEmployeeObj)
     if (!getEmployeeObj) throw new Error("something went wrong");
-    const result = addEmployeeRecord(getEmployeeObj);
-    if (!result) throw new Error("some thing went worng on add records");
+    const resultOfAddEmployeeRecords = await addEmployeeRecord(getEmployeeObj);
+    if (!resultOfAddEmployeeRecords) throw new Error("some thing went worng on add records");
     res.json({ msg: "hr report has been added" });
   } catch (ex) {
     return next({ message: ex.message, status: 400 });
@@ -46,35 +77,49 @@ router.post("/addRecords", async (req, res, next) => {
 });
 
 async function getEmployeesDataFromClient(record) {
-  // Extract all of keys which have array values
-  let arrayKeys = Object.entries(record).filter(
-    ([key, value]) => typeof value === "object" && Array.isArray(value)
-  );
-
-  //Create your default object with default keys:
-  let defaultObj = Object.entries(record).reduce((obj, [key, value]) => {
-    if (!typeof value === "object" || !Array.isArray(value)) {
-      obj[key] = value;
-    }
-    return obj;
-  }, {});
-  // Create a function which fill an array with your final objects recursively:
-  function addKeys(array, obj, keys) {
-    if (!keys.length) {
-      array.push(obj);
-      return;
-    }
-    let [key, values] = keys.pop();
-    values.forEach((val) => {
-      obj[key] = val;
-      addKeys(array, { ...obj }, [...keys]);
-    });
-  }
-
-  let output = [];
-  
-  addKeys(output, defaultObj, arrayKeys);
-  return output;
+  console.log("getEmployeesDataFromClient", record);
+  // if (record.employeeId.length == 1) return record.flat();
+  const records = record.employeeId
+    .map((employeeId) => ({
+      ...record,
+      employeeId: employeeId,
+    }))
+    .flat();
+  return records;
 }
+
+async function getProjectsFromDataClient(record) {
+
+  const records = record.projectId
+    .map((projectId) => ({
+      // ...record,
+      projectId: projectId,
+    }))
+    .flat();
+  return records;
+}
+
+router.post("/calculateDailyWage", async (req, res, next) => {
+  const { employeeId, month } = req.body;
+  console.log(employeeId, month);
+  try {
+    const getEmployeeMothRecord = await getEmployeeMothRecords(
+      employeeId,
+      month
+    );
+    const getDailyWage = await getEmployeeById(employeeId);
+
+    const calculateDailyWagePerMonth = await calc(
+      getEmployeeMothRecord,
+      getDailyWage
+    );
+    res.json({
+      result: getEmployeeMothRecord,
+      msg: "hr report has been added",
+    });
+  } catch (ex) {
+    return next({ message: ex.message, status: 400 });
+  }
+});
 
 module.exports = router;

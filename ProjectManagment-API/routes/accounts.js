@@ -12,7 +12,6 @@ router.post("/", getValidationFunction("account"), async (req, res, next) => {
         const { type } = req.body;
         const result = await isUserExist(req.body.users[0]);
         if (!result) throw new Error("Invalid User")
-        console.log("createAccount")
         const generatedAccountId = _generateAccountId()
         const caResult = await createAccount({ type, id: generatedAccountId })
         if (!caResult.affectedRows) throw new Error("Account was not created")

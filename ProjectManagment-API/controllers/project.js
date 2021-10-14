@@ -61,10 +61,8 @@ async function editProject(updatedData,projectId){
 
 function _deleteAgreementFromStorage(imgPath){
   const filePath = imgPath;
-  console.log('filePath',filePath)
   if (fs.existsSync(filePath)) {
     const deleteImage = fs.unlinkSync(filePath);
-    console.log(deleteImage)
   }
   return true;
 }
