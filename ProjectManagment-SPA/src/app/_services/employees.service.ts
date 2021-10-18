@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { BaseURL } from '.';
+import { IDWage } from '../_interfaces/dailyWage.interface';
 import { IEmployee } from '../_interfaces/emplyee.interface';
 
 @Injectable({
@@ -56,6 +57,11 @@ export class EmployeesService {
 
   addEmployee(data: IEmployee) {
     return this.httpClient.post(`${BaseURL}/employee`, data);
+  }
+
+  addDailyWage(data: IDWage) {
+    console.log(data)
+    return this.httpClient.post(`${BaseURL}/employee/addDailyWage`, data);
   }
 
   updateEmployee(data: IEmployee, employeeId: number) {

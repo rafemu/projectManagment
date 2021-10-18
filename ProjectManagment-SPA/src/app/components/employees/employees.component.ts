@@ -6,6 +6,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Subscription } from 'rxjs';
 import { IEmployee } from 'src/app/_interfaces/emplyee.interface';
 import { EmployeesService } from 'src/app/_services/employees.service';
+import { DailyWageComponent } from './daily-wage/daily-wage.component';
 import { EmployeeActionsComponent } from './employee-actions/employee-actions.component';
 
 @Component({
@@ -15,9 +16,9 @@ import { EmployeeActionsComponent } from './employee-actions/employee-actions.co
 })
 export class EmployeesComponent implements OnInit {
   employee: IEmployee[] = [];
-  employeesPerPage = 5;
+  employeesPerPage = 25 ;
   currentPage = 1;
-  pageSizeOptions = [5, 10, 25, 50];
+  pageSizeOptions = [25, 50];
   totalEmployees = 0;
   public subEmployee$: Subscription | undefined;
   dataSource: MatTableDataSource<IEmployee>;
@@ -112,6 +113,49 @@ export class EmployeesComponent implements OnInit {
             );
           }
         });
+      }
+    });
+  }
+
+  openWageDialog(action:string,obj:any){
+    obj.action = action;
+    const dialogRef = this.dialog.open(DailyWageComponent, {
+      data: obj,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (typeof result === 'undefined') return;
+      if (result.event === 'addWage') {
+        console.log(result)
+        this._employeeService.addDailyWage(result.data).subscribe((result) => {
+          if (result) {
+            this._employeeService.getAllemployee(
+              this.employeesPerPage,
+              this.currentPage
+            );
+          }
+        });
+      } else if (result.event === 'Update') {
+        // this._employeeService
+        //   .updateEmployee(result.data, obj.id)
+        //   .subscribe((result) => {
+        //     if (result) {
+        //       this._employeeService.getAllemployee(
+        //         this.employeesPerPage,
+        //         this.currentPage
+        //       );
+        //     }
+        //   });
+      } else if (result.event === 'Delete') {
+        // this._employeeService.deleteEmployee(obj.id).subscribe((result) => {
+        //   if (result) {
+        //     console.log('projectDeleted', result);
+        //     this._employeeService.getAllemployee(
+        //       this.employeesPerPage,
+        //       this.currentPage
+        //     );
+        //   }
+        // });
       }
     });
   }

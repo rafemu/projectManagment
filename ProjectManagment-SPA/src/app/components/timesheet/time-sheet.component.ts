@@ -40,10 +40,10 @@ export class TimeSheetComponent implements OnInit {
     'projectName',
     'startAt',
     'endAt',
-    'notes',
     'duration',
     'dailyWage',
     'payPerDay',
+    'notes',
     
   ];
   constructor(

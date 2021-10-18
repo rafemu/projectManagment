@@ -6,17 +6,21 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { EmployeesComponent } from './employees.component';
 import { EmployeeActionsComponent } from './employee-actions/employee-actions.component';
 import { EmployeesService } from 'src/app/_services/employees.service';
+import { DailyWageComponent } from './daily-wage/daily-wage.component';
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 
 @NgModule({
   declarations: [
     EmployeesComponent,
-    EmployeeActionsComponent
+    EmployeeActionsComponent,
+    DailyWageComponent
   ],
   imports: [
     CommonModule,
     EmployeesRoutingModule,
-    SharedModule
+    SharedModule,
+    DatePickerModule
   ],
   entryComponents:[
     EmployeeActionsComponent

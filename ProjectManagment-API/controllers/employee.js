@@ -11,41 +11,32 @@ SELECT ${process.env.DB_SCHEMA}.employee.id,
   ${process.env.DB_SCHEMA}.employee.updatedAt,
   ${process.env.DB_SCHEMA}.employeeDailyWage.dailyWage
  FROM ${process.env.DB_SCHEMA}.employee 
- join ${process.env.DB_SCHEMA}.employeeDailyWage
+ left join ${process.env.DB_SCHEMA}.employeeDailyWage
  on ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id 
  where ${process.env.DB_SCHEMA}.employee.id = ?
   order by ${process.env.DB_SCHEMA}.employeeDailyWage.dailyWage
 desc
 LIMIT 1
-  `; 
+  `;
   const [rows] = await (
     await connection()
   ).execute(getEmployeeQuery, [employeeId]);
+  console.log(rows)
   return rows[0];
 }
 async function createEmployee(employeeValues) {
   const { firstName, lastName, phone, wagePerDay, bankAccount, bankBranch } =
     employeeValues;
-  const values = [
-    firstName,
-    lastName,
-    phone,
-    bankAccount,
-    bankBranch,
-  ];
+  const values = [firstName, lastName, phone, bankAccount, bankBranch];
 
   const createProjectQuery = `INSERT INTO ${process.env.DB_SCHEMA}.employee (firstName, lastName, phone, bankAccount,bankBranch) VALUES (?,?,?,?,?);`;
   const [rows] = await (await connection()).execute(createProjectQuery, values);
   return rows.insertId;
 }
 
-async function addDailyWage(id,wagePerDay) {
-
-  const values = [
-    id,
-    wagePerDay,
-  ];
-  const insertDailyWage = `INSERT INTO ${process.env.DB_SCHEMA}.employeeDailyWage (employeeId, dailyWage) VALUES (?,?);`;
+async function addDailyWage(employeeId, dailyWage, startFrom) {
+  const values = [employeeId, dailyWage, startFrom];
+  const insertDailyWage = `INSERT INTO ${process.env.DB_SCHEMA}.employeeDailyWage (employeeId, dailyWage,startFromDate) VALUES (?,?,?);`;
   const [rows] = await (await connection()).execute(insertDailyWage, values);
   return rows;
 }
@@ -140,5 +131,5 @@ module.exports = {
   getEmployeesCount,
   deleteEmployeeById,
   editEmployee,
-  addDailyWage
+  addDailyWage,
 };

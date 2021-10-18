@@ -8,26 +8,21 @@ const {
   getEmployeesCount,
   editEmployee,
   deleteEmployeeById,
-  addDailyWage
+  addDailyWage,
 } = require("../controllers/employee");
 
 // create employee
 router.post("/", async (req, res, next) => {
-  console.log(req.body);
-
-  // firstName: 'בהאא',
-  // lastName: 'אבו גנב',
-  // phone: '0532810466',
-  // wagePerDay: 400,
-  // bankAccount: 0,
-  // bankBranch: '0',
-  // createdAt: '01-09-2021'
   try {
     const createEmployeeResult = await createEmployee(req.body);
-    if(!createEmployeeResult) throw new Error('something went worng')
+    if (!createEmployeeResult) throw new Error("something went worng");
     console.log("createEmployee", createEmployeeResult);
-    const dailyWage = await addDailyWage(createEmployeeResult,req.body.wagePerDay);
-    if(!dailyWage) throw new Error('something went wrong on insert daily wage to employee ')
+    const dailyWage = await addDailyWage(
+      createEmployeeResult,
+      req.body.wagePerDay
+    );
+    if (!dailyWage)
+      throw new Error("something went wrong on insert daily wage to employee ");
     // const { type } = req.body;
     // const result = await isUserExist(req.body.users[0]);
     // if (!result) throw new Error("Invalid User");
@@ -46,9 +41,24 @@ router.post("/", async (req, res, next) => {
   } catch (ex) {
     return next({ message: ex.message, status: 500 });
   }
+});
 
-  function _generateAccountId() {
-    return Math.floor(Math.random() * 99999);
+router.post("/addDailyWage", async (req, res, next) => {
+  // console.log(req.body);
+  const { employeeId, dailyWage, startFrom } = req.body;
+  console.log(employeeId, dailyWage, startFrom)
+  try {
+    const checkIfEmployeeExist = await getEmployeeById(employeeId);
+    if (!checkIfEmployeeExist) throw new Error("Invalid employee");
+    const result = await addDailyWage(employeeId, dailyWage, startFrom);
+    if (!result) throw new Error("error in deleteing employee");
+    res
+      .status(200)
+      .json(
+        `new Daily wage for ${employeeId} - ${dailyWage} - start from ${startFrom}`
+      );
+  } catch (ex) {
+    next({ message: ex.message, status: 400 });
   }
 });
 
@@ -81,21 +91,18 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
-router.put(
-  "/:employeeId",
-  async (req, res, next) => {
-    try {
-      const employeeId = req.params.employeeId;
-      const result = await editEmployee(req.body, employeeId);
-      if (!result) throw new Error("some thing went wrong with editing");
-      res.json({
-        result,
-      });
-    } catch (ex) {
-      return next({ message: ex.message, status: 400 });
-    }
+router.put("/:employeeId", async (req, res, next) => {
+  try {
+    const employeeId = req.params.employeeId;
+    const result = await editEmployee(req.body, employeeId);
+    if (!result) throw new Error("some thing went wrong with editing");
+    res.json({
+      result,
+    });
+  } catch (ex) {
+    return next({ message: ex.message, status: 400 });
   }
-);
+});
 
 router.delete(
   "/:employeeId",

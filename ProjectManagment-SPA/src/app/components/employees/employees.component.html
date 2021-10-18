@@ -4,13 +4,16 @@
       <mat-card>
         <mat-card-content>
           <div fxLayout="row wrap" class="align-items-center">
-            <div fxFlex.gt-md="25" fxFlex.gt-lg="25" fxFlex="100">
+            <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
               <mat-form-field>
                 <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search Employee">
               </mat-form-field>
             </div>
-            <div fxFlex.gt-md="75" class="text-right">
+            <div fxFlex.gt-md="33.3" class="text-right">
               <button mat-raised-button (click)="openDialog('Add',{})" color="primary">Add Employee</button>
+            </div>
+            <div fxFlex.gt-md="33.3" class="text-right">
+              <button mat-raised-button (click)="openWageDialog('addWage',{})" color="primary">Update Daily Wage</button>
             </div>
           </div>
         </mat-card-content>

@@ -154,7 +154,6 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   doAction() {
-    // console.log(this.form.value.startAt);
     const record: IRecord = {
       date: this.form.value.date.toISOString().split('T')[0], //.format('YYYY-MM-DD'),
       employeeId: this.form.value.employeeId,
@@ -166,7 +165,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     };
     console.log(record)
     if (this.form.invalids) return;
-    this.dialogRef.close({ event: this.action, data: record });
+    // this.dialogRef.close({ event: this.action, data: record });
   }
 
   closeDialog() {

@@ -1,0 +1,67 @@
+
+<h2 class="font-medium" mat-dialog-title><strong>add Daily Wage</strong></h2>
+<mat-dialog-content class="pb-3 mat-typography" style="width: 500px;">
+    <form [formGroup]="form">
+        <div fxLayout="row wrap" class="align-items-center">
+            <div fxFlex="100" fxFlex.gt-md="33.3">
+                <div class="m-r-15 m-l-15">
+
+                    <mat-form-field>
+                        <mat-select
+                          name="employeeId"
+                          formControlName="employeeId"
+                          placeholder="Employee"
+                          id="employeeId"
+                          [(value)]="selectedEmployee"
+                        >
+                          <mat-option
+                            *ngFor="let employee of employees"
+                            [value]="employee.id"
+                          >
+                            {{ employee.firstName }} {{ employee.lastName }}
+                          </mat-option>
+                        </mat-select>
+                        <!-- <mat-error *ngIf="productForm.get('categoryId').invalid"
+                          >please insert product category
+                        </mat-error> -->
+                      </mat-form-field>
+
+                         
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="33.3">
+                <div class="m-r-15 m-l-15">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="number"
+                        name="dailyWage"
+                        formControlName="dailyWage"
+                        placeholder=" Daily Wage"
+                      />
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex="100" fxFlex.gt-md="33.3">
+                <div class="m-r-15 m-l-15">
+                    <ejs-datepicker  formControlName="startFrom" (change)="print($event)" format='yyyy/MM/dd' [value]='currentDate'
+                    placeholder='Wage start from'></ejs-datepicker>
+                </div>
+            </div>
+        </div>
+        <button mat-button (click)="doAction()" mat-flat-button color="warn"
+            [disabled]="!form.valid">{{action}}</button>
+        <button mat-button (click)="closeDialog()">Cancel</button>
+    </form>
+
+    <div>
+    </div>
+</mat-dialog-content>
+<!-- <ng-template #elseTemplate>
+    <p>Sure to delete <b>{{local_data.firstName}}  {{local_data.lastName}}</b> ?</p>
+    <div mat-dialog-actions align="end" class="pt-3">
+        <button mat-button (click)="doAction()" mat-flat-button color="warn">{{action}}</button>
+        <button mat-button (click)="closeDialog()">Cancel</button>
+    </div>
+</ng-template> -->
+

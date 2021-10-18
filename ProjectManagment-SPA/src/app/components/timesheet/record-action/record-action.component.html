@@ -3,7 +3,7 @@
 <mat-dialog-content class="pb-3 mat-typography" style="width: 500px;">
     <form [formGroup]="form">
         <div fxLayout="row wrap" class="align-items-center">
-            <div fxFlex="100" fxFlex.gt-md="50">
+            <div fxFlex="100" fxFlex.gt-md="100">
                 <div class="m-r-15 m-l-15">
                           <ejs-datepicker  formControlName="date"
                           placeholder=" date  (required) *" [value]='recordDate' placeholder='Enter date' (change)="getRecordDate($event)"></ejs-datepicker>
@@ -12,7 +12,7 @@
             <div fxFlex="100" fxFlex.gt-md="50">
                 <div class="m-r-15 m-l-15">
                         <mat-select-autocomplete
-                        [placeholder]="'Select Options'"
+                        [placeholder]="'Select Employees'"
                         [options]="optionsEmployee"
                         [multiple]='true'
                         name="optionsSelector"
@@ -24,7 +24,7 @@
             <div fxFlex="100" fxFlex.gt-md="50">
                 <div class="m-r-15 m-l-15">
                     <mat-select-autocomplete
-                        [placeholder]="'Select Options'"
+                        [placeholder]="'Select Projects'"
                         [options]="optionsProjects"
                         [multiple]='true'
                         name="optionsSelector"
@@ -47,7 +47,7 @@
                     placeholder=" End At  (required) *"  [value]='endAt' ></ejs-timepicker>
                 </div>
             </div>
-            <div fxFlex="100" fxFlex.gt-md="50">
+            <div fxFlex="100" fxFlex.gt-md="100">
                 <div class="m-r-15 m-l-15">
                     <mat-form-field>
                         <input
