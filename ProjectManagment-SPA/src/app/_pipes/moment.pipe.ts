@@ -5,8 +5,9 @@ import * as moment from 'moment'
 })
 export class MomentPipe implements PipeTransform {
 
-  transform(value: Date|moment.Moment, ...args: any[]): any {
+  transform(value: moment.Moment, ...args: any[]): any {
     let [format] = args;
+    if(value == null) return ''
     return moment(value).locale("he").format(format)
   }
 }

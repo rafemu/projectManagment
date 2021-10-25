@@ -48,7 +48,7 @@ async function addEmployeeRecord(record) {
       const { date, startAt, endAt, employeeId, notes } = rec;
       const duration = moment
         .duration(moment(endAt).diff(moment(startAt)))
-        .subtract(0.5, "hour");
+        if(duration < 4) duration.subtract(0.5, "hour");
       var hours = duration.asHours();
       const values = [
         date,
@@ -102,10 +102,13 @@ asc`;
   return rows;
 }
 
-async function getAllRecordsByMonth(currentMonth, pageSize, currentPage) {
+async function getAllRecordsByMonth(currentMonth, pageSize, currentPage,employeeId) {
+  console.log(employeeId)
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";
+  const filterByEmployee = employeeId != 'undefined' ? `AND ${process.env.DB_SCHEMA}.employee.id  = ${employeeId}` : '';
+  console.log(filterByEmployee)
     const month = moment(currentMonth).month() +1
     const year = moment(currentMonth).year()
     const values = [currentMonth,currentMonth,month,year];
@@ -118,6 +121,7 @@ async function getAllRecordsByMonth(currentMonth, pageSize, currentPage) {
   ${process.env.DB_SCHEMA}.employeesTimeSheet.endAt AS endAt,
   ${process.env.DB_SCHEMA}.employeesTimeSheet.duration AS duration,
   ${process.env.DB_SCHEMA}.employeesTimeSheet.notes AS notes,
+  ${process.env.DB_SCHEMA}.employeesTimeSheet.payPerDay AS payPerDay,
   ${process.env.DB_SCHEMA}.employee.firstName AS firstName,
   ${process.env.DB_SCHEMA}.employee.id AS employeeId,
   ${process.env.DB_SCHEMA}.employee.lastName AS lastName,
@@ -152,9 +156,9 @@ FROM
       LEFT JOIN
   ${process.env.DB_SCHEMA}.workedProjects ON ${process.env.DB_SCHEMA}.workedProjects.dayId = ${process.env.DB_SCHEMA}.employeesTimeSheet.id
 WHERE
-  MONTH(date) = ? AND YEAR(date) = ?
+  MONTH(date) = ? AND YEAR(date) = ? ${filterByEmployee}
 GROUP BY id 
-ORDER BY date , dailyWage DESC
+ORDER BY date DESC   , dailyWage 
 ${limitQuery}
   `;
 //, date , startAt , endAt , duration , payPerDay , notes , firstName , lastName , dailyWage

@@ -16,6 +16,7 @@ router.get("/", async (req, res, next) => {
   const pageSize = +req.query.pagesize;
   const currentPage = +req.query.page;
   const currentMonth = req.query.currentMonth;
+  const employeeId = req.query.employeeId
   try {
     // currentPage
     // ? (projects = await getProjects(pageSize, currentPage))
@@ -23,7 +24,8 @@ router.get("/", async (req, res, next) => {
     const records = await getAllRecordsByMonth(
       currentMonth,
       pageSize,
-      currentPage
+      currentPage,
+      employeeId
     );
     console.log(currentMonth)
     if (!records)

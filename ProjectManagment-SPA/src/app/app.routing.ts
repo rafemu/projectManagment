@@ -35,6 +35,11 @@ export const AppRoutes: Routes = [
                 path:'timesheet',
                 loadChildren:()=> import('./components/timesheet/time-sheet.module').then(m=> m.TimeSheetModule)
             }
+            ,
+            {
+                path:'salary',
+                loadChildren:()=> import('./components/salary/salary.module').then(m=> m.SalaryModule)
+            }
 
         ]
     },

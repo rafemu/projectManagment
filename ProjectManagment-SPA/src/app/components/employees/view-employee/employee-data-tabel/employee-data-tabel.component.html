@@ -1,0 +1,177 @@
+<div fxLayout="row wrap" class="course-app">
+
+
+    <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
+      <mat-card style="height: 87%;">
+          <mat-card-header class="course-header" style="background-color: #fc4b6c">
+          <mat-card-title>
+            <span class="course-name">Filter by Month</span>
+            <span class="course-duration">
+              <mat-icon class="m-r-10">access_time</mat-icon>
+            </span>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="text-center">
+          <p class="m-b-5">Please Choose Month</p>
+          <ejs-datepicker
+            start="Year"
+            [value]="currentMonth"
+            format="MM/yyyy"
+            depth="Year"
+            placeholder="Enter date"
+            (change)="getSelectedDate($event)"
+          ></ejs-datepicker>
+        </mat-card-content>
+        <mat-card-actions class="text-center">
+          <button mat-button (click)="submit()">Get Records</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    </div>
+<div fxLayout="row wrap">
+  <div fxFlex="100">
+    <mat-card>
+      <mat-card-content>
+        <div class="table-responsive">
+          <table
+            mat-table
+            [dataSource]="dataSource"
+            class="table employee-list no-wrap"
+          >
+            <ng-container matColumnDef="date">
+              <th mat-header-cell *matHeaderCellDef>Date</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.date | momentPipe: "YYYY-MM-DD" }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef>Total</td>
+            </ng-container>
+
+            <ng-container matColumnDef="day">
+              <th mat-header-cell *matHeaderCellDef>day</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.date | momentPipe: "dddd" }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+
+            <ng-container matColumnDef="firstName">
+              <th mat-header-cell *matHeaderCellDef>full Name</th>
+              <td mat-cell *matCellDef="let element">
+                <!-- [routerLink]="['/projects',element.id]" -->
+                <div class="d-flex">
+                  <div class="m-l-15">
+                    <p class="font-bold m-b-0 m-t-0">
+                      {{ element?.firstName }}
+                    </p>
+                    <small>{{ element.lastName }}</small>
+                  </div>
+                </div>
+              </td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+
+            <ng-container matColumnDef="startAt">
+              <th mat-header-cell *matHeaderCellDef>start At</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element?.startAt | momentPipe: "HH:mm" }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+
+            <ng-container matColumnDef="endAt">
+              <th mat-header-cell *matHeaderCellDef>endAt</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element?.endAt | momentPipe: "HH:mm" }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+
+            <ng-container matColumnDef="projectName">
+              <th mat-header-cell *matHeaderCellDef>project Name</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element?.dayWorkedPlace | ProjectPipe }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+
+            <ng-container matColumnDef="duration">
+              <th mat-header-cell *matHeaderCellDef>duration</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element?.duration }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef>
+                {{ getTotalDuration() }}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="dailyWage">
+              <th mat-header-cell *matHeaderCellDef>daily wage</th>
+              <td mat-cell *matCellDef="let element">
+                <div class="d-flex">
+                  <div class="m-l-15">
+                    <p class="font-bold m-b-0 m-t-0">
+                      {{ element?.dailyWage | currency: "ILS":"symbol" }}
+                    </p>
+                    <small *ngIf="element.wageForm">wage From </small>
+                    <small>{{
+                      element?.wageFrom | momentPipe: "YYYY-MM"
+                    }}</small>
+                  </div>
+                </div>
+              </td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+
+            <ng-container matColumnDef="notes">
+              <th mat-header-cell *matHeaderCellDef>notes</th>
+              <td mat-cell *matCellDef="let element">{{ element?.notes }}</td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+            <ng-container matColumnDef="payPerDay">
+              <th mat-header-cell *matHeaderCellDef>Pay Per Day</th>
+              <td mat-cell *matCellDef="let element">
+                <div class="d-flex">
+                  <div class="m-l-15">
+                    <p class="font-bold m-b-0 m-t-0">
+                      {{ element?.payPerDay | currency: "ILS":"symbol" }}
+                    </p>
+                  </div>
+                </div>
+              </td>
+              <td mat-footer-cell *matFooterCellDef>
+                {{ getTotalOfPayPerDay() | currency: "ILS":"symbol" }}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="action">
+              <th mat-header-cell *matHeaderCellDef>Action</th>
+              <td mat-cell *matCellDef="let element" class="action-link">
+                <a
+                  (click)="openDialog('Update', element)"
+                  class="m-r-10 cursor-pointer"
+                  ><i class="fa fa-pencil"></i
+                ></a>
+                <a
+                  (click)="openDialog('Delete', element)"
+                  class="m-r-10 cursor-pointer"
+                >
+                  <i class="fa fa-trash text-danger"></i>
+                </a>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr
+              [BoldLine]
+              color="#26c6da"
+              size="24px"
+              mat-row
+              *matRowDef="let row; columns: displayedColumns"
+            ></tr>
+            <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+          </table>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

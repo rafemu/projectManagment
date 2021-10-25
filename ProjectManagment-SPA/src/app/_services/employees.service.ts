@@ -29,6 +29,7 @@ export class EmployeesService {
       .get(`${BaseURL}/employee` + queryParams)
       .pipe(
         map((employee: any) => {
+          console.log(employee)
           return {
             employee: employee.result.map((employee: IEmployee) => {
               return {
@@ -36,9 +37,10 @@ export class EmployeesService {
                 firstName: employee.firstName,
                 lastName: employee.lastName,
                 phone: employee.phone,
-                wagePerDay: employee.wagePerDay,
+                dailyWage: employee.dailyWage,
                 bankAccount: employee.bankAccount,
                 bankBranch: employee.bankBranch,
+                startFromDate: employee.startFromDate,
                 createdAt: employee.createdAt,
               };
             }),
@@ -60,7 +62,6 @@ export class EmployeesService {
   }
 
   addDailyWage(data: IDWage) {
-    console.log(data)
     return this.httpClient.post(`${BaseURL}/employee/addDailyWage`, data);
   }
 

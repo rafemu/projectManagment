@@ -64,7 +64,7 @@ export class EmployeeActionsComponent implements OnInit {
       firstName: this.form.value.firstName,
       lastName: this.form.value.lastName,
       phone: this.form.value.phone,
-      wagePerDay: this.form.value.wagePerDay,
+      dailyWage: this.form.value.dailyWage,
       bankAccount: this.form.value.bankAccount,
       bankBranch: this.form.value.bankBranch,
       createdAt: this.form.value.createdAt,

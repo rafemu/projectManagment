@@ -9,16 +9,21 @@ import {
   TimePickerModule,
   DatePickerModule,
 } from '@syncfusion/ej2-angular-calendars';
-import { SelectAutocompleteModule } from 'mat-select-autocomplete'; 
-import { MomentPipe } from 'src/app/_pipes/moment.pipe';
+import { SelectAutocompleteModule } from 'mat-select-autocomplete';
 import { BoldLineDirective } from 'src/app/_directive/boldLine.directive';
-import { ProjectsPipe } from 'src/app/_pipes/projects.pipe';
 import { FilterByMonthComponent } from './filter-by-month/filter-by-month.component';
 import { CalculateWageComponent } from './calculate-wage/calculate-wage.component';
 import { TimeSheetStatisticsComponent } from './time-sheet-statistics/time-sheet-statistics.component';
 
 @NgModule({
-  declarations: [TimeSheetComponent, RecordActionComponent,MomentPipe,BoldLineDirective,ProjectsPipe, FilterByMonthComponent, CalculateWageComponent, TimeSheetStatisticsComponent],
+  declarations: [
+    TimeSheetComponent,
+    RecordActionComponent,
+    BoldLineDirective,
+    FilterByMonthComponent,
+    CalculateWageComponent,
+    TimeSheetStatisticsComponent,
+  ],
   imports: [
     CommonModule,
     TimeSheetRoutingModule,
@@ -28,8 +33,6 @@ import { TimeSheetStatisticsComponent } from './time-sheet-statistics/time-sheet
     SelectAutocompleteModule,
   ],
   providers: [DatePipe],
-  entryComponents:[
-    RecordActionComponent
-  ]
+  entryComponents: [RecordActionComponent],
 })
 export class TimeSheetModule {}

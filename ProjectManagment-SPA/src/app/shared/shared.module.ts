@@ -4,7 +4,7 @@ import { MenuItems } from './menu-items/menu-items';
 import {
   AccordionAnchorDirective,
   AccordionLinkDirective,
-  AccordionDirective
+  AccordionDirective,
 } from './accordion';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TokenService } from '../_services/token.service';
@@ -13,19 +13,22 @@ import { TokenInterceptor } from '../_services/token-interceptor';
 import { DemoMaterialModule } from '../demo-material-module';
 import { HorizontalMenuItems } from './menu-items/horizontal-menu-items';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MomentPipe } from '../_pipes/moment.pipe';
+import { ProjectsPipe } from '../_pipes/projects.pipe';
 
 @NgModule({
   declarations: [
     AccordionAnchorDirective,
     AccordionLinkDirective,
     AccordionDirective,
-    
+    MomentPipe,
+    ProjectsPipe,
   ],
-  imports:[
+  imports: [
     DemoMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   exports: [
     DemoMaterialModule,
@@ -34,10 +37,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AccordionDirective,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MomentPipe,
+    ProjectsPipe,
   ],
   providers: [
-    TokenService,MenuItems,HorizontalMenuItems,
+    TokenService,
+    MenuItems,
+    HorizontalMenuItems,
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
     // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ],

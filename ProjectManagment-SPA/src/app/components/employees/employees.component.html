@@ -1,96 +1,140 @@
-
 <div fxLayout="row wrap">
-    <div fxFlex="100">
-      <mat-card>
-        <mat-card-content>
-          <div fxLayout="row wrap" class="align-items-center">
-            <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
-              <mat-form-field>
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search Employee">
-              </mat-form-field>
-            </div>
-            <div fxFlex.gt-md="33.3" class="text-right">
-              <button mat-raised-button (click)="openDialog('Add',{})" color="primary">Add Employee</button>
-            </div>
-            <div fxFlex.gt-md="33.3" class="text-right">
-              <button mat-raised-button (click)="openWageDialog('addWage',{})" color="primary">Update Daily Wage</button>
-            </div>
+  <div fxFlex="100">
+    <mat-card>
+      <mat-card-content>
+        <div fxLayout="row wrap" class="align-items-center">
+          <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
+            <mat-form-field>
+              <input
+                matInput
+                (keyup)="applyFilter($event.target.value)"
+                placeholder="Search Employee"
+              />
+            </mat-form-field>
           </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+          <div fxFlex.gt-md="33.3" class="text-right">
+            <button
+              mat-raised-button
+              (click)="openDialog('Add', {})"
+              color="primary"
+            >
+              Add Employee
+            </button>
+          </div>
+          <div fxFlex.gt-md="33.3" class="text-right">
+            <button
+              mat-raised-button
+              (click)="openWageDialog('addWage', {})"
+              color="primary"
+            >
+              Update Daily Wage
+            </button>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
   </div>
-  <div fxLayout="row wrap">
-    <div fxFlex="100">
-      <mat-card>
-        <mat-card-content>
-          <div class="table-responsive">
-            <table mat-table [dataSource]="dataSource" class="table employee-list no-wrap">
-  
-              <ng-container matColumnDef="id">
-                <th mat-header-cell *matHeaderCellDef> # </th>
-                <td mat-cell *matCellDef="let element;let i = index"> {{i+1}} </td>
-              </ng-container>
+</div>
+<div fxLayout="row wrap">
+  <div fxFlex="100">
+    <mat-card>
+      <mat-card-content>
+        <div class="table-responsive">
+          <table
+            mat-table
+            [dataSource]="dataSource"
+            class="table employee-list no-wrap"
+          >
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef>#</th>
+              <td mat-cell *matCellDef="let element; let i = index">
+                {{ i + 1 }}
+              </td>
+            </ng-container>
 
-              <ng-container matColumnDef="firstName">
-                <th mat-header-cell *matHeaderCellDef> first Name </th>
-                <td mat-cell *matCellDef="let element">
-                  <div [routerLink]="['/projects',element.id]" class="d-flex">
-                    <div class="m-l-15">
-                      <p class="font-bold m-b-0 m-t-0">{{ element.firstName }}</p>
-                      <small>{{element.lastName}}</small>
-                    </div>
+            <ng-container matColumnDef="firstName">
+              <th mat-header-cell *matHeaderCellDef>first Name</th>
+              <td mat-cell *matCellDef="let element">
+                <div [routerLink]="['/employees', element.id]" class="d-flex">
+                  <div class="m-l-15">
+                    <p class="font-bold m-b-0 m-t-0">{{ element.firstName }}</p>
+                    <small>{{ element.lastName }}</small>
                   </div>
-                </td>
-              </ng-container>
-  
-              <ng-container matColumnDef="lastName">
-                <th mat-header-cell *matHeaderCellDef> Last Name </th>
-                <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
-              </ng-container>
-  
-              <ng-container matColumnDef="phone">
-                <th mat-header-cell *matHeaderCellDef> phone </th>
-                <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
-              </ng-container>
-  
-              <ng-container matColumnDef="wagePerDay">
-                <th mat-header-cell *matHeaderCellDef>wagePerDay </th>
-                <td mat-cell *matCellDef="let element"> {{element.wagePerDay | currency: "ILS":"symbol"}} </td>
-              </ng-container>
-  
-              <ng-container matColumnDef="bankAccount">
-                <th mat-header-cell *matHeaderCellDef> bankAccount </th>
-                <td mat-cell *matCellDef="let element"> {{element.bankAccount}} </td>
-              </ng-container>
-  
-              <ng-container matColumnDef="bankBranch">
-                <th mat-header-cell *matHeaderCellDef> bankBranch </th>
-                <td mat-cell *matCellDef="let element"> {{element.bankBranch}} </td>
-              </ng-container>
-  
-              <!-- <ng-container matColumnDef="createdAt">
+                </div>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="lastName">
+              <th mat-header-cell *matHeaderCellDef>Last Name</th>
+              <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="phone">
+              <th mat-header-cell *matHeaderCellDef>phone</th>
+              <td mat-cell *matCellDef="let element">{{ element.phone }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="wagePerDay">
+              <th mat-header-cell *matHeaderCellDef>daily Wage</th>
+
+              <td mat-cell *matCellDef="let element">
+                <p>{{ element.dailyWage | currency: "ILS":"symbol" }}</p>
+                <small>wage From </small>
+                <small>{{
+                  element.startFromDate | momentPipe: "YYYY-MM" 
+                }}</small>
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="bankAccount">
+              <th mat-header-cell *matHeaderCellDef>bankAccount</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.bankAccount }}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="bankBranch">
+              <th mat-header-cell *matHeaderCellDef>bankBranch</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.bankBranch }}
+              </td>
+            </ng-container>
+
+            <!-- <ng-container matColumnDef="createdAt">
                 <th mat-header-cell *matHeaderCellDef> createdAt </th>
                 <td mat-cell *matCellDef="let element"> {{element.createdAt}} </td>
               </ng-container> -->
-  
-              <ng-container matColumnDef="action">
-                <th mat-header-cell *matHeaderCellDef> Action </th>
-                <td mat-cell *matCellDef="let element" class="action-link">
-                  <a (click)="openDialog('Update',element)" class="m-r-10 cursor-pointer"><i class="fa fa-pencil"></i></a>
-                  <a (click)="openDialog('Delete',element)" class="m-r-10 cursor-pointer">
-                    <i class="fa fa-trash text-danger"></i>
-                  </a>
-                </td>
-              </ng-container>
-  
-              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
-            <mat-paginator showFirstLastButtons [length]="totalEmployees" [pageSize]="employeesPerPage" [pageSizeOptions]="pageSizeOptions" (page)="onChangedPage($event)"
-            *ngIf="employee.length > 0"></mat-paginator>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
+
+            <ng-container matColumnDef="action">
+              <th mat-header-cell *matHeaderCellDef>Action</th>
+              <td mat-cell *matCellDef="let element" class="action-link">
+                <a
+                  (click)="openDialog('Update', element)"
+                  class="m-r-10 cursor-pointer"
+                  ><i class="fa fa-pencil"></i
+                ></a>
+                <a
+                  (click)="openDialog('Delete', element)"
+                  class="m-r-10 cursor-pointer"
+                >
+                  <i class="fa fa-trash text-danger"></i>
+                </a>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+          <mat-paginator
+            showFirstLastButtons
+            [length]="totalEmployees"
+            [pageSize]="employeesPerPage"
+            [pageSizeOptions]="pageSizeOptions"
+            (page)="onChangedPage($event)"
+            *ngIf="employee.length > 0"
+          ></mat-paginator>
+        </div>
+      </mat-card-content>
+    </mat-card>
   </div>
+</div>

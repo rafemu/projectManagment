@@ -158,14 +158,14 @@ export class RecordActionComponent implements OnInit, OnDestroy {
       date: this.form.value.date.toISOString().split('T')[0], //.format('YYYY-MM-DD'),
       employeeId: this.form.value.employeeId,
       projectId: this.form.value.projectId,
-      startAt: this.form.value.startAt, // moment(this.form.value.startAt).format('HH:mm'),
-      endAt: this.form.value.endAt, //moment(this.form.value.endAt).format('HH:mm'),
+      startAt: this.form.value.startAt,
+      endAt: this.form.value.endAt, 
       notes: this.form.value.notes,
       createdAt: moment().format('YYYY-MM-DD'),
     };
     console.log(record)
     if (this.form.invalids) return;
-    // this.dialogRef.close({ event: this.action, data: record });
+    this.dialogRef.close({ event: this.action, data: record });
   }
 
   closeDialog() {

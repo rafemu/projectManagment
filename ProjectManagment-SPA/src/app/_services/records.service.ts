@@ -22,8 +22,8 @@ export class RecordsService {
     this.records$ = this.recordsSubject.asObservable();
   }
 
-  getAllRecords(recordPerPage?: number, currentPage?: number, month?: string) {
-    const queryParams = `?currentMonth=${month}&pagesize=${recordPerPage}&page=${currentPage}`;
+  getAllRecords(recordPerPage?: number, currentPage?: number, month?: string,employeeId?:number) {
+    const queryParams = `?currentMonth=${month}&pagesize=${recordPerPage}&page=${currentPage}&employeeId=${employeeId}`;
     return this.httpClient
       .get(`${BaseURL}/timesSheet` + queryParams)
       .pipe(
@@ -66,7 +66,6 @@ export class RecordsService {
         })
       )
       .subscribe((recordsAndTotal) => {
-        console.log(recordsAndTotal )
         this.recordsArray = recordsAndTotal.records;
         this.recordsSubject.next({
           records: [...this.recordsArray],

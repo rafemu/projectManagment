@@ -3,8 +3,9 @@ export interface IEmployee {
     firstName: string;
     lastName: string;
     phone: string;
-    wagePerDay: number;
+    dailyWage: number;
     bankAccount: number;
     bankBranch: string;
+    startFromDate?:Date;
     createdAt: Date;
   }

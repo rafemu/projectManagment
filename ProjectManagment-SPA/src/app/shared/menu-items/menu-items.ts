@@ -55,6 +55,12 @@ const MENUITEMS = [
         type: 'link',
         icon: 'content_copy'
     },
+    {
+        state: 'salary',
+        name: 'salary',
+        type: 'link',
+        icon: 'content_copy'
+    },
     // {
     //     state: 'material',
     //     name: 'Material Ui',

@@ -1,5 +1,7 @@
 const connection = require("../database/index");
 
+const moment = require('moment');
+
 async function getEmployeeById(employeeId) {
   const getEmployeeQuery = `
 SELECT ${process.env.DB_SCHEMA}.employee.id,
@@ -42,11 +44,54 @@ async function addDailyWage(employeeId, dailyWage, startFrom) {
 }
 
 async function getEmployees(pageSize, currentPage) {
+  const currentDate = moment().format('YYYY-MM-DD hh:mm:ss')
+  console.log('currentDate',currentDate)
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";
-  const getEmployeeQuery = `SELECT * FROM ${process.env.DB_SCHEMA}.employee ${limitQuery};`;
-  const [rows] = await (await connection()).execute(getEmployeeQuery);
+  const getEmployeeQuery =`
+  SELECT ${process.env.DB_SCHEMA}.employee.id As id,
+  ${process.env.DB_SCHEMA}.employee.firstName,
+  ${process.env.DB_SCHEMA}.employee.lastName,
+  ${process.env.DB_SCHEMA}.employee.phone,
+  ${process.env.DB_SCHEMA}.employee.bankBranch,
+  ${process.env.DB_SCHEMA}.employee.createdAt,
+  ${process.env.DB_SCHEMA}.employee.updatedAt,
+  ${process.env.DB_SCHEMA}.employee.bankAccount,
+
+  (SELECT 
+    dailywage
+FROM
+    ${process.env.DB_SCHEMA}.employeeDailyWage
+WHERE
+    startFromDate <= ?
+        AND ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id
+ORDER BY startFromDate DESC
+LIMIT 1) AS dailyWage,
+(SELECT 
+    startFromDate
+FROM
+    ${process.env.DB_SCHEMA}.employeeDailyWage
+WHERE
+    startFromDate <= ?
+        AND ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id
+ORDER BY startFromDate DESC
+LIMIT 1) AS startFromDate
+ FROM ${process.env.DB_SCHEMA}.employee 
+ left join ${process.env.DB_SCHEMA}.employeeDailyWage
+ on ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id 
+ GROUP BY id 
+  order by dailyWage
+desc
+${limitQuery}
+  `
+  
+  // `
+  
+  // SELECT * FROM ${process.env.DB_SCHEMA}.employee ${limitQuery};
+  // `;
+  
+  const [rows] = await (await connection()).execute(getEmployeeQuery,[currentDate,currentDate]);
   return rows;
 }
 

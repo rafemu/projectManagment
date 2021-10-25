@@ -29,9 +29,9 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   multiSelect!: SelectAutocompleteComponent;
 
   projects: IProject[] = [];
-  projectPerPage = 5;
+  projectPerPage = 25;
   currentPage = 1;
-  pageSizeOptions = [5, 10, 25, 50];
+  pageSizeOptions = [50, 100];
   totalProjects = 0;
   dataSourceProjects: MatTableDataSource<IProject>;
   imgPath = BaseURL;

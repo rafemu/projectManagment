@@ -8,25 +8,24 @@ import { EmployeeActionsComponent } from './employee-actions/employee-actions.co
 import { EmployeesService } from 'src/app/_services/employees.service';
 import { DailyWageComponent } from './daily-wage/daily-wage.component';
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
-
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { EmployeeDataTabelComponent } from './view-employee/employee-data-tabel/employee-data-tabel.component';
 
 @NgModule({
   declarations: [
     EmployeesComponent,
     EmployeeActionsComponent,
-    DailyWageComponent
+    DailyWageComponent,
+    ViewEmployeeComponent,
+    EmployeeDataTabelComponent,
   ],
   imports: [
     CommonModule,
     EmployeesRoutingModule,
     SharedModule,
-    DatePickerModule
+    DatePickerModule,
   ],
-  entryComponents:[
-    EmployeeActionsComponent
-  ],
-  providers:[
-    DatePipe,EmployeesService
-  ]
+  entryComponents: [EmployeeActionsComponent],
+  providers: [DatePipe, EmployeesService],
 })
-export class EmployeesModule { }
+export class EmployeesModule {}
