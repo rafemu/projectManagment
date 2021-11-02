@@ -9,6 +9,10 @@ import { ProjectsActionsComponent } from './projects-actions/projects-actions.co
 import { ImageViewComponent } from './image-view/image-view.component';
 import { ProjectComponent } from './project/project.component';
 import { ProjectsService } from 'src/app/_services/projects.service';
+import { ProjectDetailsComponent } from './project/project-details/project-details.component';
+import { EmployeeWorkedDaysComponent } from './project/employee-worked-days/employee-worked-days.component';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { PaidsDetailsComponent } from './project/paids-details/paids-details.component';
 
 
 @NgModule({
@@ -16,7 +20,10 @@ import { ProjectsService } from 'src/app/_services/projects.service';
     ProjectsComponent,
     ProjectsActionsComponent,
     ImageViewComponent,
-    ProjectComponent
+    ProjectComponent,
+    ProjectDetailsComponent,
+    EmployeeWorkedDaysComponent,
+    PaidsDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +32,8 @@ import { ProjectsService } from 'src/app/_services/projects.service';
   ],
   providers:[
     DatePipe,
-    ProjectsService
+    ProjectsService,
+    { provide: MAT_DATE_LOCALE, useValue: 'en-GB' }
   ],
   entryComponents:[
     ProjectsActionsComponent,

@@ -9,19 +9,6 @@ export interface IProject{
       unPaid?: number,
       haregem?:number,
       agreement:any,
-      createdAt:Date,
+      createdAt:string,
       updatedAt?:Date,
 }
-
-// "id": 1,
-//         "projectName": "רפעת מפעל חדש",
-//         "clientFullName": "רפעת מולא",
-//         "clientPhone": "05277274640",
-//         "location": "ירכא",
-//         "quotation": 0,
-//         "paid": 0,
-//         "unPaid": 0,
-//         "haregem": 0,
-//         "agreement": null,
-//         "createdAt": "2021-02-15",
-//         "updatedAt": "2021-02-15T12:13:37.000Z"

@@ -15,8 +15,16 @@ export class ProjectsService {
     totalProjects: number;
   }>({ projects: this.projectsArray, totalProjects: 0 });
   public projects$: Observable<{ projects: IProject[]; totalProjects: number }>;
+
+  private projectById!: IProject;
+  private projectByIdSubject = new BehaviorSubject<{ project: IProject }>({
+    project: this.projectById,
+  });
+  public projectById$: Observable<{ project: IProject }>;
+
   constructor(private httpClient: HttpClient) {
     this.projects$ = this.projectsSubject.asObservable();
+    this.projectById$ = this.projectByIdSubject.asObservable();
   }
 
   getAllProjects(projectsPerPage?: number, currentPage?: number) {
@@ -27,8 +35,24 @@ export class ProjectsService {
         map((projects: any) => {
           return {
             projects: projects.result.map((project: IProject) => {
-              const img = project.agreement ==null ? project.agreement= 'default/default-placeholder-150x150.png' : project.agreement.split("/")[1]; 
-              const {id,projectName,clientFullName,clientPhone,location,quotation,paid,unPaid,haregem,createdAt,updatedAt} = project
+              const img =
+                project.agreement == null
+                  ? (project.agreement =
+                      'default/default-placeholder-150x150.png')
+                  : project.agreement.split('/')[1];
+              const {
+                id,
+                projectName,
+                clientFullName,
+                clientPhone,
+                location,
+                quotation,
+                paid,
+                unPaid,
+                haregem,
+                createdAt,
+                updatedAt,
+              } = project;
               return {
                 id: id,
                 projectName: projectName,
@@ -57,11 +81,59 @@ export class ProjectsService {
       });
   }
 
+  getProjectById(id: string) {
+    return this.httpClient
+      .get(`${BaseURL}/projects/` + id)
+      .pipe(
+        map((project: any) => {
+          console.log(project);
+
+          const img =
+            project.agreement == null
+              ? (project.agreement = 'default/default-placeholder-150x150.png')
+              : project.agreement.split('/')[1];
+
+          const {
+            id,
+            projectName,
+            clientFullName,
+            clientPhone,
+            location,
+            quotation,
+            paid,
+            unPaid,
+            haregem,
+            createdAt,
+            updatedAt,
+          } = project;
+          return {
+            id: id,
+            projectName: projectName,
+            clientFullName: clientFullName,
+            clientPhone: clientPhone,
+            location: location,
+            quotation: quotation,
+            paid: paid,
+            unPaid: unPaid,
+            haregem: haregem,
+            agreement: img,
+            createdAt: createdAt,
+            updatedAt: updatedAt,
+          };
+        })
+      )
+      .subscribe((project) => {
+        this.projectById = project;
+        this.projectByIdSubject.next({
+          project: this.projectById,  
+        });
+      });
+  }
   addProject(data: IProject) {
     const formDataHeader = {
       headers: new HttpHeaders({
-        "content-type": "multipart/form-data",
-      })
+        'content-type': 'multipart/form-data',
+      }),
     };
     console.log(data);
     const postData = new FormData();
@@ -73,14 +145,15 @@ export class ProjectsService {
     postData.append('paid', data.paid.toString());
     postData.append('createdAt', data.createdAt.toString());
     postData.append('agreement', data.agreement);
-    console.log(postData)
-      return this.httpClient.post(
-        `${BaseURL}/projects`,
-        postData
-      );
+    console.log(postData);
+    return this.httpClient.post(`${BaseURL}/projects`, postData);
   }
 
-  updateProject(data: IProject,projectId:number) {
+  getProjectPaids(id:string): Promise<Array<any>> {
+    return (this.httpClient.get(`${BaseURL}/projects/getPaids/${id}`).toPromise() as Promise<Array<any>>)
+  }
+
+  updateProject(data: IProject, projectId: number) {
     const postData = new FormData();
     postData.append('projectName', data.projectName);
     postData.append('clientFullName', data.clientFullName);
@@ -90,17 +163,11 @@ export class ProjectsService {
     postData.append('paid', data.paid.toString());
     postData.append('createdAt', data.createdAt.toString());
     postData.append('agreement', data.agreement);
-    console.log(data)
-      return this.httpClient.put(
-        `${BaseURL}/projects/${projectId}`,
-        postData
-      );
+    console.log(data);
+    return this.httpClient.put(`${BaseURL}/projects/${projectId}`, postData);
   }
 
   deleteProject(projectId: number) {
-      return this.httpClient.delete(
-        `${BaseURL}/projects/${projectId}`
-      );
+    return this.httpClient.delete(`${BaseURL}/projects/${projectId}`);
   }
-
 }

@@ -4,6 +4,7 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { IProject } from 'src/app/_interfaces/project.interface';
 import { BaseURL } from 'src/app/_services';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-projects-actions',
@@ -28,8 +29,8 @@ export class ProjectsActionsComponent implements OnInit {
     this.action = this.local_data.action;
     if (this.local_data.agreement === undefined) {
       console.log(this.local_data.agreement)
-      // this.local_data.imagePath =
-        'assets/images/default-placeholder-150x150.png';
+       this.local_data.agreement =
+      '/assets/images/default-placeholder-150x150.png';
     }else{
       this.local_data.agreement = BaseURL+'/'+this.local_data.agreement
       console.log(this.local_data.agreement )
@@ -54,7 +55,6 @@ export class ProjectsActionsComponent implements OnInit {
       location: new FormControl('', { validators: [Validators.required] }),
       quotation: new FormControl('', { validators: [Validators.required] }),
       paid: new FormControl('', { validators: [Validators.required] }),
-      // unPaid: new FormControl('', { validators: [Validators.required] }),
       createdAt: new FormControl('', { validators: [Validators.required] }),
     });
   }
@@ -73,15 +73,16 @@ export class ProjectsActionsComponent implements OnInit {
   }
 
   doAction() {
+    const {projectName,clientFullName,clientPhone,location,quotation,paid,createdAt} =this.form.value
     const  project:IProject={
-          projectName: this.form.value.projectName,
-          clientFullName: this.form.value.clientFullName,
-          clientPhone: this.form.value.clientPhone,
-          location: this.form.value.location,
-          quotation: this.form.value.quotation,
-          paid: this.form.value.paid,
+          projectName: projectName,
+          clientFullName: clientFullName,
+          clientPhone: clientPhone,
+          location: location,
+          quotation: quotation,
+          paid: paid,
           // haregem:this.form.haregem,
-          createdAt: this.form.value.createdAt,
+          createdAt: moment(this.form.value.createdAt).format('YYYY-MM-DD HH:mm:ss'),
           agreement:this.imagePath
     }
     

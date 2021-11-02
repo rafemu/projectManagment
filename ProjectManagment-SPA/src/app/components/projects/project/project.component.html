@@ -1,1 +1,34 @@
-<p>project works!</p>
+<!-- ============================================================== -->
+<!-- Simple four boxes Row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+  <!-- column -->
+  <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
+    <mat-card>
+      <mat-card-content>
+        <!-- Row -->
+        <div fxLayout="row" fxLayoutWrap="wrap">
+          <!-- column -->
+          <div fxFlex.gt-sm="100" fxFlex.gt-xs="100">
+            <app-project-details [project]="project"></app-project-details>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutWrap="wrap">
+          <!-- column -->
+          <div fxFlex.gt-sm="100" fxFlex.gt-xs="100">
+            <app-paids-details [projectPiads]="projectPiads"></app-paids-details>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxLayoutWrap="wrap">
+            <!-- column -->
+            <div fxFlex.gt-sm="100" fxFlex.gt-xs="100">
+              <app-employee-worked-days [recordsByProject]="records"></app-employee-worked-days>
+            </div>
+          </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <!-- column -->
+</div>

@@ -18,8 +18,20 @@ export class RecordsService {
     records: IRecord[];
     totaleRecords: number;
   }>;
+
+  private recordsByProjectArray: IRecord[] = [];
+  private recordsByProjectSubject = new BehaviorSubject<{
+    records: IRecord[];
+    totaleRecords: number;
+  }>({ records: this.recordsByProjectArray, totaleRecords: 0 });
+  public recordsByProject$: Observable<{
+    records: IRecord[];
+    totaleRecords: number;
+  }>;
+
   constructor(private httpClient: HttpClient) {
     this.records$ = this.recordsSubject.asObservable();
+    this.recordsByProject$ = this.recordsByProjectSubject.asObservable();
   }
 
   getAllRecords(recordPerPage?: number, currentPage?: number, month?: string,employeeId?:number) {
@@ -69,6 +81,58 @@ export class RecordsService {
         this.recordsArray = recordsAndTotal.records;
         this.recordsSubject.next({
           records: [...this.recordsArray],
+          totaleRecords: recordsAndTotal.totalRecords,
+        });
+      });
+  }
+
+  getAllRecordByProject(recordPerPage?: number, currentPage?: number,projectId?:string) {
+    const queryParams = `?pagesize=${recordPerPage}&page=${currentPage}`;
+    return this.httpClient
+      .get(`${BaseURL}/timesSheet/${projectId}` + queryParams)
+      .pipe(
+        map((record: any) => {
+          console.log(record)
+          return {
+            records: record.map((record: any) => {
+              const {
+                id,
+                employeeId,
+                date,
+                firstName,
+                lastName,
+                startAt,
+                endAt,
+                notes,
+                dailyWage,
+                payPerDay,
+                duration,
+                dayWorkedPlace,
+                startFromDate
+              } = record;
+              return {
+                id: id,
+                employeeId:employeeId,
+                date: date,
+                firstName: firstName,
+                lastName: lastName,
+                startAt: startAt,
+                endAt: endAt,
+                notes: notes,
+                dailyWage: dailyWage,
+                payPerDay: payPerDay,
+                wageFrom:startFromDate,
+                duration: duration,
+              };
+            }),
+            totalRecords: record.total,
+          };
+        })
+      )
+      .subscribe((recordsAndTotal) => {
+        this.recordsByProjectArray = recordsAndTotal.records;
+        this.recordsByProjectSubject.next({
+          records: [...this.recordsByProjectArray],
           totaleRecords: recordsAndTotal.totalRecords,
         });
       });

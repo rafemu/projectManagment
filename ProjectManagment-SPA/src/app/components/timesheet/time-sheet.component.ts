@@ -59,7 +59,7 @@ export class TimeSheetComponent implements OnInit {
   ngOnInit(): void {
     this.employeeService.getAllemployee();
     this.projectsService.getAllProjects();
-     this.projectsService.projects$
+    this.subProject= this.projectsService.projects$
       .pipe(filter((v) => v !== undefined))
       .subscribe((projec) => {
           setProjectsLS(projec.projects)
@@ -146,5 +146,11 @@ export class TimeSheetComponent implements OnInit {
       this.totalRecords = records.totaleRecords;
       this.dataSource = new MatTableDataSource<any>(this.records);
     });
+  }
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //Add 'implements OnDestroy' to the class.
+    if(this.subRecords$) this.subRecords$.unsubscribe()
+    if(this.subProject)this.subProject.unsubscribe()
   }
 }

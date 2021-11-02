@@ -39,7 +39,6 @@ export class EmployeeDataTabelComponent implements OnInit {
     this.currentMonth = moment().format(
       'YYYY-MM-DD HH:mm:ss'
     );
-    //'2021-09-30T13:00:00.000Z'
   }
 
   ngOnInit(): void {
