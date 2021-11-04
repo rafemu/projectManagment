@@ -17,7 +17,7 @@
         <div fxLayout="row" fxLayoutWrap="wrap">
           <!-- column -->
           <div fxFlex.gt-sm="100" fxFlex.gt-xs="100">
-            <app-paids-details [projectPiads]="projectPiads"></app-paids-details>
+            <app-paids-details  (AddPaidsEvent)="AddPaids($event)" [projectPiads]="projectPiads"></app-paids-details>
           </div>
         </div>
 

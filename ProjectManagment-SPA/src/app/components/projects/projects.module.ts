@@ -13,6 +13,8 @@ import { ProjectDetailsComponent } from './project/project-details/project-detai
 import { EmployeeWorkedDaysComponent } from './project/employee-worked-days/employee-worked-days.component';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { PaidsDetailsComponent } from './project/paids-details/paids-details.component';
+import { AddPaidsComponent } from './project/paids-details/add-paids/add-paids.component';
+import { DatePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 
 @NgModule({
@@ -23,12 +25,15 @@ import { PaidsDetailsComponent } from './project/paids-details/paids-details.com
     ProjectComponent,
     ProjectDetailsComponent,
     EmployeeWorkedDaysComponent,
-    PaidsDetailsComponent
+    PaidsDetailsComponent,
+    AddPaidsComponent
   ],
   imports: [
     CommonModule,
     ProjectsRoutingModule,
     SharedModule,
+    TimePickerModule,
+    DatePickerModule,
   ],
   providers:[
     DatePipe,
@@ -37,7 +42,8 @@ import { PaidsDetailsComponent } from './project/paids-details/paids-details.com
   ],
   entryComponents:[
     ProjectsActionsComponent,
-    ImageViewComponent
+    ImageViewComponent,
+    AddPaidsComponent
   ]
 })
 export class ProjectsModule { }

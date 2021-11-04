@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { BaseURL } from '.';
+import { IPaids } from '../_interfaces/paids.interface';
 import { IProject } from '../_interfaces/project.interface';
 
 @Injectable({
@@ -125,7 +126,7 @@ export class ProjectsService {
       .subscribe((project) => {
         this.projectById = project;
         this.projectByIdSubject.next({
-          project: this.projectById,  
+          project: this.projectById,
         });
       });
   }
@@ -149,8 +150,29 @@ export class ProjectsService {
     return this.httpClient.post(`${BaseURL}/projects`, postData);
   }
 
-  getProjectPaids(id:string): Promise<Array<any>> {
-    return (this.httpClient.get(`${BaseURL}/projects/getPaids/${id}`).toPromise() as Promise<Array<any>>)
+  getProjectPaids(id: string): Promise<Array<any>> {
+    return this.httpClient
+      .get(`${BaseURL}/projects/getPaids/${id}`)
+      .toPromise() as Promise<Array<any>>;
+  }
+
+  addProjectPaids(paidData: IPaids,projectId:string) {
+    const formDataHeader = {
+      headers: new HttpHeaders({
+        'content-type': 'multipart/form-data',
+      }),
+    };
+    console.log(paidData)
+    const { paidDate, paid, checkImg, notes, method } = paidData;
+    const paidsData = new FormData();
+    paidsData.append('paidDate', paidDate.toString());
+    paidsData.append('projectId', projectId);
+    paidsData.append('paid', paid.toString());
+    if (checkImg) paidsData.append('checkImg', checkImg);
+    paidsData.append('method', method);
+    paidsData.append('notes', notes);
+
+    return this.httpClient.post(`${BaseURL}/projects/paids`, paidsData);
   }
 
   updateProject(data: IProject, projectId: number) {

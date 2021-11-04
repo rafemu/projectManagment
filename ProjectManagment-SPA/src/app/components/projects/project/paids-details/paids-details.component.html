@@ -2,6 +2,11 @@
   <div fxLayout="row wrap">
     <div fxFlex="100">
       <mat-card>
+        <mat-card-header>
+          <div fxLayout="row wrap">
+            <button mat-raised-button (click)="openDialog('Add',{})" color="primary">Add Paid</button>
+          </div>
+        </mat-card-header>
         <mat-card-content>
           <div class="table-responsive">
             <table mat-table [dataSource]="dataSource" class="table employee-list no-wrap">

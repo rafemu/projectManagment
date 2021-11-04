@@ -31,7 +31,7 @@ async function insertPaidsForProject(projectId, paid) {
   const [rows] = await (
     await connection()
   ).execute(inserQuotationQuery, values);
-  return rows;
+  return rows.insertId;
 }
 
 async function editProject(updatedData, projectId) {
@@ -184,6 +184,13 @@ async function getProjectPaids(id){
 
 }
 
+async function insertCheckPhotoToDB(filePath, id) {
+  const CheckPhotoQuery =
+    `INSERT INTO ${process.env.DB_SCHEMA}.checks_imgs  (checksImgPath,payId) VALUES (?,?)`;
+  const [rows] = await (await connection()).execute(CheckPhotoQuery, [filePath, id]);
+  return rows.affectedRows;
+}
+
 async function getProjectWithEmoloyeeTimeSheet(projectId) {
   const getProjectWithEmoloyeeTimeSheetQuery = `SELECT 
   ${process.env.DB_SCHEMA}.employeesTimeSheet.date AS 'date',
@@ -214,6 +221,7 @@ module.exports = {
   createProject,
   insertQuotationForProject,
   insertPaidsForProject,
+  insertCheckPhotoToDB,
   editProject,
   getAgreementByProjectId,
   getProjectPaids,

@@ -8,7 +8,7 @@ const {
   createProject,
   insertQuotationForProject,
   insertPaidsForProject,
-  addPaids,
+  insertCheckPhotoToDB,
   getProjectPaids,
   editProject,
   deleteProjectById,
@@ -99,6 +99,10 @@ router.post("/paids", uploadCheck, async (req, res, next) => {
   try {
     const result = await insertPaidsForProject(projectId, paid, method);
     if (!result) throw new Error("some thing went wrong to add paids");
+    if(req.file){
+      const insertCheckImgToDb = await insertCheckPhotoToDB(req.file.path,result);
+      if(!insertCheckImgToDb) throw new Error('some thing went wrong with insertImg Path');
+    }
    res.json(result);
   } catch (ex) {
     next({ message: ex.message, status: 400 });
