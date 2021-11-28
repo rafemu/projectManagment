@@ -1,5 +1,4 @@
 import {
-  ChangeDetectionStrategy,
   Component,
   OnDestroy,
   OnInit,
@@ -19,7 +18,7 @@ import { Subscription } from 'rxjs';
 import { SelectAutocompleteComponent } from 'mat-select-autocomplete';
 
 @Component({
-  // changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: C hangeDetectionStrategy.OnPush,
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
@@ -122,7 +121,6 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       } else if (result.event === 'Delete') {
         this._projectServices.deleteProject(obj.id).subscribe((result) => {
           if (result) {
-            console.log('projectDeleted', result);
             this._projectServices.getAllProjects(
               this.projectPerPage,
               this.currentPage
@@ -137,7 +135,6 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     const dialogRef = this.dialog.open(ImageViewComponent, {
       data: obj,
     });
-
     dialogRef.afterClosed().subscribe((result) => {});
   }
 
@@ -145,8 +142,6 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     return moment(time).fromNow();
   }
   ngOnDestroy(): void {
-    //Called once, before the instance is destroyed.
-    //Add 'implements OnDestroy' to the class.
     if (this.subProject$) this.subProject$.unsubscribe();
   }
 }

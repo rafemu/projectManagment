@@ -29,9 +29,7 @@ function validateEnvParams() {
 validateEnvParams();
 
 api.use(express.static("images"));
-// api.use(express.static(path.join(__dirname, "public")));
 api.use(express.static(path.join(__dirname, "images")));
-// api.use(express.static("public"));
 
 
 api.use(cors());

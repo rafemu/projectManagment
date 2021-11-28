@@ -51,11 +51,24 @@ export class ProjectComponent implements OnInit {
 
   async getProjectPaids(id: string) {
     this.projectPiads = await this.projectService.getProjectPaids(id);
-    console.log(this.projectPiads);
   }
 
   AddPaids(event: any) {
     this.projectService.addProjectPaids(event,this.projectId).subscribe((result) => {
+      if (result) return this.getProjectPaids(this.projectId);
+    });
+  }
+
+  UpdatePaids(event:any){
+    console.log(event)
+const {data , id} = event
+    this.projectService.updatePaid(data,id).subscribe((result) => {
+      if (result) return this.getProjectPaids(this.projectId);
+    });
+  }
+
+  deletePaids(event:any){
+    this.projectService.deletePaid(event).subscribe((result) => {
       if (result) return this.getProjectPaids(this.projectId);
     });
   }

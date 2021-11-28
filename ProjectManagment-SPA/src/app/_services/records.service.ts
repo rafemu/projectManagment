@@ -34,7 +34,7 @@ export class RecordsService {
     this.recordsByProject$ = this.recordsByProjectSubject.asObservable();
   }
 
-  getAllRecords(recordPerPage?: number, currentPage?: number, month?: string,employeeId?:number) {
+  getAllRecords(recordPerPage?: number , currentPage?: number, month?: string,employeeId:number | undefined = undefined) {
     const queryParams = `?currentMonth=${month}&pagesize=${recordPerPage}&page=${currentPage}&employeeId=${employeeId}`;
     return this.httpClient
       .get(`${BaseURL}/timesSheet` + queryParams)
@@ -79,6 +79,7 @@ export class RecordsService {
       )
       .subscribe((recordsAndTotal) => {
         this.recordsArray = recordsAndTotal.records;
+        console.log(this.recordsArray)
         this.recordsSubject.next({
           records: [...this.recordsArray],
           totaleRecords: recordsAndTotal.totalRecords,
@@ -145,4 +146,30 @@ export class RecordsService {
       recordDetails
     );
   }
+
+  updateRecord(data: IRecord) {
+    return this.httpClient.put(`${BaseURL}/timesSheet/editRecord/`, data);
+  }
+  
+  deleteRecord(recordId:number){
+    return this.httpClient.delete(`${BaseURL}/timesSheet/deleteRecord/${recordId}`)
+  }
+
+  calculateSalary(date: string) {
+    return this.httpClient.post(
+      `${BaseURL}/timesSheet/calculateSalary`,
+      {currentMonth:date}
+    );
+  }
+
+  getSalary(){
+    return this.httpClient.get(`${BaseURL}/timesSheet/get/allSalaries`);
+  }
+
+  getSalaryByMonth(currentMonth:string){
+    const queryParams = `?currentMonth=${currentMonth}`
+    return this.httpClient.get(`${BaseURL}/timesSheet/getlast/Salary` + queryParams);
+  }
+
+
 }

@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { BaseURL } from 'src/app/_services';
+import { ImageViewComponent } from '../../image-view/image-view.component';
 import { AddPaidsComponent } from './add-paids/add-paids.component';
 
 @Component({
@@ -12,8 +14,10 @@ import { AddPaidsComponent } from './add-paids/add-paids.component';
 })
 export class PaidsDetailsComponent implements OnInit {
   @Output() AddPaidsEvent = new EventEmitter<any>();
-
+  @Output() UpdatePaidsEvent = new EventEmitter<any>();
+  @Output() DeletePaidsEvent = new EventEmitter<any>();
   @Input() projectPiads!:any;
+  public  imgPath = BaseURL;
   public dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator =
   Object.create(null);
@@ -23,47 +27,45 @@ displayedColumns = [
   'date',
   'paid',
   'notes',
+  'checkImg',
+  'action'
 ];
   constructor(  public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
+
   openDialog(action: string, obj: any) {
     obj.action = action;
+    console.log(action)
     const dialogRef = this.dialog.open(AddPaidsComponent, {
       data: obj,
     });
 
     dialogRef.afterClosed().subscribe((result) => {
+      console.log(result)
       if (typeof result === 'undefined') return;
       if (result.event === 'Add') {
-        console.log(result)
         this.AddPaidsEvent.emit(result.data)
       } else if (result.event === 'Update') {
-        // this._employeeService
-        //   .updateEmployee(result.data, obj.id)
-        //   .subscribe((result) => {
-        //     if (result) {
-        //       this._employeeService.getAllemployee(
-        //         this.employeesPerPage,
-        //         this.currentPage
-        //       );
-        //     }
-        //   });
+        this.UpdatePaidsEvent.emit({data:result.data,id:obj.id})
       } else if (result.event === 'Delete') {
-        // this._employeeService.deleteEmployee(obj.id).subscribe((result) => {
-        //   if (result) {
-        //     console.log('projectDeleted', result);
-        //     this._employeeService.getAllemployee(
-        //       this.employeesPerPage,
-        //       this.currentPage
-        //     );
-        //   }
-        // });
+        this.DeletePaidsEvent.emit(obj.id)
       }
     });
   }
+
+  openAgreement(obj: any) {
+    const dialogRef = this.dialog.open(ImageViewComponent, {
+      data: obj,
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {});
+  }
+  
   ngOnChanges(): void {
     this.dataSource = new MatTableDataSource<any>(this.projectPiads?.paids);
+    console.log(this.projectPiads)
+
   }
 }

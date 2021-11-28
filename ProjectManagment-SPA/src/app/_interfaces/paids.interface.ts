@@ -3,7 +3,7 @@ import { IProject } from "./project.interface";
 
 export interface IPaids {
     id?:string,
-    paidDate: Date;
+    paidDate: string;
     projectId: IProject;
     paid:number;
     checkImg?:any;

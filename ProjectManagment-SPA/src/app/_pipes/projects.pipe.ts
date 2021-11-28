@@ -14,11 +14,8 @@ export class ProjectsPipe implements PipeTransform {
   }
   transform(value: any, ...args: any[]): any {
     if (value == null) return (this.concatName = 'Vacation');
-    console.log(value);
     let spliteProjectId = value.split(',');
-    console.log(spliteProjectId)
     spliteProjectId.map((p: any) => {
-      console.log(p)
       this.projectName = this.projects.filter((project) => {
         return project.id == p;
       });

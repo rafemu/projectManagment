@@ -18,12 +18,12 @@
            
               <ng-container matColumnDef="date">
                 <th mat-header-cell *matHeaderCellDef> Date </th>
-                <td mat-cell *matCellDef="let element"> {{element?.createdAt |  momentPipe:'YYYY-MM-DD'}} </td>
+                <td mat-cell *matCellDef="let element"> {{element?.paidDate |  momentPipe:'YYYY-MM-DD'}} </td>
               </ng-container>
 
               <ng-container matColumnDef="notes">
                 <th mat-header-cell *matHeaderCellDef> method </th>
-                <td mat-cell *matCellDef="let element"> {{element?.notes}} </td>
+                <td mat-cell *matCellDef="let element"> {{element?.method}} </td>
               </ng-container> 
               <ng-container matColumnDef="paid">
                 <th mat-header-cell *matHeaderCellDef> paid</th>
@@ -36,6 +36,13 @@
                   </div>
                    </td>
               </ng-container> 
+              <ng-container matColumnDef="checkImg">
+                <th mat-header-cell *matHeaderCellDef> img check </th>
+                <td mat-cell *matCellDef="let element"> 
+                  <img *ngIf="element.checksImgPath" (click)="openAgreement(element)" class="mat-card-avatar" [src]="imgPath +'/'+element.checksImgPath.replace('images/','')">  
+                </td>
+              </ng-container> 
+
               
               <ng-container matColumnDef="action">
                 <th mat-header-cell *matHeaderCellDef> Action </th>

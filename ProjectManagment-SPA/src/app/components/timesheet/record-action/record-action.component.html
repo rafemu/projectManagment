@@ -1,79 +1,211 @@
+<h2 class="font-medium" mat-dialog-title>
+  <strong>{{ action }} record</strong>
+</h2>
+<mat-dialog-content class="pb-3 mat-typography" style="width: 500px" *ngIf="action != 'Delete'; else elseTemplate">
+  <form [formGroup]="form">
 
-<h2 class="font-medium" mat-dialog-title><strong>add record</strong></h2>
-<mat-dialog-content class="pb-3 mat-typography" style="width: 500px;">
-    <form [formGroup]="form">
-        <div fxLayout="row wrap" class="align-items-center">
-            <div fxFlex="100" fxFlex.gt-md="100">
-                <div class="m-r-15 m-l-15">
-                          <ejs-datepicker  formControlName="date"
-                          placeholder=" date  (required) *" [value]='recordDate' placeholder='Enter date' (change)="getRecordDate($event)"></ejs-datepicker>
-                </div>
-            </div>
-            <div fxFlex="100" fxFlex.gt-md="50">
-                <div class="m-r-15 m-l-15">
-                        <mat-select-autocomplete
-                        [placeholder]="'Select Employees'"
-                        [options]="optionsEmployee"
-                        [multiple]='true'
-                        name="optionsSelector"
-                        ngDefaultControl
-                        [formControl]="form.controls.employeeId"
-                        ></mat-select-autocomplete>
-                </div>
-            </div>
-            <div fxFlex="100" fxFlex.gt-md="50">
-                <div class="m-r-15 m-l-15">
-                    <mat-select-autocomplete
+
+    <div fxLayout="row wrap" class="align-items-center">
+      <div fxFlex="100" fxFlex.gt-md="100">
+        <div class="m-r-15 m-l-15">
+          <ejs-datepicker
+            formControlName="date"
+            placeholder=" date  (required) *"
+            [value]="recordDate"
+            placeholder="Enter date"
+            (change)="getRecordDate($event)"
+          ></ejs-datepicker>
+        </div>
+      </div>
+      <div *ngIf="action == 'Update'" fxFlex="100" fxFlex.gt-md="50">
+        <div class="m-r-15 m-l-15">
+          <mat-form-field>
+            <input
+              matInput
+              type="text"
+              name="notes"
+              disabled
+              [value]="local_data.firstName + ' ' + local_data.lastName"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <div *ngIf="action == 'Add'" fxFlex="100" fxFlex.gt-md="100">
+        <div class="m-r-15 m-l-15">
+            <mat-form-field class="example-chip-list">
+                <mat-chip-list #chipListEmployee aria-label="projects selection">
+                  <mat-chip
+                    *ngFor="let sEmployee of selectedEmployees"
+                    [selectable]="true"
+                    [removable]="true"
+                    (removed)="removeEmployee(sEmployee)"
+                  >
+                    {{ sEmployee.firstName }} {{ sEmployee.lastName }}
+                    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                  </mat-chip>
+                  <input
+                    placeholder="Select Employee.."
+                    #employeeInput
+                    #autocompleteTriggerEmployee="matAutocompleteTrigger"
+                    formControlName="employeeId"
+                    [matAutocomplete]="autoEmployee"
+                    [matChipInputFor]="chipListEmployee"
+                    [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                    (matChipInputTokenEnd)="addEmployee($event)"
+                  />
+                </mat-chip-list>
+                <mat-autocomplete
+                  #autoEmployee="matAutocomplete"
+                  (optionSelected)="selectedEmployeeF($event)"
+                  autoActiveFirstOption
+                >
+                  <mat-option
+                    *ngFor="let employee of filteredEmployees | async"
+                    [value]="employee"
+                  >
+                    <mat-checkbox
+                      color="primary"
+                      style="padding: 0 12px"
+                    ></mat-checkbox>
+                    {{ employee.firstName }} {{ employee.lastName }}
+
+                  </mat-option>
+                </mat-autocomplete>
+                <button
+                  mat-icon-button
+                  matSuffix
+                  style="width: 34px; height: 34px"
+                  (click)="openAutoEmployee(matACTriggerEmployee)"
+                >
+                  <mat-icon style="width: 34px">expand_more</mat-icon>
+                </button>
+              </mat-form-field>
+          <!-- <mat-select-autocomplete
+            [placeholder]="'Select Employees'"
+            [options]="optionsEmployee"
+            [multiple]="true"
+            name="optionsSelector"
+            ngDefaultControl
+            [formControl]="form.controls.employeeId"
+          ></mat-select-autocomplete> -->
+        </div>
+      </div>
+      <div fxFlex="100" fxFlex.gt-md="1100">
+        <div class="m-r-15 m-l-15">
+          <!-- <mat-select-autocomplete
                         [placeholder]="'Select Projects'"
                         [options]="optionsProjects"
                         [multiple]='true'
                         name="optionsSelector"
                         ngDefaultControl
-                        [formControl]="form.controls.projectId  "
+                        [value]="'value'"
+                        [formControl]="form.controls.projectId"
+                        [selectedOptions]="selectedWorkedPlaces"
+                        (selectionChange)="getSelectedOptions($event)"
                         >
-                    </mat-select-autocomplete>
-                </div>
+                    </mat-select-autocomplete> -->
 
-            </div>
-            <div fxFlex="100" fxFlex.gt-md="50">
-                <div class="m-r-15 m-l-15">
-                    <ejs-timepicker formControlName="startAt"
-                    placeholder=" Start At  (required) *"  [value]='startAt'  ></ejs-timepicker>
-                </div>
-            </div>
-            <div fxFlex="100" fxFlex.gt-md="50">
-                <div class="m-r-15 m-l-15">
-                    <ejs-timepicker formControlName="endAt"
-                    placeholder=" End At  (required) *"  [value]='endAt' ></ejs-timepicker>
-                </div>
-            </div>
-            <div fxFlex="100" fxFlex.gt-md="100">
-                <div class="m-r-15 m-l-15">
-                    <mat-form-field>
-                        <input
-                        matInput
-                        type="text"
-                        name="notes"
-                        formControlName="notes"
-                        placeholder=" Notes"
-                      />
-                    </mat-form-field>
-                </div>
-            </div>
+          <mat-form-field class="example-chip-list">
+            <mat-chip-list #chipList aria-label="projects selection">
+              <mat-chip
+                *ngFor="let sproject of selectedProjects"
+                [selectable]="true"
+                [removable]="true"
+                (removed)="remove(sproject)"
+              >
+                {{ sproject.projectName }}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+              <input
+                placeholder="Select Projects.."
+                #projectInput
+                #autocompleteTrigger="matAutocompleteTrigger"
+                formControlName="projectId"
+                [matAutocomplete]="auto"
+                [matChipInputFor]="chipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                (matChipInputTokenEnd)="add($event)"
+              />
+            </mat-chip-list>
+            <mat-autocomplete
+              #auto="matAutocomplete"
+              (optionSelected)="selected($event)"
+              autoActiveFirstOption
+            >
+              <mat-option
+                *ngFor="let project of filteredProjects | async"
+                [value]="project"
+              >
+                <mat-checkbox
+                  color="primary"
+                  style="padding: 0 12px"
+                  [checked]="isChecked"
+                ></mat-checkbox>
+                {{ project.projectName }}
+              </mat-option>
+            </mat-autocomplete>
+            <button
+              mat-icon-button
+              matSuffix
+              style="width: 34px; height: 34px"
+              (click)="openAuto(autocompleteTrigger)"
+            >
+              <mat-icon style="width: 34px">expand_more</mat-icon>
+            </button>
+          </mat-form-field>
         </div>
-        <button mat-button (click)="doAction()" mat-flat-button color="warn"
-            [disabled]="!form.valid">{{action}}</button>
-        <button mat-button (click)="closeDialog()">Cancel</button>
-    </form>
-
-    <div>
+      </div>
+      <div fxFlex="100" fxFlex.gt-md="50">
+        <div class="m-r-15 m-l-15">
+          <ejs-timepicker
+            formControlName="startAt"
+            placeholder=" Start At  (required) *"
+            [value]="startAt"
+          ></ejs-timepicker>
+        </div>
+      </div>
+      <div fxFlex="100" fxFlex.gt-md="50">
+        <div class="m-r-15 m-l-15">
+          <ejs-timepicker
+            formControlName="endAt"
+            placeholder=" End At  (required) *"
+            [value]="endAt"
+          ></ejs-timepicker>
+        </div>
+      </div>
+      <div fxFlex="100" fxFlex.gt-md="100">
+        <div class="m-r-15 m-l-15">
+          <mat-form-field>
+            <input
+              matInput
+              type="text"
+              name="notes"
+              formControlName="notes"
+              placeholder=" Notes"
+            />
+          </mat-form-field>
+        </div>
+      </div>
     </div>
+    <button
+      mat-button
+      (click)="doAction()"
+      mat-flat-button
+      color="warn"
+    >
+      {{ action }}
+    </button>
+    <!-- [disabled]="!form.valid" -->
+
+    <button mat-button (click)="closeDialog()">Cancel</button>
+  </form>
+
+  <div></div>
 </mat-dialog-content>
-<!-- <ng-template #elseTemplate>
-    <p>Sure to delete <b>{{local_data.firstName}}  {{local_data.lastName}}</b> ?</p>
+<ng-template #elseTemplate>
+    <p>Sure to delete <b>  {{local_data.date}}</b> ?</p>
     <div mat-dialog-actions align="end" class="pt-3">
         <button mat-button (click)="doAction()" mat-flat-button color="warn">{{action}}</button>
         <button mat-button (click)="closeDialog()">Cancel</button>
     </div>
-</ng-template> -->
-
+</ng-template>

@@ -44,7 +44,7 @@ export class TimeSheetComponent implements OnInit {
     'dailyWage',
     'payPerDay',
     'notes',
-    
+    'action'
   ];
   constructor(
     public dialog: MatDialog,
@@ -54,6 +54,8 @@ export class TimeSheetComponent implements OnInit {
   ) {
     this.dataSource = new MatTableDataSource<any>(this.records);
      this.currentMonth = moment().format("YYYY-MM-DD HH:mm:ss")
+     //moment('2021-09-09 17:14:25').format("YYYY-MM-DD HH:mm:ss")
+     //
   }
 
   ngOnInit(): void {
@@ -97,6 +99,7 @@ export class TimeSheetComponent implements OnInit {
   }
 
   openDialog(action: string, obj: any) {
+    console.log(obj)
     obj.action = action;
     const dialogRef = this.dialog.open(RecordActionComponent, {
       data: obj,
@@ -110,17 +113,15 @@ export class TimeSheetComponent implements OnInit {
           this.getAllRecords()
         });
       } else if (result.event === 'Update') {
-        // this._employeeService
-        //   .updateEmployee(result.data, obj.id)
-        //   .subscribe((result) => {
-        //     if (result) {
-        //       this._employeeService.getAllemployee(
-        //         this.employeesPerPage,
-        //         this.currentPage
-        //       );
-        //     }
-        //   });
+        console.log(result)
+        this.recordsService.updateRecord(result.data).subscribe(result=>{
+          this.getAllRecords();
+        })
+        
       } else if (result.event === 'Delete') {
+        this.recordsService.deleteRecord(obj.id).subscribe(result=>{
+          this.getAllRecords();
+        })
         // this._employeeService.deleteEmployee(obj.id).subscribe((result) => {
         //   if (result) {
         //     console.log('projectDeleted', result);

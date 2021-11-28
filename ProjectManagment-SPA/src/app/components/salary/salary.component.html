@@ -1,19 +1,25 @@
-
-
-<div fxLayout="row" fxLayoutWrap="wrap">
-    <!-- column -->
-    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-        <mat-card>
-            <mat-card-content>
-                <!-- Row -->
-                <div fxLayout="row" fxLayoutWrap="wrap">
-                    <!-- column -->
-                    <div fxFlex.gt-sm="50" fxFlex.gt-xs="50">
-                        <p>salary works!</p>
-                    </div>
-                </div>
-            </mat-card-content>
-        </mat-card>
+<mat-card>
+  <mat-card-content>
+    <!-- Row -->
+    <div fxLayout="row wrap" class="course-app">
+      <!-- column -->
+      <div fxFlex.gt-lg="50" fxFlex.gt-xs="50" fxFlex="100">
+        <app-calc-hr (caclHrEvent)="calculateSalary($event)"></app-calc-hr>
+      </div>
+      <div fxFlex.gt-lg="50" fxFlex.gt-xs="50" fxFlex="100">
+        <app-getlast-salaries (getSalarisByMonthEvent)="getSalarisByMonth($event)"></app-getlast-salaries>
+      </div>
     </div>
-    <!-- column -->
-</div>
+    <div fxLayout="row wrap">
+      <!-- Column-->
+      <div fxFlex.gt-lg="40" fxFlex.gt-xs="40" fxFlex="100">
+        <app-all-salaries [salaries]="salaries"></app-all-salaries>
+      </div>
+      <!-- Column-->
+      <div fxFlex.gt-lg="60" fxFlex.gt-xs="60" fxFlex="100">
+        <app-last-salaries [lastSalary]="salaryByMonth"></app-last-salaries>
+      </div>
+      <!-- Column-->
+    </div>
+  </mat-card-content>
+</mat-card>

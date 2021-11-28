@@ -2,12 +2,11 @@ const multer = require("multer");
 const path = require("path");
 
 const storage = multer.diskStorage({
-  destination: "./images",
+  destination: "./images/agreements",
   filename: function (_req, file, cb) {
-
     cb(
       null,
-      _req.body.projectName + "-" + Date.now() + path.extname(file.originalname)
+      _req.params.projectId + "-" + Date.now() + path.extname(file.originalname)
     );
   },
 });
@@ -20,24 +19,11 @@ var upload = multer({
     fileSize: 15000000, // 150 KB for a 1080x1080 JPG 90
   },
   fileFilter: async function (_req, file, cb) {
-    // checkFileType(file, cb);
     const {
-      projectName,
-      clientFullName,
-      clientPhone,
-      location,
       quotation,
-      paid,
-      createdAt,
     } = _req.body;
     if (
-      !projectName ||
-      !clientFullName ||
-      !clientPhone ||
-      !location ||
-      !quotation ||
-      !paid ||
-      !createdAt
+      !quotation 
     ) {
       cb(`Error:  not  found`);
     } else {

@@ -75,10 +75,6 @@ export class DailyWageComponent implements OnInit {
     this.dialogRef.close({ event: this.action, data: dailyWageData });
   }
 
-  print(event:any){
-    console.log(event.value)
-  }
-
   closeDialog() {
     this.dialogRef.close({ event: 'Cancel' });
   }

@@ -4,7 +4,7 @@ const connection = require("../database/index");
 
 async function getProjectWithEmoloyeeTimeSheet(projectId) {
   const currentDate = moment().format("YYYY-MM-DD hh:mm:ss");
-  const values = [ projectId];
+  const values = [projectId];
   const getProjectWithEmoloyeeTimeSheetQuery = `
 
   SELECT 
@@ -55,7 +55,6 @@ ORDER BY date DESC   , dailyWage
 
   `;
 
-
   const [rows] = await (
     await connection()
   ).execute(getProjectWithEmoloyeeTimeSheetQuery, values);
@@ -63,7 +62,6 @@ ORDER BY date DESC   , dailyWage
 }
 
 async function getEmoloyeeTimeSheet(id) {
-  console.log(id);
   const getProjectWithEmoloyeeTimeSheetQuery = `
   SELECT * FROM ${process.env.DB_SCHEMA}.employeesTimeSheet
   JOIN ${process.env.DB_SCHEMA}.employee
@@ -81,8 +79,8 @@ async function addEmployeeRecord(record) {
     record.map(async (rec) => {
       const { date, startAt, endAt, employeeId, notes } = rec;
       const duration = moment.duration(moment(endAt).diff(moment(startAt)));
-      console.log('24r532fdd',parseFloat(duration.asHours()).toFixed(2))
-      if (parseFloat(duration.asHours()).toFixed(2) > 4) duration.subtract(0.5, "hour");
+      if (parseFloat(duration.asHours()).toFixed(2) > 4)
+        duration.subtract(0.5, "hour");
       var hours = duration.asHours();
       const values = [
         date,
@@ -96,7 +94,6 @@ async function addEmployeeRecord(record) {
       addWorkPlace(rec, addRecordReuslt);
     })
   );
-  // console.log(record)
   return addRecord;
 }
 
@@ -124,12 +121,12 @@ async function addWorkedProject(dayId, projectId) {
   return rows;
 }
 
-async function getEmployeeMothRecords(employeeId, month) {
-  const values = [employeeId, month];
+async function getEmployeeMothRecords(employeeId, month, year) {
+  const values = [employeeId, month, year];
   const query = `
   SELECT * FROM ${process.env.DB_SCHEMA}.employeesTimeSheet where employeeId = ?
-and month (date) = ?
-order by date
+and month (date) = ? AND YEAR(date) = ? 
+order by date 
 asc`;
   const [rows] = await (await connection()).execute(query, values);
   return rows;
@@ -141,19 +138,21 @@ async function getAllRecordsByMonth(
   currentPage,
   employeeId
 ) {
-  console.log(employeeId);
+
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";
+    console.log(employeeId)
+
+    console.log(typeof employeeId)
   const filterByEmployee =
-    employeeId != "undefined"
+    !isNaN(employeeId)
       ? `AND ${process.env.DB_SCHEMA}.employee.id  = ${employeeId}`
       : "";
   console.log(filterByEmployee);
   const month = moment(currentMonth).month() + 1;
   const year = moment(currentMonth).year();
   const values = [currentMonth, currentMonth, month, year];
-
   const query = `
   SELECT 
   ${process.env.DB_SCHEMA}.employeesTimeSheet.id AS id,
@@ -175,15 +174,15 @@ async function getAllRecordsByMonth(
               AND ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id
       ORDER BY startFromDate DESC
       LIMIT 1) AS dailyWage,
-  (SELECT 
-          startFromDate
-      FROM
-          ${process.env.DB_SCHEMA}.employeeDailyWage
-      WHERE
-          startFromDate <= ?
-              AND ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id
-      ORDER BY startFromDate DESC
-      LIMIT 1) AS startFromDate,
+    (SELECT 
+            startFromDate
+        FROM
+            ${process.env.DB_SCHEMA}.employeeDailyWage
+        WHERE
+            startFromDate <= ?
+                AND ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id
+        ORDER BY startFromDate DESC
+        LIMIT 1) AS startFromDate,
   IFNULL(GROUP_CONCAT(DISTINCT ${process.env.DB_SCHEMA}.workedProjects.projectId
               ORDER BY (${process.env.DB_SCHEMA}.workedProjects.projectId) DESC
               SEPARATOR ','),
@@ -202,21 +201,12 @@ GROUP BY id
 ORDER BY date DESC   , dailyWage 
 ${limitQuery}
   `;
-  //, date , startAt , endAt , duration , payPerDay , notes , firstName , lastName , dailyWage
-
-  console.log(currentMonth, currentMonth, month, year);
-
-  //   `
-  //   SELECT * FROM ${process.env.DB_SCHEMA}.employeesTimeSheet where month (date) = ?
-  // order by date
-  // asc`;
   const [rows] = await (await connection()).execute(query, values);
   return rows;
 }
 
 async function getRecordsCount(currentMonth) {
   const month = moment(currentMonth).month() + 1;
-  console.log("month", month);
   const values = [month];
   const getProjectsQuery = `SELECT count(*) as totalRecords FROM ${process.env.DB_SCHEMA}.employeesTimeSheet WHERE
   MONTH(date) = ? `;
@@ -224,11 +214,187 @@ async function getRecordsCount(currentMonth) {
   return rows[0].totalRecords;
 }
 
+async function addOrUpdateSalary(currentMonth) {
+  const calculateSalries = await _calculateSalary(currentMonth);
+  const getMothSalaries = await getSalriesByMonth(currentMonth);
+
+  console.log(calculateSalries)
+  const extractNewSalaries = calculateSalries.filter(
+    (el) => !getMothSalaries.find((old) => old.employeeId === el.employeeId)
+  );
+
+  if (extractNewSalaries.length > 0)
+    await _addSalary(extractNewSalaries, currentMonth);
+  const updateOldSalaries = calculateSalries.map((el) =>
+    getMothSalaries.map(async (old) => {
+      if (old.employeeId === el.employeeId)
+        await _updateSalary(old.id, el.salary);
+    })
+  );
+  return updateOldSalaries;
+}
+
+// const calculateSalries = await _calculateSalary(currentMonth);
+//   const getMothSalaries = await getSalriesByMonth(currentMonth);
+
+//   const extractNewSalaries = calculateSalries.filter(
+//     (el) => !getMothSalaries.find((old) => old.employeeId === el.employeeId)
+//   );
+
+//   if (extractNewSalaries.length > 0)
+//     await _addSalary(extractNewSalaries, currentMonth);
+//   const updateOldSalaries = calculateSalries.map((el) =>
+//     getMothSalaries.map(async (old) => {
+//       if (old.employeeId === el.employeeId)
+//         await _updateSalary(old.id, el.salary);
+//     })
+//   );
+//   return updateOldSalaries;
+
+async function _addSalary(newSalary, currentMonth) {
+  console.log("add");
+  const month = moment(currentMonth)
+    .startOf("month")
+    .format("YYYY-MM-DD HH:mm:ss");
+  const addSalaray = newSalary.map(async (s) => {
+    const values = [s.employeeId, s.salary, month];
+    const addSalaryQuery = `
+  INSERT INTO ${process.env.DB_SCHEMA}.salary (employeeId, salary,salaryDate) VALUES (?, ?, ?);
+  `;
+    const [rows] = await (await connection()).execute(addSalaryQuery, values);
+    return rows;
+  });
+  return addSalaray;
+}
+async function _updateSalary(id, salary) {
+  const values = [salary, id];
+  const updateEmployeeHrQuery = `UPDATE ${process.env.DB_SCHEMA}.salary SET salary = ? WHERE id = ?;`;
+  const [rows] = await (
+    await connection()
+  ).execute(updateEmployeeHrQuery, values);
+  return rows.affectedRows;
+}
+
+async function _calculateSalary(currentMonth) {
+  console.log('_calculateSalary(currentMonth)',currentMonth)
+  const month = moment(currentMonth).month() + 1;
+  const year = moment(currentMonth).year();
+  const values = [month, year];
+  const query = `
+  SELECT 
+  ${process.env.DB_SCHEMA}.employee.id AS employeeId,
+  ${process.env.DB_SCHEMA}.employee.firstName AS firstName,
+  ${process.env.DB_SCHEMA}.employee.lastName AS lastName,
+  SUM(${process.env.DB_SCHEMA}.employeesTimeSheet.payPerDay) as salary
+FROM
+  ${process.env.DB_SCHEMA}.employeesTimeSheet
+  Left Join
+ ${process.env.DB_SCHEMA}.employee ON ${process.env.DB_SCHEMA}.employeesTimeSheet.employeeId = ${process.env.DB_SCHEMA}.employee.id
+
+WHERE
+  MONTH(date) = ? AND YEAR(date) = ?
+GROUP BY  ${process.env.DB_SCHEMA}.employee.id
+ORDER BY ${process.env.DB_SCHEMA}.employee.id asc  
+  `;
+  const [rows] = await (await connection()).execute(query, values);
+  return rows;
+}
+
+async function getSalriesByMonth(currentMonth) {
+  const month = moment(currentMonth).month() + 1;
+  const year = moment(currentMonth).year();
+  const values = [month, year];
+  const query = `
+  SELECT * FROM ${process.env.DB_SCHEMA}.salary
+WHERE
+  MONTH(salaryDate) = ? AND YEAR(salaryDate) = ?
+  `;
+  const [rows] = await (await connection()).execute(query, values);
+  return rows;
+}
+
+async function getSalaries() {
+  const query = `
+  SELECT SUM(${process.env.DB_SCHEMA}.salary.salary) as total,
+	${process.env.DB_SCHEMA}.salary.salaryDate
+ FROM ${process.env.DB_SCHEMA}.salary
+GROUP BY ${process.env.DB_SCHEMA}.salary.salaryDate
+ORDER BY ${process.env.DB_SCHEMA}.salary.salaryDate DESC
+  `;
+  const [rows] = await (await connection()).execute(query);
+  return rows;
+}
+
+async function getSalaryByMonth(currentMonth){
+  const month = moment(currentMonth).month() + 1;
+  const year = moment(currentMonth).year();
+  const values = [currentMonth,currentMonth,month, year];
+  const query = `
+  SELECT 
+  ${process.env.DB_SCHEMA}.salary.salaryDate as salaryDate,
+  ${process.env.DB_SCHEMA}.employee.id AS employeeId,
+  ${process.env.DB_SCHEMA}.employee.firstName AS firstName,
+  ${process.env.DB_SCHEMA}.employee.lastName AS lastName,
+  ${process.env.DB_SCHEMA}.salary.salary,
+(SELECT 
+          dailywage
+      FROM
+          ${process.env.DB_SCHEMA}.employeeDailyWage
+      WHERE
+          startFromDate <= ?
+              AND ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id
+      ORDER BY startFromDate DESC
+      LIMIT 1) AS dailyWage,
+(SELECT 
+          startFromDate
+      FROM
+          ${process.env.DB_SCHEMA}.employeeDailyWage
+      WHERE
+          startFromDate <= ?
+              AND ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id
+      ORDER BY startFromDate DESC
+      LIMIT 1) AS startFromDate
+FROM
+  ${process.env.DB_SCHEMA}.employeesTimeSheet
+  Left Join					
+ ${process.env.DB_SCHEMA}.employee ON ${process.env.DB_SCHEMA}.employeesTimeSheet.employeeId = ${process.env.DB_SCHEMA}.employee.id
+  left join 
+${process.env.DB_SCHEMA}.salary ON ${process.env.DB_SCHEMA}.salary.employeeId = ${process.env.DB_SCHEMA}.employee.id
+WHERE
+  MONTH(salaryDate) = ? AND YEAR(salaryDate) = ?
+GROUP BY  ${process.env.DB_SCHEMA}.employee.id
+ORDER BY ${process.env.DB_SCHEMA}.employee.id asc  
+`;
+const [rows] = await (await connection()).execute(query, values);
+return rows;
+}
+
+async function getDuration(currentMonth){
+  const month = moment(currentMonth).month() + 1;
+  const year = moment(currentMonth).year();
+  const values = [month, year];
+  const query = `
+  SELECT  ${process.env.DB_SCHEMA}.employeesTimeSheet.employeeId,
+  sum(${process.env.DB_SCHEMA}.employeesTimeSheet.duration) as duration
+FROM
+  ${process.env.DB_SCHEMA}.employeesTimeSheet
+WHERE
+    MONTH(employeesTimeSheet.date) = ? AND YEAR(employeesTimeSheet.date) = ? 
+group by  ${process.env.DB_SCHEMA}.employeesTimeSheet.employeeId
+order by ${process.env.DB_SCHEMA}.employeesTimeSheet.employeeId asc
+  `;
+  const [rows] = await (await connection()).execute(query, values);
+return rows;
+}
+
 module.exports = {
+  getSalaries,
+  getDuration,
+  getSalaryByMonth,
   getProjectWithEmoloyeeTimeSheet,
   getEmoloyeeTimeSheet,
   addEmployeeRecord,
-  getEmployeeMothRecords,
+  addOrUpdateSalary,
   getAllRecordsByMonth,
   getRecordsCount,
   addWorkedProject,

@@ -1,9 +1,12 @@
 <h2 class="font-medium" mat-dialog-title>
   <strong>{{ action }}</strong>
 </h2>
-<mat-dialog-content class="pb-3" *ngIf="action != 'Delete'; else elseTemplate">
+<ng-container [ngTemplateOutlet]="isAdd ? addTemplate : isUpdate ? updateTemplate : deleteTemplate"></ng-container>
+
+<ng-template  #addTemplate>
+<mat-dialog-content class="pb-3"  >
   <form [formGroup]="form">
-    <div class="d-flex align-items-center m-b-15">
+    <!-- <div class="d-flex align-items-center m-b-15">
       aggrement
       <img class="mat-card-avatar" [src]="local_data.agreement" />
       <button
@@ -16,7 +19,7 @@
       <span *ngIf="fileError" class="bg-danger p-10 text-white">{{
         fileError
       }}</span>
-    </div>
+    </div> -->
     <div fxLayout="row wrap" class="align-items-center">
       <div fxFlex="100" fxFlex.gt-md="50">
         <div class="m-r-15 m-l-15">
@@ -70,7 +73,7 @@
           </mat-form-field>
         </div>
       </div>
-      <div fxFlex="100" fxFlex.gt-md="50">
+      <!-- <div fxFlex="100" fxFlex.gt-md="50">
         <div class="m-r-15 m-l-15">
           <mat-form-field>
             <input
@@ -82,8 +85,8 @@
             />
           </mat-form-field>
         </div>
-      </div>
-      <div fxFlex="100" fxFlex.gt-md="50">
+      </div> -->
+      <!-- <div fxFlex="100" fxFlex.gt-md="50">
         <div class="m-r-15 m-l-15">
           <mat-form-field>
             <input
@@ -95,7 +98,7 @@
             />
           </mat-form-field>
         </div>
-      </div>
+      </div> -->
       <!-- <div fxFlex="100" fxFlex.gt-md="50">
                 <div class="m-r-15 m-l-15">
                     <mat-form-field>
@@ -150,7 +153,109 @@
     <button mat-button (click)="closeDialog()">Cancel</button>
   </form>
 </mat-dialog-content>
-<ng-template #elseTemplate>
+</ng-template>
+
+<ng-template  #updateTemplate>
+<mat-dialog-content class="pb-3"#addTemplate >
+    <form [formGroup]="form">
+      <div class="d-flex align-items-center m-b-15">
+        aggrement
+        <img class="mat-card-avatar" [src]="local_data.agreement" />
+        <button
+          mat-raised-button
+          color="primary"
+          class="m-l-15 input-file-button"
+        >
+          <input type="file" (change)="onSelectFile($event)" />
+        </button>
+        <span *ngIf="fileError" class="bg-danger p-10 text-white">{{
+          fileError
+        }}</span>
+      </div>
+      <div fxLayout="row wrap" class="align-items-center">
+        <div fxFlex="100" fxFlex.gt-md="50">
+          <div class="m-r-15 m-l-15">
+            <mat-form-field>
+              <input
+                matInput
+                type="text"
+                name="projectName"
+                formControlName="projectName"
+                placeholder=" project  (required) *"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxFlex="100" fxFlex.gt-md="50">
+          <div class="m-r-15 m-l-15">
+            <mat-form-field>
+              <input
+                matInput
+                type="text"
+                name="clientFullName"
+                formControlName="clientFullName"
+                placeholder=" clientFullName  (required) *"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxFlex="100" fxFlex.gt-md="50">
+          <div class="m-r-15 m-l-15">
+            <mat-form-field>
+              <input
+                matInput
+                type="text"
+                name="clientPhone"
+                formControlName="clientPhone"
+                placeholder=" clientPhone  (required) *"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxFlex="100" fxFlex.gt-md="50">
+          <div class="m-r-15 m-l-15">
+            <mat-form-field>
+              <input
+                matInput
+                type="text"
+                name="location"
+                formControlName="location"
+                placeholder=" location  (required) *"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div fxFlex="100" fxFlex.gt-md="50">
+          <mat-form-field appearance="fill">
+            <mat-label>Created At</mat-label>
+            <input
+              matInput
+              [matDatepicker]="picker"
+              formControlName="createdAt"
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="picker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
+      <button
+        mat-button
+        (click)="doAction()"
+        mat-flat-button
+        color="warn"
+        [disabled]="!form.valid"
+      >
+        {{ action }}
+      </button>
+      <button mat-button (click)="closeDialog()">Cancel</button>
+    </form>
+  </mat-dialog-content>
+</ng-template>
+
+<ng-template  #deleteTemplate>
   <p>
     Sure to delete <b>{{ local_data.projectName }}</b> ?
   </p>

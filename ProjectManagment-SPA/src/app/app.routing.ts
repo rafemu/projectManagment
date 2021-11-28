@@ -16,11 +16,11 @@ export const AppRoutes: Routes = [
                 redirectTo: '/login',
                 pathMatch: 'full'
             },
-            {
-                path: 'home',
-                loadChildren: () => import('./starter/starter.module').then(m => m.StarterModule),
-                canActivate: [AuthGuard],
-            },
+            // {
+            //     path: 'home',
+            //     loadChildren: () => import('./starter/starter.module').then(m => m.StarterModule),
+            //     canActivate: [AuthGuard],
+            // },
             {
                 path: 'projects',
                 loadChildren: () => import('./components/projects/projects.module').then(m => m.ProjectsModule),
@@ -28,17 +28,17 @@ export const AppRoutes: Routes = [
             },
             {
                 path:'employees',
-                loadChildren:()=> import('./components/employees/employees.module').then(m=> m.EmployeesModule)
+                loadChildren:()=> import('./components/employees/employees.module').then(m=> m.EmployeesModule),
             }
             ,
             {
                 path:'timesheet',
-                loadChildren:()=> import('./components/timesheet/time-sheet.module').then(m=> m.TimeSheetModule)
+                loadChildren:()=> import('./components/timesheet/time-sheet.module').then(m=> m.TimeSheetModule),
             }
             ,
             {
                 path:'salary',
-                loadChildren:()=> import('./components/salary/salary.module').then(m=> m.SalaryModule)
+                loadChildren:()=> import('./components/salary/salary.module').then(m=> m.SalaryModule),
             }
 
         ]

@@ -13,15 +13,6 @@ const {
 const getValidationFunction = require("../validations/login.validation");
 const currentTime = moment().utc();
 
-// router.post("/login", async (req, res, next) => {
-//   const { email, password } = req.body;
-//   if (!email || !password) res.send("error");
-//   const result = await isUserRegistered(email, password);
-//   if (result)
-//     return res.json({ message: `Hello ${result.firstName} , login success` });
-//   else return res.json({ message: `Login Failed` });
-// });
-
 router.post(
   "/login",
   getValidationFunction("login"),
@@ -80,26 +71,11 @@ router.post(
       } else throw new Error("Registration Failed");
     } catch (error) {
       logger.error(`${currentTime} - Registration Failed - ${error.message} `);
-      // console.log({message: error.message, status: 500})
       return next({ message: error.message, status: 500 });
     }
   }
 );
 
-// const _registerPath = "register"
-// router.post(`/${_registerPath}`, getValidationFunction(_registerPath), async (req, res, next) => {
-//     const { email } = req.body;
-//     try {
-//         const result = await isUserRegistered(email)
-//         if (result) throw new Error(`User ${result.email} is already exist`)
-//         const create = await createUser(req.body)
-//         if (create) return res.json({ message: `Registration completed` })
-//         else throw new Error("Registration Failed")
-//     } catch (ex) {
-//         console.log(ex.message)
-//         return next({ message: ex.message, status: 400 })
-//     }
-// })
 
 const _changePasswordPath = "changePassword";
 router.post(

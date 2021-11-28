@@ -4,8 +4,8 @@ import { IProject } from "./project.interface";
 export interface IRecord {
     id?:string,
     date: Date;
-    employeeId: IEmployee;
-    projectId: IProject;
+    employeeId: any;
+    projectId: any;
     startAt: Date;
     endAt: Date;
     payPerDay?: number;

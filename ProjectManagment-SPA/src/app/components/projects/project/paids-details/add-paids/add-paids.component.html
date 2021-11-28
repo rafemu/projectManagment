@@ -1,5 +1,5 @@
-<h2 class="font-medium" mat-dialog-title><strong>Add Paid</strong></h2>
-<mat-dialog-content class="pb-3 mat-typography" style="width: 500px">
+<h2 class="font-medium" mat-dialog-title><strong>{{action}} Paid</strong></h2>
+<mat-dialog-content class="pb-3 mat-typography" style="width: 500px" *ngIf="action != 'Delete'; else elseTemplate">
   <form [formGroup]="form">
     
 
@@ -60,7 +60,7 @@
 
       <div class="d-flex align-items-center m-b-15" *ngIf="isShow">
         CheckImg
-        <img class="mat-card-avatar" [src]="local_data.agreement" />
+        <img class="mat-card-avatar" [src]="recordData.checksImgPath" />
         <button
           mat-raised-button
           color="primary"
@@ -101,10 +101,10 @@
 
   <div></div>
 </mat-dialog-content>
-<!-- <ng-template #elseTemplate>
-    <p>Sure to delete <b>{{local_data.firstName}}  {{local_data.lastName}}</b> ?</p>
+<ng-template #elseTemplate>
+    <p>Sure to delete <b>  </b> ?</p>
     <div mat-dialog-actions align="end" class="pt-3">
         <button mat-button (click)="doAction()" mat-flat-button color="warn">{{action}}</button>
         <button mat-button (click)="closeDialog()">Cancel</button>
     </div>
-</ng-template> -->
+</ng-template>

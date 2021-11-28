@@ -15,6 +15,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { PaidsDetailsComponent } from './project/paids-details/paids-details.component';
 import { AddPaidsComponent } from './project/paids-details/add-paids/add-paids.component';
 import { DatePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { QuotationActionComponent } from './project/project-details/quotation-action/quotation-action.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { DatePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-cale
     ProjectDetailsComponent,
     EmployeeWorkedDaysComponent,
     PaidsDetailsComponent,
-    AddPaidsComponent
+    AddPaidsComponent,
+    QuotationActionComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +45,8 @@ import { DatePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-cale
   entryComponents:[
     ProjectsActionsComponent,
     ImageViewComponent,
-    AddPaidsComponent
+    AddPaidsComponent,
+    QuotationActionComponent
   ]
 })
 export class ProjectsModule { }

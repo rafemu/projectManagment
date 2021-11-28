@@ -1,5 +1,9 @@
 const express = require("express");
 const router = express.Router();
+const logger = require("../logger");
+const moment = require("moment");
+const currentTime = moment().utc();
+const getValidationFunctionEmployee = require("../validations//employee.validation");
 
 const {
   createEmployee,
@@ -11,61 +15,57 @@ const {
   addDailyWage,
 } = require("../controllers/employee");
 
-// create employee
-router.post("/", async (req, res, next) => {
-  try {
-    const createEmployeeResult = await createEmployee(req.body);
-    if (!createEmployeeResult) throw new Error("something went worng");
-    console.log("createEmployee", createEmployeeResult);
-    const dailyWage = await addDailyWage(
-      createEmployeeResult,
-      req.body.wagePerDay
-    );
-    if (!dailyWage)
-      throw new Error("something went wrong on insert daily wage to employee ");
-    // const { type } = req.body;
-    // const result = await isUserExist(req.body.users[0]);
-    // if (!result) throw new Error("Invalid User");
-    // console.log("createAccount");
-    // const generatedAccountId = _generateAccountId();
-    // const caResult = await createAccount({ type, id: generatedAccountId });
-    // if (!caResult.affectedRows) throw new Error("Account was not created");
-    // const cauResult = await createAccountUser(
-    //   generatedAccountId,
-    //   req.body.users[0],
-    //   "Owner"
-    // );
-    // if (!cauResult.affectedRows)
-    //   throw new Error("User Account was not created");
-    res.json({ message: "employee created" });
-  } catch (ex) {
-    return next({ message: ex.message, status: 500 });
-  }
-});
-
-router.post("/addDailyWage", async (req, res, next) => {
-  // console.log(req.body);
-  const { employeeId, dailyWage, startFrom } = req.body;
-  console.log(employeeId, dailyWage, startFrom)
-  try {
-    const checkIfEmployeeExist = await getEmployeeById(employeeId);
-    if (!checkIfEmployeeExist) throw new Error("Invalid employee");
-    const result = await addDailyWage(employeeId, dailyWage, startFrom);
-    if (!result) throw new Error("error in deleteing employee");
-    res
-      .status(200)
-      .json(
-        `new Daily wage for ${employeeId} - ${dailyWage} - start from ${startFrom}`
+//create new employee
+router.post(
+  "/",
+  getValidationFunctionEmployee("createNewEmployee"),
+  async (req, res, next) => {
+    try {
+      const createEmployeeResult = await createEmployee(req.body);
+      if (!createEmployeeResult) throw new Error("something went worng");
+      logger.info(
+        `currentTime: ${currentTime} ###### New Employee has been created`
       );
-  } catch (ex) {
-    next({ message: ex.message, status: 400 });
+      res.json({ message: "employee created" });
+    } catch (ex) {
+      logger.error(
+        `${currentTime} - Creating Employee Failed - ${error.message} `
+      );
+      return next({ message: ex.message, status: 500 });
+    }
   }
-});
+);
+
+router.post(
+  "/addDailyWage",
+  getValidationFunctionEmployee("wage"),
+  async (req, res, next) => {
+    const { employeeId, dailyWage, startFrom } = req.body;
+    try {
+      const checkIfEmployeeExist = await getEmployeeById(employeeId);
+      if (!checkIfEmployeeExist) throw new Error("Invalid employee");
+      const result = await addDailyWage(employeeId, dailyWage, startFrom);
+      if (!result) throw new Error("error in deleteing employee");
+      logger.info(
+        `currentTime: ${currentTime} ###### new Daily wage for ${employeeId} - ${dailyWage} - start from ${startFrom}`
+      );
+      res
+        .status(200)
+        .json(
+          `new Daily wage for ${employeeId} - ${dailyWage} - start from ${startFrom}`
+        );
+    } catch (ex) {
+      logger.error(
+        `${currentTime} - Update / Add Wage Failed - ${error.message} `
+      );
+      next({ message: ex.message, status: 400 });
+    }
+  }
+);
 
 router.get("/", async (req, res, next) => {
   const pageSize = +req.query.pagesize;
   const currentPage = +req.query.page;
-  // console.log('employee')
   try {
     currentPage
       ? (employees = await getEmployees(pageSize, currentPage))
@@ -73,41 +73,53 @@ router.get("/", async (req, res, next) => {
     if (!employees) throw new Error("no employees");
     const total = await getEmployeesCount();
     if (!total) throw new Error("error occured");
-    // console.log('employee',result)
+    logger.info(`currentTime: ${currentTime} ###### fetch employee succses`);
     res.json({ result: employees, total: total });
   } catch (error) {
+    logger.error(`${currentTime} - fetch employee  Failed - ${error.message} `);
     return next({ message: error.message, status: 400 });
   }
 });
 
-router.get("/:id", async (req, res, next) => {
-  const id = req.params.id;
-  try {
-    const result = await getEmployeeById(id);
-    if (!result) throw new Error("no employees");
-    res.json(result);
-  } catch (ex) {
-    return next({ message: "global error", status: 401 });
-  }
-});
+// router.get("/:id",getValidationFunctionEmployee('getEmployeeById'), async (req, res, next) => {
+//   const id = req.params.id;
+//   console.log('dfgdfwd',id)
+//   try {
+//     const result = await getEmployeeById(id);
+//     if (!result) throw new Error("no employees");
+//     res.json(result);
+//   } catch (ex) {
+//     return next({ message: "global error", status: 401 });
+//   }
+// });
 
-router.put("/:employeeId", async (req, res, next) => {
-  try {
-    const employeeId = req.params.employeeId;
-    const result = await editEmployee(req.body, employeeId);
-    if (!result) throw new Error("some thing went wrong with editing");
-    res.json({
-      result,
-    });
-  } catch (ex) {
-    return next({ message: ex.message, status: 400 });
+router.put(
+  "/:employeeId",
+  getValidationFunctionEmployee("getEmployeeById"),
+  getValidationFunctionEmployee("createNewEmployee"),
+  async (req, res, next) => {
+    console.log(req.body)
+    try {
+      const employeeId = req.params.employeeId;
+      const checkIfEmployeeExist = await getEmployeeById(employeeId);
+      if (!checkIfEmployeeExist) throw new Error("Invalid employee");
+      const result = await editEmployee(req.body, employeeId);
+      if (!result) throw new Error("some thing went wrong with editing");
+      logger.info(`currentTime: ${currentTime} ###### updating employee succses`);
+      res.json({
+        result,
+      });
+    } catch (ex) {
+      logger.error(`${currentTime} - updating employee ${employeeId} Failed - ${error.message} `);
+      return next({ message: ex.message, status: 400 });
+    }
   }
-});
+);
 
 router.delete(
   "/:employeeId",
-  // getValidationFunction("deleteSchema"),
-  async (req, res, next) => {
+  getValidationFunctionEmployee("getEmployeeById"),
+    async (req, res, next) => {
     const employeeId = req.params.employeeId;
     try {
       const checkIfEmployeeExist = await getEmployeeById(employeeId);

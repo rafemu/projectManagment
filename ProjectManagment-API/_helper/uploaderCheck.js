@@ -1,8 +1,17 @@
 const multer = require("multer");
 const path = require("path");
-
+const fs = require('fs')
 const storage = multer.diskStorage({
-  destination: "./images/checks",
+  destination: (_req, file, cb) => {
+    console.log('_req.body',_req.body)
+    const dir = `./images/checks/${_req.body.projectId }`
+    fs.exists(dir, exist => {
+    if (!exist) {
+      return fs.mkdir(dir, error => cb(error, dir))
+    }
+    return cb(null, dir)
+    })
+  },
   filename: function (_req, file, cb) {
     if (!file) {
       cb(null, false);
@@ -10,7 +19,7 @@ const storage = multer.diskStorage({
     }else{
       cb(
         null,
-        _req.body.projectId + "-" + Date.now() + path.extname(file.originalname)
+        _req.body.projectId + "-" + _req.params.paidId + "-" +Date.now() + path.extname(file.originalname)
       );
     }
     

@@ -16,9 +16,10 @@ export class ImageViewComponent implements OnInit {
   constructor(
     public datePipe: DatePipe,
     public dialogRef: MatDialogRef<ImageViewComponent>,
-    @Optional() @Inject(MAT_DIALOG_DATA) public data: IProject
+    @Optional() @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    this.local_data = { ...data };
+    const img = data.agreement ? data.agreement : data.checksImgPath.replace('images/','')
+    this.local_data = img ;
   }
 
   ngOnInit(): void {

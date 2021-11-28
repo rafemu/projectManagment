@@ -31,12 +31,12 @@ export interface Menu {
 }
 
 const MENUITEMS = [
-    {
-        state: 'home',
-        name: 'דף הבית',
-        type: 'link',
-        icon: 'content_copy'
-    },
+    // {
+    //     state: 'home',
+    //     name: 'דף הבית',
+    //     type: 'link',
+    //     icon: 'content_copy'
+    // },
     {
         state: 'projects',
         name: 'פרויקטים',
@@ -51,13 +51,13 @@ const MENUITEMS = [
     },
     {
         state: 'timesheet',
-        name: 'timesheet',
+        name: 'דיווח',
         type: 'link',
         icon: 'content_copy'
     },
     {
         state: 'salary',
-        name: 'salary',
+        name: 'משכורות',
         type: 'link',
         icon: 'content_copy'
     },

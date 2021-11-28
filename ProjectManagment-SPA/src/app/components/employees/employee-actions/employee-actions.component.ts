@@ -3,6 +3,7 @@ import { Component, Inject, OnInit, Optional } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { IEmployee } from 'src/app/_interfaces/emplyee.interface';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-employee-actions',
@@ -15,7 +16,7 @@ export class EmployeeActionsComponent implements OnInit {
   imagePath: any;
   form: any;
   fileError: string = '';
-
+  public currentDate?: string;
   constructor(
     private formBuilder: FormBuilder,
     public datePipe: DatePipe,
@@ -24,6 +25,7 @@ export class EmployeeActionsComponent implements OnInit {
   ) {
     this.local_data = { ...data };
     this.action = this.local_data.action;
+    this.currentDate = moment().startOf('month').format('YYYY-MM-DD'); 
   }
 
   ngOnInit(): void {
@@ -40,7 +42,6 @@ export class EmployeeActionsComponent implements OnInit {
         validators: [Validators.required],
       }),
       phone: new FormControl('', { validators: [Validators.required] }),
-      wagePerDay: new FormControl('', { validators: [Validators.required] }),
       bankAccount: new FormControl('', { validators: [Validators.required] }),
       bankBranch: new FormControl('', { validators: [Validators.required] }),
       createdAt: new FormControl('', { validators: [Validators.required] }),
@@ -52,10 +53,9 @@ export class EmployeeActionsComponent implements OnInit {
       firstName: this.local_data['firstName'],
       lastName: this.local_data['lastName'],
       phone: this.local_data['phone'],
-      wagePerDay: this.local_data['wagePerDay'],
       bankAccount: this.local_data['bankAccount'],
       bankBranch: this.local_data['bankBranch'],
-      createdAt: this.local_data['createdAt'],
+      createdAt: moment(this.local_data['createdAt']).format('YYYY-MM-DD HH:mm:ss'),
     });
   }
 

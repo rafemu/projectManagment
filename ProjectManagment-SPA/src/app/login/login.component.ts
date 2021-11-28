@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     const token = this._tokenService.getToken();
     if (token) {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/projects']);
     }
   }
   initForm() {
@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
     this._authService.login(this.loginForm.value).subscribe((respons) => {
       console.log(respons);
       this.msg = respons.message;
-      this.router.navigate(['/home'])
+      this.router.navigate(['/projects'])
       // this.handleUserResponse(respons)
     });
   }

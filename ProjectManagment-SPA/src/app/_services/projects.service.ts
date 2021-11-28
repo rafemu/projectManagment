@@ -40,7 +40,7 @@ export class ProjectsService {
                 project.agreement == null
                   ? (project.agreement =
                       'default/default-placeholder-150x150.png')
-                  : project.agreement.split('/')[1];
+                  : project.agreement.replace('images/','');
               const {
                 id,
                 projectName,
@@ -87,12 +87,11 @@ export class ProjectsService {
       .get(`${BaseURL}/projects/` + id)
       .pipe(
         map((project: any) => {
-          console.log(project);
-
           const img =
-            project.agreement == null
-              ? (project.agreement = 'default/default-placeholder-150x150.png')
-              : project.agreement.split('/')[1];
+          project.agreement == null
+            ? (project.agreement =
+                'default/default-placeholder-150x150.png')
+            : project.agreement.replace('images/','');
 
           const {
             id,
@@ -104,6 +103,7 @@ export class ProjectsService {
             paid,
             unPaid,
             haregem,
+            notes,
             createdAt,
             updatedAt,
           } = project;
@@ -114,6 +114,7 @@ export class ProjectsService {
             clientPhone: clientPhone,
             location: location,
             quotation: quotation,
+            quotationNotes:notes,
             paid: paid,
             unPaid: unPaid,
             haregem: haregem,
@@ -131,23 +132,21 @@ export class ProjectsService {
       });
   }
   addProject(data: IProject) {
-    const formDataHeader = {
-      headers: new HttpHeaders({
-        'content-type': 'multipart/form-data',
-      }),
-    };
-    console.log(data);
-    const postData = new FormData();
-    postData.append('projectName', data.projectName);
-    postData.append('clientFullName', data.clientFullName);
-    postData.append('clientPhone', data.clientPhone);
-    postData.append('location', data.location);
-    postData.append('quotation', data.quotation.toString());
-    postData.append('paid', data.paid.toString());
-    postData.append('createdAt', data.createdAt.toString());
-    postData.append('agreement', data.agreement);
-    console.log(postData);
-    return this.httpClient.post(`${BaseURL}/projects`, postData);
+    // const formDataHeader = {
+    //   headers: new HttpHeaders({
+    //     'content-type': 'multipart/form-data',
+    //   }),
+    // };
+    // const postData = new FormData();
+    // postData.append('projectName', data.projectName);
+    // postData.append('clientFullName', data.clientFullName);
+    // postData.append('clientPhone', data.clientPhone);
+    // postData.append('location', data.location);
+    // // postData.append('quotation', data.quotation.toString());
+    // // postData.append('paid', data.paid.toString());
+    // postData.append('createdAt', data.createdAt.toString());
+    // // postData.append('agreement', data.agreement);
+    return this.httpClient.post(`${BaseURL}/projects`, data);
   }
 
   getProjectPaids(id: string): Promise<Array<any>> {
@@ -156,13 +155,36 @@ export class ProjectsService {
       .toPromise() as Promise<Array<any>>;
   }
 
+  addProjectQuotation(quotationData:any){
+    
+    const { projectId, notes,quotation, imagePath } = quotationData;
+    console.log(quotationData)
+    const quotData = new FormData();
+    quotData.append('projectId', projectId);
+    quotData.append('quotation', quotation);
+    if (imagePath) quotData.append('agreement', imagePath);
+    quotData.append('notes', notes);
+
+    return this.httpClient.post(`${BaseURL}/projects/quotation/${projectId}`, quotData);
+  }
+
+  updateQuotation(quotationData:any){
+    const { projectId, notes,quotation, imagePath } = quotationData;
+    const quotData = new FormData();
+    quotData.append('projectId', projectId);
+    quotData.append('quotation', quotation);
+    if (imagePath) quotData.append('agreement', imagePath);
+    quotData.append('notes', notes);
+
+    return this.httpClient.put(`${BaseURL}/projects/updateQuotation/${projectId}`, quotData);
+  }
+
   addProjectPaids(paidData: IPaids,projectId:string) {
     const formDataHeader = {
       headers: new HttpHeaders({
         'content-type': 'multipart/form-data',
       }),
     };
-    console.log(paidData)
     const { paidDate, paid, checkImg, notes, method } = paidData;
     const paidsData = new FormData();
     paidsData.append('paidDate', paidDate.toString());
@@ -175,17 +197,32 @@ export class ProjectsService {
     return this.httpClient.post(`${BaseURL}/projects/paids`, paidsData);
   }
 
+  updatePaid(paidData: IPaids,paidId:string) {
+    const { paidDate, paid,projectId, checkImg, notes, method } = paidData;
+    const paidsData = new FormData();
+    console.log(paidData)
+    paidsData.append('paidDate', paidDate.toString());
+    paidsData.append('projectId', projectId.toString());
+    paidsData.append('paid', paid.toString());
+    if (checkImg) paidsData.append('checkImg', checkImg);
+    paidsData.append('method', method);
+    paidsData.append('notes', notes);
+    return this.httpClient.put(`${BaseURL}/projects/paid/${paidId}`, paidsData);
+  }
+
+  deletePaid(paidId:number){
+    return this.httpClient.delete(`${BaseURL}/projects/paidById/${paidId}`);
+  }
+
+
   updateProject(data: IProject, projectId: number) {
     const postData = new FormData();
     postData.append('projectName', data.projectName);
     postData.append('clientFullName', data.clientFullName);
     postData.append('clientPhone', data.clientPhone);
     postData.append('location', data.location);
-    postData.append('quotation', data.quotation.toString());
-    postData.append('paid', data.paid.toString());
     postData.append('createdAt', data.createdAt.toString());
     postData.append('agreement', data.agreement);
-    console.log(data);
     return this.httpClient.put(`${BaseURL}/projects/${projectId}`, postData);
   }
 

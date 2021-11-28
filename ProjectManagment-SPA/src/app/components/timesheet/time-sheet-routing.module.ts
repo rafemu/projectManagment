@@ -6,8 +6,8 @@ const routes: Routes = [{
   path:'',
   component:TimeSheetComponent,
   data:{
-    title: 'timeSheet',
-    urls: [{ title: 'לוח הבקרה', url: '/dashboard' }, { title: 'Time Sheet' } ],
+    title: 'דיווח משכורות',
+    urls: [{ title: 'לוח הבקרה', url: '/dashboard' }, { title: 'דיווח משכורות' } ],
   }
 }];
 

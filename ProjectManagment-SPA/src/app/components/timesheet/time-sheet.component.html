@@ -1,27 +1,5 @@
 
 
-<!-- <div fxLayout="row wrap">
-    <div fxFlex="100">
-      <mat-card>
-        <mat-card-content>
-          <div fxLayout="row wrap" class="align-items-center">
-            <div fxFlex.gt-lg="75" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100">
-              <mat-form-field>
-                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search Employee">
-              </mat-form-field>
-            </div>
-            <div fxFlex.gt-lg="75" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100">
-              <button mat-raised-button (click)="openDialog('Add',{})" color="primary">Add Record</button>
-            </div>
-           
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
-  </div> -->
-
-
-
   <app-filter-by-month (AddRecordEvent)="openDialog('Add',{})" (filterByNameEvent)="applyFilter($event)" (getRecordsByDateEvent)="getRecordsByDate($event)"></app-filter-by-month>
 
 

@@ -16,7 +16,7 @@ export class AddPaidsComponent implements OnInit {
   public paidDate!: Date;
   public fileError: string = '';
   public imagePath: any;
-  public local_data: any;
+  public recordData: any;
   public isShow: boolean = false;
   public methods?: Array<any> = [
     { value: 'cash', viewValue: 'Cash' },
@@ -29,28 +29,27 @@ export class AddPaidsComponent implements OnInit {
     @Optional() @Inject(MAT_DIALOG_DATA) public data: any
   ) {
     this.paidDate = new Date();
-    this.local_data = { ...data };
-    console.log(this.local_data);
-    this.action = this.local_data.action;
-    if (this.local_data.agreement === undefined) {
-      console.log(this.local_data.agreement);
-      this.local_data.agreement =
+    this.recordData = { ...data };
+    this.action = this.recordData.action;
+    if (this.recordData.checksImgPath === null || this.action == 'Add') {
+      this.recordData.checksImgPath =
         '/assets/images/default-placeholder-150x150.png';
     } else {
-      this.local_data.agreement = BaseURL + '/' + this.local_data.agreement;
-      console.log(this.local_data.agreement);
+      this.recordData.checksImgPath =
+        BaseURL + '/' + this.recordData.checksImgPath.replace('images/', '');
     }
   }
 
   ngOnInit(): void {
-    this.initForm();
+   if(this.recordData.action === 'Update' || 'Add') this.initForm();
+    if (this.recordData.action === 'Update') this.filForm();
   }
 
   doAction() {
-    const { paiddate, projectId, paid, method, notes } = this.form.value;
+    const { paiddate, paid, method, notes } = this.form.value;
     const paidValues: IPaids = {
-      paidDate: paiddate.toISOString().split('T')[0], //.format('YYYY-MM-DD'),
-      projectId: projectId,
+      paidDate: moment(paiddate).format('YYYY-MM-DD HH:mm:ss'),
+      projectId: this.recordData.projectId,
       paid: paid,
       method: method,
       notes: notes,
@@ -69,6 +68,17 @@ export class AddPaidsComponent implements OnInit {
       method: new FormControl('cash', { validators: [Validators.required] }),
       notes: new FormControl(''),
     });
+  }
+
+  filForm() {
+
+    this.form.setValue({
+      paiddate: this.recordData['paidDate'],
+      paid: this.recordData['paid'],
+      method: this.recordData['method'],
+      notes: this.recordData['notes'],
+    });
+    if(this.recordData.method == 'check') this.isShow = true
   }
 
   selectMethod(event: any) {
@@ -90,7 +100,7 @@ export class AddPaidsComponent implements OnInit {
             // this.alertify.warning('image should not be more than 1.5mb');
           } else {
             this.imagePath = event.target.files[0];
-            this.local_data.agreement = reader.result;
+            this.recordData.checksImgPath = reader.result;
           }
         }
       };

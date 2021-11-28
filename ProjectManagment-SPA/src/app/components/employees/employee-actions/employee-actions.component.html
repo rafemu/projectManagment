@@ -42,7 +42,7 @@
                 </div>
 
             </div>
-            <div fxFlex="100" fxFlex.gt-md="50">
+            <!-- <div fxFlex="100" fxFlex.gt-md="50">
                 <div class="m-r-15 m-l-15">
                     <mat-form-field>
                         <input
@@ -54,7 +54,7 @@
                       />
                     </mat-form-field>
                 </div>
-            </div>
+            </div> -->
             <div fxFlex="100" fxFlex.gt-md="50">
                 <div class="m-r-15 m-l-15">
                     <mat-form-field>
@@ -83,7 +83,9 @@
             </div>
             <div fxFlex="100" fxFlex.gt-md="50">
                 <div class="m-r-15 m-l-15">
-                    <mat-form-field>
+                    <ejs-datepicker  formControlName="createdAt"  format='yyyy/MM/dd' [value]='currentDate'
+                    placeholder='start at'></ejs-datepicker>
+                    <!-- <mat-form-field>
                        <input
                         matInput
                         type="text"
@@ -91,7 +93,7 @@
                         formControlName="createdAt"
                         placeholder=" start at  (required) *"
                       />
-                    </mat-form-field>
+                    </mat-form-field> -->
                 </div>
             </div>
         </div>
