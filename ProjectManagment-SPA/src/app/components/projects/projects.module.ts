@@ -3,7 +3,6 @@ import { CommonModule, DatePipe } from '@angular/common';
 
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProjectsActionsComponent } from './projects-actions/projects-actions.component';
 import { ImageViewComponent } from './image-view/image-view.component';

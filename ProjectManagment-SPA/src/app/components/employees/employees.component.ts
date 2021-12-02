@@ -79,7 +79,7 @@ export class EmployeesComponent implements OnInit {
     obj.action = action;
     const dialogRef = this.dialog.open(EmployeeActionsComponent, {
       data: obj,
-    });
+      disableClose: true});
 
     dialogRef.afterClosed().subscribe((result) => {
       if (typeof result === 'undefined') return;
@@ -121,6 +121,7 @@ export class EmployeesComponent implements OnInit {
     obj.action = action;
     const dialogRef = this.dialog.open(DailyWageComponent, {
       data: obj,
+      disableClose:true
     });
 
     dialogRef.afterClosed().subscribe((result) => {

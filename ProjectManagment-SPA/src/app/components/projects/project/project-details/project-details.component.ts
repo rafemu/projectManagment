@@ -27,6 +27,7 @@ console.log(this.project)
     obj.action = action;
     const dialogRef = this.dialog.open(QuotationActionComponent, {
       data: this.project,
+      disableClose:true
     });
 
     dialogRef.afterClosed().subscribe((result) => {
@@ -50,6 +51,7 @@ console.log(this.project)
   openAgreement(obj: any) {
     const dialogRef = this.dialog.open(ImageViewComponent, {
       data: obj,
+      disableClose:true
     });
     dialogRef.afterClosed().subscribe((result) => {});
   }

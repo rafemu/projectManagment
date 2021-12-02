@@ -3,10 +3,6 @@
   style="background-image: url(assets/images/background/login-register.jpg)"
 >
   <div class="login-register-box">
-    <!-- <div class="bg-info text-white m-b-10 text-center p-t-10 p-b-10 alert-box">
-            <span class="m-r-10">Username : admin</span> |
-            <span class="m-l-10">Password : admin123</span>
-        </div> -->
     <mat-card class="m-t-10">
       <mat-card-content>
         <form [formGroup]="loginForm">
@@ -17,46 +13,37 @@
           <div *ngIf="msg" class="bg-danger p-10 text-white">{{ msg }}</div>
           <div fxLayout="row wrap">
             <!-- col full-->
-           
+
             <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-                <mat-form-field>
-              <input
-                matInput
-                type="text"
-                name="email"
-                formControlName="email"
-                placeholder="Enter your Email "
-              />
-              <mat-error *ngIf="loginForm.get('email').invalid"
-                >please insert your email
-              </mat-error>
-            </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  type="text"
+                  name="email"
+                  formControlName="email"
+                  placeholder="Enter your Email "
+                />
+                <mat-error *ngIf="loginForm.get('email').invalid"
+                  >please insert your email
+                </mat-error>
+              </mat-form-field>
             </div>
             <!-- col full-->
             <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
               <mat-form-field>
-
-              <input
-          matInput
-          type="password"
-          name="password"
-          formControlName="password"
-          placeholder="Enter your Email  Password"
-        />
-        <mat-error *ngIf="loginForm.get('password').invalid"
-          >please insert password
-        </mat-error>
-    </mat-form-field>
+                <input
+                  matInput
+                  type="password"
+                  name="password"
+                  formControlName="password"
+                  placeholder="Enter your Email  Password"
+                />
+                <mat-error *ngIf="loginForm.get('password').invalid"
+                  >please insert password
+                </mat-error>
+              </mat-form-field>
             </div>
-            <!-- col half-->
-            <!-- <div fxFlex.gt-sm="50" fxFlex.gt-xs="50">
-                    <mat-checkbox color="warn">Remember me</mat-checkbox>
-                </div> -->
-            <!-- col half-->
-            <!-- <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" class="text-right">
-                    <a [routerLink]="['/authentication/forgot']" class="link">Forgot pwd?</a>
-                </div> -->
-            <!-- col full-->
+
             <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
               <button
                 mat-raised-button

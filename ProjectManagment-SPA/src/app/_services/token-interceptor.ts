@@ -20,7 +20,6 @@ export class TokenInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<any>> {
     const headers = {
       'Content-Type': 'application/json',
-      // 'Content-Type': 'multipart/form-data',
       Accept: 'application/json',
     };
     const token = this.tokenService.getToken();

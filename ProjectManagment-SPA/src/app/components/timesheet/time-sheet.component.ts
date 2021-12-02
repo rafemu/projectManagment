@@ -103,6 +103,7 @@ export class TimeSheetComponent implements OnInit {
     obj.action = action;
     const dialogRef = this.dialog.open(RecordActionComponent, {
       data: obj,
+      disableClose:true
     });
 
     dialogRef.afterClosed().subscribe((result) => {

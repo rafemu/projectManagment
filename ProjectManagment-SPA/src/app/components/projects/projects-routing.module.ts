@@ -15,10 +15,7 @@ const routes: Routes = [
   {
     path: ':projectId',
     component: ProjectComponent,
-    // data: {
-    //   // title: this.project,
-    //   urls: [{ title: 'לוח הבקרה', url: '/dashboard' }, { title: 'פרויקטים' }],
-    // },
+
   },
 ];
 

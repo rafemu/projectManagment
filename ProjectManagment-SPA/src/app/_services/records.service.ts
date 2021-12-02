@@ -171,5 +171,9 @@ export class RecordsService {
     return this.httpClient.get(`${BaseURL}/timesSheet/getlast/Salary` + queryParams);
   }
 
+  getRecordsByDate(currentMonth:string){
+    return this.httpClient.post(`${BaseURL}/timesSheet/getRecordsByDate`,{date:currentMonth});
+  }
+
 
 }

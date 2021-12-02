@@ -16,17 +16,17 @@ import { EmployeesService } from 'src/app/_services/employees.service';
 import { ProjectsService } from 'src/app/_services/projects.service';
 import { IEmployee } from 'src/app/_interfaces/emplyee.interface';
 import { IProject } from 'src/app/_interfaces/project.interface';
-import { Observable, Subscription, zip } from 'rxjs';
-import { filter, map, pairwise, startWith } from 'rxjs/operators';
+import { Observable, Subscription } from 'rxjs';
+import { filter, map, startWith } from 'rxjs/operators';
 import { SelectAutocompleteComponent } from 'mat-select-autocomplete';
 import * as moment from 'moment';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import {
   MatAutocomplete,
-  MatAutocompleteSelectedEvent,
   MatAutocompleteTrigger,
 } from '@angular/material/autocomplete';
 import { MatChipInputEvent } from '@angular/material/chips';
+import { RecordsService } from 'src/app/_services/records.service';
 
 enableRipple(true);
 
@@ -38,6 +38,12 @@ enableRipple(true);
 export class RecordActionComponent implements OnInit, OnDestroy {
   @ViewChild(SelectAutocompleteComponent)
   multiSelect!: SelectAutocompleteComponent;
+
+  // toppingsControl = new FormControl([]);
+  // toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+
+  // employeeControl = new FormControl([]);
+   availableEmployees: IEmployee[]  = []
 
   action: string;
   local_data: any;
@@ -86,6 +92,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     public dialogRef: MatDialogRef<RecordActionComponent>,
     private employeeService: EmployeesService,
     private projectsService: ProjectsService,
+    private recordsService: RecordsService,
     @Optional() @Inject(MAT_DIALOG_DATA) public data: IRecord
   ) {
     this.local_data = { ...data };
@@ -109,11 +116,10 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     this.filteredEmployees = this.form.get('employeeId').valueChanges.pipe(
       startWith(null),
       map((employee: string | null) =>
-        employee ? this._filterEmployee(employee) : this.allEmployees.slice()
+        employee ? this._filterEmployee(employee) : this.availableEmployees.slice()
       )
     );
   }
-
   ngOnInit(): void {}
 
   getEmployees() {
@@ -121,6 +127,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
       .pipe(filter((v) => v !== undefined))
       .subscribe((employees) => {
         this.allEmployees = employees.employee;
+        this.availableEmployees = this.allEmployees;
       });
   }
 
@@ -133,7 +140,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   initForm() {
-    console.log(this.local_data)
+    console.log(this.local_data);
     this.form = this.formBuilder.group({
       date: new FormControl(this.recordDate, {
         validators: [Validators.required],
@@ -165,6 +172,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
       notes: this.local_data['notes'],
     });
   }
+
   getSelectedOptions(selected: any) {
     this.selectedWorkedPlaces = selected;
   }
@@ -184,17 +192,32 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     this.form.get('date').setValue(this.recordDate);
     this.form.get('startAt').setValue(this.startAt);
     this.form.get('endAt').setValue(this.endAt);
+
+    this.recordsService
+      .getRecordsByDate(newDate.toISOString().split('T')[0])
+      .subscribe((result) =>{
+       console.log(result)
+       if(Array.isArray(result))this.filteredEmployees =  this.form.get('employeeId').valueChanges.pipe(
+        startWith(null),
+        map((employee: string | null) =>
+        this.allEmployees.filter(employee=>!result.find(e=>employee.id === e.employeeId))
+        )
+      );
+       
+       
+       console.log(this.availableEmployees)
+       });
   }
 
   doAction() {
     let getSelectedProjectIds = this.selectedProjects.map((p) => p.id);
     let getSelectedEmployee;
     let id;
-    if(this.action == 'Update'){
-     getSelectedEmployee = this.selectedEmployees;
-     id = this.local_data.id ? this.local_data.id : null
-    }else{
-     getSelectedEmployee = this.selectedEmployees.map((e) => e.id);
+    if (this.action == 'Update') {
+      getSelectedEmployee = this.selectedEmployees;
+      id = this.local_data.id ? this.local_data.id : null;
+    } else {
+      getSelectedEmployee = this.selectedEmployees.map((e) => e.id);
     }
     const record: IRecord = {
       id,
@@ -208,7 +231,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     };
     console.log(record);
     if (this.form.invalids) return;
-     this.dialogRef.close({ event: this.action, data: record });
+    this.dialogRef.close({ event: this.action, data: record });
   }
 
   closeDialog() {
@@ -230,6 +253,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   remove(fruit: any): void {
+    console.log(fruit);
     const index = this.selectedProjects.indexOf(fruit);
 
     if (index >= 0) {
@@ -262,8 +286,8 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   private _filter(value: any) {
-    return this.allProjects.filter(
-      (project: any) => project.projectName.toLowerCase() === value
+    return this.allProjects.filter((project: any) =>
+      project.projectName.includes(value)
     );
   }
 
@@ -319,8 +343,8 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   private _filterEmployee(value: any) {
-    return this.allEmployees.filter(
-      (employee: any) => employee.firstName === value
+    return this.availableEmployees.filter((employee: any) =>
+      employee.firstName.includes(value)
     );
   }
 

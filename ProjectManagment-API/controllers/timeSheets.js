@@ -138,18 +138,12 @@ async function getAllRecordsByMonth(
   currentPage,
   employeeId
 ) {
-
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";
-    console.log(employeeId)
-
-    console.log(typeof employeeId)
-  const filterByEmployee =
-    !isNaN(employeeId)
-      ? `AND ${process.env.DB_SCHEMA}.employee.id  = ${employeeId}`
-      : "";
-  console.log(filterByEmployee);
+  const filterByEmployee = !isNaN(employeeId)
+    ? `AND ${process.env.DB_SCHEMA}.employee.id  = ${employeeId}`
+    : "";
   const month = moment(currentMonth).month() + 1;
   const year = moment(currentMonth).year();
   const values = [currentMonth, currentMonth, month, year];
@@ -218,38 +212,33 @@ async function addOrUpdateSalary(currentMonth) {
   const calculateSalries = await _calculateSalary(currentMonth);
   const getMothSalaries = await getSalriesByMonth(currentMonth);
 
-  console.log(calculateSalries)
   const extractNewSalaries = calculateSalries.filter(
     (el) => !getMothSalaries.find((old) => old.employeeId === el.employeeId)
   );
 
-  if (extractNewSalaries.length > 0)
-    await _addSalary(extractNewSalaries, currentMonth);
-  const updateOldSalaries = calculateSalries.map((el) =>
-    getMothSalaries.map(async (old) => {
-      if (old.employeeId === el.employeeId)
-        await _updateSalary(old.id, el.salary);
-    })
+  if (extractNewSalaries.length > 0) {
+    const addReuslt = await _addSalary(extractNewSalaries, currentMonth);
+  }
+  const updateOldSalaries = calculateSalries.map(
+    async (el) =>
+      await getMothSalaries.map(async (old) => {
+        if (old.employeeId === el.employeeId) {
+          const updateResult = await _updateSalary(old.id, el.salary);
+        }
+      })
   );
+  const extractDeletedSalaries = getMothSalaries.filter(
+    (el) => !calculateSalries.find((old) => old.employeeId === el.employeeId)
+  );
+
+  if (extractDeletedSalaries.length > 0) {
+    const resultOfDelete = extractDeletedSalaries.map(async (d) => {
+      await _deleteSalaryForEmployee(d.employeeId, currentMonth);
+    });
+  }
+
   return updateOldSalaries;
 }
-
-// const calculateSalries = await _calculateSalary(currentMonth);
-//   const getMothSalaries = await getSalriesByMonth(currentMonth);
-
-//   const extractNewSalaries = calculateSalries.filter(
-//     (el) => !getMothSalaries.find((old) => old.employeeId === el.employeeId)
-//   );
-
-//   if (extractNewSalaries.length > 0)
-//     await _addSalary(extractNewSalaries, currentMonth);
-//   const updateOldSalaries = calculateSalries.map((el) =>
-//     getMothSalaries.map(async (old) => {
-//       if (old.employeeId === el.employeeId)
-//         await _updateSalary(old.id, el.salary);
-//     })
-//   );
-//   return updateOldSalaries;
 
 async function _addSalary(newSalary, currentMonth) {
   console.log("add");
@@ -275,8 +264,15 @@ async function _updateSalary(id, salary) {
   return rows.affectedRows;
 }
 
+async function _deleteSalaryForEmployee(employeeId, salaryMonth) {
+  const deleteQuery = `DELETE FROM ${process.env.DB_SCHEMA}.salary WHERE employeeId = ? AND salaryDate = ?;`;
+  const [rows] = await (
+    await connection()
+  ).execute(deleteQuery, [employeeId, salaryMonth]);
+  return rows.affectedRows;
+}
+
 async function _calculateSalary(currentMonth) {
-  console.log('_calculateSalary(currentMonth)',currentMonth)
   const month = moment(currentMonth).month() + 1;
   const year = moment(currentMonth).year();
   const values = [month, year];
@@ -325,10 +321,10 @@ ORDER BY ${process.env.DB_SCHEMA}.salary.salaryDate DESC
   return rows;
 }
 
-async function getSalaryByMonth(currentMonth){
+async function getSalaryByMonth(currentMonth) {
   const month = moment(currentMonth).month() + 1;
   const year = moment(currentMonth).year();
-  const values = [currentMonth,currentMonth,month, year];
+  const values = [currentMonth, currentMonth, month, year];
   const query = `
   SELECT 
   ${process.env.DB_SCHEMA}.salary.salaryDate as salaryDate,
@@ -365,11 +361,11 @@ WHERE
 GROUP BY  ${process.env.DB_SCHEMA}.employee.id
 ORDER BY ${process.env.DB_SCHEMA}.employee.id asc  
 `;
-const [rows] = await (await connection()).execute(query, values);
-return rows;
+  const [rows] = await (await connection()).execute(query, values);
+  return rows;
 }
 
-async function getDuration(currentMonth){
+async function getDuration(currentMonth) {
   const month = moment(currentMonth).month() + 1;
   const year = moment(currentMonth).year();
   const values = [month, year];
@@ -384,7 +380,7 @@ group by  ${process.env.DB_SCHEMA}.employeesTimeSheet.employeeId
 order by ${process.env.DB_SCHEMA}.employeesTimeSheet.employeeId asc
   `;
   const [rows] = await (await connection()).execute(query, values);
-return rows;
+  return rows;
 }
 
 module.exports = {

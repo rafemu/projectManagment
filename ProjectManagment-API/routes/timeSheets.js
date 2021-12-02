@@ -16,6 +16,7 @@ const {
   checkProjectsIfChanged,
   updateRecord,
   deleteRecordById,
+  checkIfRecordEx
 } = require("../controllers/records");
 const getValidationFunctionTimeSheet = require("../validations/timeSheets.validation");
 const getValidationFunction = require("../validations/project.validation");
@@ -125,6 +126,7 @@ router.get(
       logger.info(
         `currentTime: ${currentTime} ###### Get  Salary by month done - currentMonth: ${req.query.currentMonth}`
       );
+      console.log('resultWithDuration',resultWithDuration)
       res.json({
         result: resultWithDuration,
         msg: `salary `,
@@ -204,6 +206,19 @@ router.put(
     }
   }
 );
+
+router.post('/getRecordsByDate',async (req,res,next)=>{
+  try{
+    console.log(req.body)
+const record = await checkIfRecordEx(req.body.date);
+res.json(record)
+  }catch(ex){
+    logger.error(
+      `${currentTime} - Error with checking if record exsite- Failed - ${ex.message} `
+    );
+    next({ message: ex.message, status: 400 });
+  }
+})
 
 router.delete(
   "/deleteRecord/:recordId",

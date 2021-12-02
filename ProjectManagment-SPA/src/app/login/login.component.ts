@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Router } from '@angular/router';
-import { MyserviceService } from './../myservice.service';
+import { Router } from '@angular/router';
 
 import {
   FormBuilder,
@@ -9,14 +8,12 @@ import {
   FormControl
 } from '@angular/forms';
 import { AuthService } from '../_services/auth.service';
-import { IUser } from '../_interfaces/auth.interface';
 import { TokenService } from '../_services/token.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
-  providers: [MyserviceService]
 })
 export class LoginComponent implements OnInit {
   msg = '';
@@ -47,16 +44,7 @@ export class LoginComponent implements OnInit {
       console.log(respons);
       this.msg = respons.message;
       this.router.navigate(['/projects'])
-      // this.handleUserResponse(respons)
     });
-  }
-
-  handleUserResponse(user: any) {
-    const { userData, accessToken } = user;
-    if (accessToken) {
-      this._tokenService.deleteToken();
-      this._tokenService.setToken(accessToken);
-      this._authService.setAuth(userData);
-    }
+  
   }
 }

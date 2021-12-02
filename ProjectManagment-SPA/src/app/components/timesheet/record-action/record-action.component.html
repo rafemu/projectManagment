@@ -1,10 +1,12 @@
 <h2 class="font-medium" mat-dialog-title>
   <strong>{{ action }} record</strong>
 </h2>
-<mat-dialog-content class="pb-3 mat-typography" style="width: 500px" *ngIf="action != 'Delete'; else elseTemplate">
+<mat-dialog-content
+  class="pb-3 mat-typography"
+  style="width: 500px"
+  *ngIf="action != 'Delete'; else elseTemplate"
+>
   <form [formGroup]="form">
-
-
     <div fxLayout="row wrap" class="align-items-center">
       <div fxFlex="100" fxFlex.gt-md="100">
         <div class="m-r-15 m-l-15">
@@ -31,79 +33,59 @@
         </div>
       </div>
       <div *ngIf="action == 'Add'" fxFlex="100" fxFlex.gt-md="100">
+
         <div class="m-r-15 m-l-15">
-            <mat-form-field class="example-chip-list">
-                <mat-chip-list #chipListEmployee aria-label="projects selection">
-                  <mat-chip
-                    *ngFor="let sEmployee of selectedEmployees"
-                    [selectable]="true"
-                    [removable]="true"
-                    (removed)="removeEmployee(sEmployee)"
-                  >
-                    {{ sEmployee.firstName }} {{ sEmployee.lastName }}
-                    <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
-                  </mat-chip>
-                  <input
-                    placeholder="Select Employee.."
-                    #employeeInput
-                    #autocompleteTriggerEmployee="matAutocompleteTrigger"
-                    formControlName="employeeId"
-                    [matAutocomplete]="autoEmployee"
-                    [matChipInputFor]="chipListEmployee"
-                    [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                    (matChipInputTokenEnd)="addEmployee($event)"
-                  />
-                </mat-chip-list>
-                <mat-autocomplete
-                  #autoEmployee="matAutocomplete"
-                  (optionSelected)="selectedEmployeeF($event)"
-                  autoActiveFirstOption
-                >
-                  <mat-option
-                    *ngFor="let employee of filteredEmployees | async"
-                    [value]="employee"
-                  >
-                    <mat-checkbox
+          <mat-form-field class="example-chip-list">
+            <mat-chip-list #chipListEmployee aria-label="projects selection">
+              <mat-chip
+                *ngFor="let sEmployee of selectedEmployees"
+                [selectable]="true"
+                [removable]="true"
+                (removed)="removeEmployee(sEmployee)"
+              >
+                {{ sEmployee.firstName }} {{ sEmployee.lastName }}
+                <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+              </mat-chip>
+              <input
+                placeholder="Select Employee.."
+                #employeeInput
+                #autocompleteTriggerEmployee="matAutocompleteTrigger"
+                formControlName="employeeId"
+                [matAutocomplete]="autoEmployee"
+                [matChipInputFor]="chipListEmployee"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                (matChipInputTokenEnd)="addEmployee($event)"
+              />
+            </mat-chip-list>
+            <mat-autocomplete
+              #autoEmployee="matAutocomplete"
+              (optionSelected)="selectedEmployeeF($event)"
+              autoActiveFirstOption
+            >
+              <mat-option
+                *ngFor="let employee of filteredEmployees | async"
+                [value]="employee"
+              >
+                <!-- <mat-checkbox
                       color="primary"
                       style="padding: 0 12px"
-                    ></mat-checkbox>
-                    {{ employee.firstName }} {{ employee.lastName }}
-
-                  </mat-option>
-                </mat-autocomplete>
-                <button
-                  mat-icon-button
-                  matSuffix
-                  style="width: 34px; height: 34px"
-                  (click)="openAutoEmployee(matACTriggerEmployee)"
-                >
-                  <mat-icon style="width: 34px">expand_more</mat-icon>
-                </button>
-              </mat-form-field>
-          <!-- <mat-select-autocomplete
-            [placeholder]="'Select Employees'"
-            [options]="optionsEmployee"
-            [multiple]="true"
-            name="optionsSelector"
-            ngDefaultControl
-            [formControl]="form.controls.employeeId"
-          ></mat-select-autocomplete> -->
+                    ></mat-checkbox> -->
+                {{ employee.firstName }} {{ employee.lastName }}
+              </mat-option>
+            </mat-autocomplete>
+            <button
+              mat-icon-button
+              matSuffix
+              style="width: 34px; height: 34px"
+              (click)="openAutoEmployee(matACTriggerEmployee)"
+            >
+              <mat-icon style="width: 34px">expand_more</mat-icon>
+            </button>
+          </mat-form-field>
         </div>
       </div>
       <div fxFlex="100" fxFlex.gt-md="1100">
         <div class="m-r-15 m-l-15">
-          <!-- <mat-select-autocomplete
-                        [placeholder]="'Select Projects'"
-                        [options]="optionsProjects"
-                        [multiple]='true'
-                        name="optionsSelector"
-                        ngDefaultControl
-                        [value]="'value'"
-                        [formControl]="form.controls.projectId"
-                        [selectedOptions]="selectedWorkedPlaces"
-                        (selectionChange)="getSelectedOptions($event)"
-                        >
-                    </mat-select-autocomplete> -->
 
           <mat-form-field class="example-chip-list">
             <mat-chip-list #chipList aria-label="projects selection">
@@ -136,11 +118,6 @@
                 *ngFor="let project of filteredProjects | async"
                 [value]="project"
               >
-                <mat-checkbox
-                  color="primary"
-                  style="padding: 0 12px"
-                  [checked]="isChecked"
-                ></mat-checkbox>
                 {{ project.projectName }}
               </mat-option>
             </mat-autocomplete>
@@ -187,12 +164,7 @@
         </div>
       </div>
     </div>
-    <button
-      mat-button
-      (click)="doAction()"
-      mat-flat-button
-      color="warn"
-    >
+    <button mat-button (click)="doAction()" [disabled]="!form.valid"  mat-flat-button color="warn">
       {{ action }}
     </button>
     <!-- [disabled]="!form.valid" -->
@@ -203,9 +175,13 @@
   <div></div>
 </mat-dialog-content>
 <ng-template #elseTemplate>
-    <p>Sure to delete <b>  {{local_data.date}}</b> ?</p>
-    <div mat-dialog-actions align="end" class="pt-3">
-        <button mat-button (click)="doAction()" mat-flat-button color="warn">{{action}}</button>
-        <button mat-button (click)="closeDialog()">Cancel</button>
-    </div>
+  <p>
+    Sure to delete <b> {{ local_data.date }}</b> ?
+  </p>
+  <div mat-dialog-actions align="end" class="pt-3">
+    <button mat-button (click)="doAction()" mat-flat-button color="warn">
+      {{ action }}
+    </button>
+    <button mat-button (click)="closeDialog()">Cancel</button>
+  </div>
 </ng-template>

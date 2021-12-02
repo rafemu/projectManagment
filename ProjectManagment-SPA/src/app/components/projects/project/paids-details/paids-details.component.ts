@@ -40,6 +40,7 @@ displayedColumns = [
     console.log(action)
     const dialogRef = this.dialog.open(AddPaidsComponent, {
       data: obj,
+      disableClose:true
     });
 
     dialogRef.afterClosed().subscribe((result) => {
@@ -58,6 +59,7 @@ displayedColumns = [
   openAgreement(obj: any) {
     const dialogRef = this.dialog.open(ImageViewComponent, {
       data: obj,
+      disableClose:true
     });
 
     dialogRef.afterClosed().subscribe((result) => {});

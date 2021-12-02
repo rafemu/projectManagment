@@ -18,7 +18,6 @@ import { Subscription } from 'rxjs';
 import { SelectAutocompleteComponent } from 'mat-select-autocomplete';
 
 @Component({
-  // changeDetection: C hangeDetectionStrategy.OnPush,
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
@@ -94,6 +93,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     obj.action = action;
     const dialogRef = this.dialog.open(ProjectsActionsComponent, {
       data: obj,
+      disableClose:true
     });
 
     dialogRef.afterClosed().subscribe((result) => {
@@ -134,6 +134,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   openAgreement(obj: any) {
     const dialogRef = this.dialog.open(ImageViewComponent, {
       data: obj,
+      disableClose:true
     });
     dialogRef.afterClosed().subscribe((result) => {});
   }

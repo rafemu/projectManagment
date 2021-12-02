@@ -2,7 +2,6 @@ import { Component, Inject, OnInit, Optional } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BaseURL } from 'src/app/_services';
-import * as moment from 'moment';
 
 @Component({
   selector: 'app-quotation-action',

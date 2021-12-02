@@ -9092,3 +9092,1205 @@
 {"message":"Server started!","level":"info","timestamp":"2021-11-28T10:24:36.641Z"}
 {"message":"Server started!","level":"info","timestamp":"2021-11-28T10:24:39.317Z"}
 {"message":"Server started!","level":"info","timestamp":"2021-11-28T10:28:48.518Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:30:43 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:30:43.280Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:30:43.285Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:30:43.290Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:30:43 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:30:43.434Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:30:45.080Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:30:46.413Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Project test sucssfully","level":"info","timestamp":"2021-11-28T10:30:51.097Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Paids 132 sucssfully","level":"info","timestamp":"2021-11-28T10:30:51.100Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get Project with time sheet done - projectId: 132","level":"info","timestamp":"2021-11-28T10:30:51.137Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:31:34.838Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:31:35.641Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:31:35.644Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:35 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:35.659Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:35 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:35.800Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-11-28T10:31:36.194Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-11-28T10:31:36.218Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:31:38.346Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:31:38.356Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:38.365Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:38.507Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 279","level":"info","timestamp":"2021-11-28T10:31:44.990Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:45.044Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 274","level":"info","timestamp":"2021-11-28T10:31:46.843Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:46.899Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 277","level":"info","timestamp":"2021-11-28T10:31:48.328Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:48.387Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 275","level":"info","timestamp":"2021-11-28T10:31:49.863Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:49.922Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 283","level":"info","timestamp":"2021-11-28T10:31:51.827Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:51.881Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 284","level":"info","timestamp":"2021-11-28T10:31:54.946Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:54.995Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 393","level":"info","timestamp":"2021-11-28T10:31:56.413Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:56.465Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 280","level":"info","timestamp":"2021-11-28T10:31:58.227Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:31:58.283Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 397","level":"info","timestamp":"2021-11-28T10:31:59.959Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:00.012Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 396","level":"info","timestamp":"2021-11-28T10:32:01.472Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:01.530Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 395","level":"info","timestamp":"2021-11-28T10:32:03.485Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:03.543Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 282","level":"info","timestamp":"2021-11-28T10:32:05.091Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:05.146Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 281","level":"info","timestamp":"2021-11-28T10:32:06.673Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:06.724Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 398","level":"info","timestamp":"2021-11-28T10:32:08.701Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:08.752Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 394","level":"info","timestamp":"2021-11-28T10:32:10.369Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:10.427Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 278","level":"info","timestamp":"2021-11-28T10:32:12.241Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:12.289Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 276","level":"info","timestamp":"2021-11-28T10:32:14.274Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:14.325Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### deleted record done  - 286","level":"info","timestamp":"2021-11-28T10:32:16.195Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:31:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:16.239Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:32:18.065Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:32:18.748Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:32:18 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:18.760Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:32:18.774Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:32:18 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:32:18.876Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:36:20.137Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:36:20.589Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:36:20.590Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:36:20 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:36:20.605Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:36:20 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:36:21.031Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:36:26.319Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:36:27.188Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:36:26 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:36:27.190Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:36:27.191Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 12:36:26 - employeeId:undefined","level":"info","timestamp":"2021-11-28T10:36:27.611Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:36:31.246Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:37:49.393Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:37:50.019Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:37:57.642Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:37:58.916Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:38:02.713Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:38:04.533Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:38:13.470Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:38:14.115Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:38:18.841Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:38:19.330Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:38:30.766Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:38:31.611Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:38:36.149Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:38:36.728Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:39:01.911Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:39:02.771Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:40:03.451Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:40:03.965Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T10:51:19.324Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T10:51:19.873Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T16:53:48.661Z"}
+{"message":"tring to login - email: Rafe.mulla@gmail.com - Sun Nov 28 2021 10:28:48 GMT+0000","level":"info","timestamp":"2021-11-28T17:40:39.923Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Logged User :rafe  Role : User","level":"info","timestamp":"2021-11-28T17:40:39.997Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:40:40.440Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T17:40:44.485Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T17:40:45.027Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:40:45.031Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:40:44 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:40:45.033Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:40:44 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:40:45.119Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-11-28T17:40:45.714Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-11-28T17:40:45.758Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T17:40:46.711Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:40:46.731Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:40:46 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:40:46.734Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:40:46 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:40:46.784Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-10-28 19:40:46 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:40:49.279Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T17:40:54.387Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-11-28T17:40:54.926Z"}
+{"message":"currentTime: Sun Nov 28 2021 10:28:48 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-11-28T17:40:54.962Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-11-28T17:43:31.118Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-11-28T17:43:49.120Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-11-28T17:43:49.160Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-11-28T17:43:49.181Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:43:54.773Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-11-28T17:43:55.231Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-11-28T17:43:55.271Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:44:36.703Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-11-28T17:44:37.290Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-11-28T17:44:37.350Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T17:47:37.756Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:47:38.444Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T17:47:39.073Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:47:39.075Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:47:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:47:39.079Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:43:31 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:47:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:47:39.141Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-11-28T17:48:32.080Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-11-28T17:48:34.694Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:48:38.747Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T17:48:39.135Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:48:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:48:39.139Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T17:48:39.152Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 19:48:38 - employeeId:undefined","level":"info","timestamp":"2021-11-28T17:48:39.404Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T18:06:27.956Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T18:06:28.349Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T18:06:28.352Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 20:06:28 - employeeId:undefined","level":"info","timestamp":"2021-11-28T18:06:28.370Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 20:06:28 - employeeId:undefined","level":"info","timestamp":"2021-11-28T18:06:28.619Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T18:11:47.075Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T18:11:47.564Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T18:11:47.565Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 20:11:47 - employeeId:undefined","level":"info","timestamp":"2021-11-28T18:11:47.574Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 20:11:47 - employeeId:undefined","level":"info","timestamp":"2021-11-28T18:11:47.758Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T18:58:44.153Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-11-28T18:58:44.607Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-28T18:58:44.615Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 20:58:44 - employeeId:undefined","level":"info","timestamp":"2021-11-28T18:58:44.653Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-28 20:58:44 - employeeId:undefined","level":"info","timestamp":"2021-11-28T18:58:44.842Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-11-29T07:01:50.491Z"}
+{"message":"tring to login - email: Rafe.mulla@gmail.com - Sun Nov 28 2021 17:48:34 GMT+0000","level":"info","timestamp":"2021-12-01T07:31:26.360Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Logged User :rafe  Role : User","level":"info","timestamp":"2021-12-01T07:31:26.468Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:31:26.968Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T07:31:32.235Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T07:31:32.914Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 09:31:32 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:31:32.924Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:31:32.930Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 09:31:32 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:31:33.041Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:31:33.623Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:31:33.648Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 09:32:40 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:32:40.954Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T07:32:40.965Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:32:40.978Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 09:32:40 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:32:41.069Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Add new record done for employees - 13,14,18 - currentMonth: 2021-11-01","level":"info","timestamp":"2021-12-01T07:33:09.701Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 09:32:40 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:33:09.757Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 09:32:40 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:33:11.466Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:33:13.776Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:33:13.809Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:33:16.861Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:33:16.906Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:33:16.929Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:33:20.433Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:33:20.728Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:33:20.742Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:33:25.539Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:33:25.748Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:33:25.773Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T07:33:38.535Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:33:43.269Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:33:43.601Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:33:43.624Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:33:57.102Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:33:57.495Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:33:57.534Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:34:40.759Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:34:41.331Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:34:41.360Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:37:10.072Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:37:10.134Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:37:10.171Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 09:38:01 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:38:01.568Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T07:38:01.577Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T07:38:01.582Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 09:38:01 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:38:01.692Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 09:38:01 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:38:06.018Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### deleted record done  - 401","level":"info","timestamp":"2021-12-01T07:38:11.922Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 09:38:01 - employeeId:undefined","level":"info","timestamp":"2021-12-01T07:38:11.968Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:38:14.596Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:38:14.623Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:38:18.442Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:38:18.482Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:38:18.529Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:38:20.227Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:38:20.263Z"}
+{"message":"currentTime: Sun Nov 28 2021 17:48:34 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:38:20.298Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:42:43.044Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:42:54.399Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:43:02.845Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:43:05.645Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:43:05 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:43:07.538Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:43:05 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:43:07.573Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:43:05 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:43:07.600Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:43:33.596Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:43:42.670Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:43:42 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:44:32.798Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:43:42 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:44:32.837Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:43:42 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:44:32.862Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:46:49.589Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:47:02.840Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:47:02 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:47:05.001Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:47:02 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:47:05.034Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:47:02 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:47:05.087Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:54:39.334Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:55:12.102Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:55:39.919Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:56:41.319Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:57:09.180Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:57:19.557Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:57:19 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:57:48.773Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:57:19 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:57:48.815Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:57:19 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:57:48.849Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:58:00.444Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:58:17.578Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:58:38.316Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:58:38 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T07:58:38.873Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:58:38 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T07:58:38.912Z"}
+{"message":"currentTime: Wed Dec 01 2021 07:58:38 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T07:58:38.948Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:58:59.952Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:59:11.382Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:59:16.156Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:59:43.620Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:59:49.040Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T07:59:57.463Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:00:23.660Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:01:01.673Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:01:07.345Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:01:27.418Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:01:44.266Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:01:44 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:01:47.592Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:01:44 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:01:47.665Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:01:44 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:01:47.721Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:01:59.015Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:02:05.243Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:02:05 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:02:06.053Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:02:05 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:02:06.089Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:02:05 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:02:06.119Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:02:22.188Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:02:22 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:02:28.547Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:02:22 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:02:28.583Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:02:22 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:02:28.615Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:03:06.008Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:08:08.312Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:08:11.535Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:08:11 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:08:56.498Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:08:11 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:08:56.533Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:08:11 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:08:56.552Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:09:09.770Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:09:09 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:09:11.329Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:09:09 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:09:11.370Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:09:09 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:09:11.406Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:10:10.386Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:10:24.031Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:10:34.973Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:10:50.665Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:10:50 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:10:51.323Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:10:50 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:10:51.374Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:10:50 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:10:51.405Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:11:23.746Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:11:23 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:11:54.681Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:11:23 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:11:54.722Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:11:23 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:11:54.760Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:11:23 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:12:19.645Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:12:20.300Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:12:20 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:12:36.222Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:12:20 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:12:36.263Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:12:20 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:12:36.299Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:13:18.967Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:16:15.046Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:16:43.793Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:18:19.194Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:18:33.012Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:18:44.219Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:18:57.191Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:19:01.231Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:19:14.629Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:19:24.038Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:20:33.489Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:20:33.533Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:20:33.564Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T08:20:58.258Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:20:58.596Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:20:58.637Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T08:21:16.770Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 10:21:25 - employeeId:undefined","level":"info","timestamp":"2021-12-01T08:21:25.948Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T08:21:25.957Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T08:21:25.959Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 10:21:25 - employeeId:undefined","level":"info","timestamp":"2021-12-01T08:21:26.024Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:19:24 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 10:21:25 - employeeId:undefined","level":"info","timestamp":"2021-12-01T08:21:29.034Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:22:14.770Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:22:14 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:22:20.876Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:22:14 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:22:20.918Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:22:14 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:22:24.046Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:22:14 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:22:24.096Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:22:14 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:22:24.133Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:23:22.904Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:23:22 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:23:23.466Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:23:22 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:23:23.522Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:23:22 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:23:23.565Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:23:55.425Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:24:07.031Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:24:09.879Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:24:09.927Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:24:09.958Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:24:13.040Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:24:13.081Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:24:13.109Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:24:15.438Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:24:15.485Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:24:15.519Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:24:17.133Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:24:17.169Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:24:17.202Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:24:17.913Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:24:17.951Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:24:17.982Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:24:18.490Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:24:18.532Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:24:18.568Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T08:24:31.671Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:24:32.146Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:24:07 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:24:32.161Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:27:51.401Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:27:55.916Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:28:02.962Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:28:03.018Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:28:03.055Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T08:34:51.722Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:34:52.309Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:34:52.326Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:46:23.368Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:46:23.424Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:46:23.473Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T08:46:35.796Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:46:38.949Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:46:38.999Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:46:39.035Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T08:46:40.931Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T08:46:42.203Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:46:44.610Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:46:44.651Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:46:44.682Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T08:46:45.643Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T08:47:14.017Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 10:47:13 - employeeId:undefined","level":"info","timestamp":"2021-12-01T08:47:14.034Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T08:47:14.037Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 10:47:13 - employeeId:undefined","level":"info","timestamp":"2021-12-01T08:47:14.136Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:27:55 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 10:47:13 - employeeId:undefined","level":"info","timestamp":"2021-12-01T08:47:17.065Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:49:31.602Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:49:36.747Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:49:36.788Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:49:39.470Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:49:39.504Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:49:39.563Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:50:25.133Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T08:50:27.534Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:51:11.284Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:51:11.322Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:51:11.349Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:51:11.922Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:51:11.958Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:51:11.986Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:51:12.310Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:51:12.353Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:51:12.387Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:51:12.536Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:51:12.576Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:51:12.634Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:51:12.768Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:51:12.820Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:49:31 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:51:12.852Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:54:50.785Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:54:50 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:55:55.544Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:54:50 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:55:55.588Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:54:50 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:55:55.614Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:56:13.846Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:56:53.649Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:56:53 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:56:57.804Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:56:53 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:56:57.864Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:56:53 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:56:57.908Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:57:28.252Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:57:30.498Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T08:57:33.316Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:57:33 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T08:57:34.356Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:57:33 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T08:57:34.405Z"}
+{"message":"currentTime: Wed Dec 01 2021 08:57:33 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T08:57:34.440Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:10:19.381Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:10:38.900Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:10:38 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T09:11:39.883Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:10:38 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:11:40.369Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:10:38 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:11:40.383Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:30:25.927Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:30:30.592Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:30:35.096Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:30:40.981Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:30:46.284Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:30:51.966Z"}
+{"message":"Wed Dec 01 2021 09:30:51 GMT+0000 -  Calculate Salary for month - 2021-11-01 00:00:00  - Failed - v is not defined ","level":"error","timestamp":"2021-12-01T09:30:55.445Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:31:08.415Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T09:31:14.045Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:31:14.101Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:31:14.180Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T09:32:08.612Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:32:08.668Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:32:08.699Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T09:32:09.642Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:32:09.687Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:32:09.733Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T09:32:11.406Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T09:32:11.412Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 11:32:11 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:11.427Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 11:32:11 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:11.539Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 11:32:11 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:15.399Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Add new record done for employees - 20 - currentMonth: 2021-12-16","level":"info","timestamp":"2021-12-01T09:32:28.667Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 11:32:11 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:28.757Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T09:32:37.961Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T09:32:38.423Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T09:32:38.430Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 11:32:38 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:38.477Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 11:32:38 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:38.747Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### update record done for employees - 20 - currentMonth: 2021-11-17","level":"info","timestamp":"2021-12-01T09:32:47.771Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 11:32:38 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:47.876Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 11:32:38 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:49.171Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:32:51.543Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:32:51.614Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T09:32:56.424Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:32:56.487Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:32:56.530Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T09:32:58.689Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 11:32:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:58.697Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T09:32:58.699Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 11:32:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:32:58.836Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 11:32:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:33:02.056Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### deleted record done  - 400","level":"info","timestamp":"2021-12-01T09:33:09.533Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 11:32:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T09:33:09.576Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:33:10.580Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:33:10.625Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T09:33:13.318Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:33:13.365Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:31:08 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:33:13.414Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:34:01.083Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T09:34:05.035Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:34:05 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T09:36:29.331Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:34:05 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:36:30.068Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:34:05 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:36:30.102Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:34:05 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T09:38:46.110Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:34:05 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T09:38:46.672Z"}
+{"message":"currentTime: Wed Dec 01 2021 09:34:05 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T09:38:46.759Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:09:49.524Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:10:28.172Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:10:28 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T10:10:43.948Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:10:28 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:10:43.990Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:10:28 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:10:44.033Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:10:56.702Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:11:01.743Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:11:13.215Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:11:46.885Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:12:56.107Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T10:12:58.988Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:12:59.108Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:12:59.159Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T10:13:01.207Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:13:01.242Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:13:01.278Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T10:13:02.128Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:13:02.161Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:13:02.198Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T10:13:07.951Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:13:07 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:13:08.012Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T10:13:08.034Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:13:07 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:13:08.105Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 12:13:07 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:13:10.961Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### deleted record done  - 399","level":"info","timestamp":"2021-12-01T10:13:14.189Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 12:13:07 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:13:14.238Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:13:15.080Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:13:15.135Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T10:13:18.136Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:13:18.190Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:13:18.220Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Calculate Salary for month - 2021-11-01 00:00:00 done  ","level":"info","timestamp":"2021-12-01T10:13:19.371Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:13:19.411Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:13:19.450Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:12:56 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-11-01 00:00:00","level":"info","timestamp":"2021-12-01T10:13:22.624Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:13:42.453Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:13:49.729Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:13:53.799Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T10:14:28.266Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-01T10:14:28.761Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-01T10:14:28.782Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T10:50:10.327Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T10:50:10.333Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:50:10 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:50:10.342Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:50:10 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:50:10.450Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 12:50:10 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:50:13.475Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### deleted record done  - 402","level":"info","timestamp":"2021-12-01T10:50:45.472Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-11-01 12:50:10 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:50:45.516Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T10:50:48.104Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T10:50:48.642Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T10:50:48.653Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:50:48 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:50:48.662Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:50:48 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:50:48.726Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Add new record done for employees - 13 - currentMonth: 2021-12-01","level":"info","timestamp":"2021-12-01T10:50:55.670Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:13:53 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:50:48 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:50:55.727Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:55:35.879Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:55:35 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T10:56:11.391Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:55:35 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T10:56:11.959Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:55:35 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T10:56:11.961Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:55:35 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:56:11 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:56:11.968Z"}
+{"message":"currentTime: Wed Dec 01 2021 10:55:35 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 12:56:11 - employeeId:undefined","level":"info","timestamp":"2021-12-01T10:56:12.235Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T10:59:46.624Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:00:24.872Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:00:45.070Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:00:50.757Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:00:55.222Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:01:20.775Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:01:24.019Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:04:04.931Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:04:13.836Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:04:44.960Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:04:51.603Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:05:10.283Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:06:45.678Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:06:51.979Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:06:54.785Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:07:26.948Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:07:36.860Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:08:21.844Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:08:25.812Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:08:39.520Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:08:42.532Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:10:33.926Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:10:39.286Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:10:46.073Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:10:57.249Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-01T11:11:27.777Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:12:40.647Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:12:40 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:12:41.087Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:12:41.089Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:12:41.097Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:12:40 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:12:41.216Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:12:40 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:12:41.407Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:24.318Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:13:24.817Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:24.849Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:24 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:24.873Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:24 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:25.264Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:30.241Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:13:30.832Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:30.836Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:30 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:30.838Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:30 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:31.146Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:43.274Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:13:43.827Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:43.831Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:43 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:43.853Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:43 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:44.037Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:49.791Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:13:50.321Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:13:50.323Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:50 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:50.329Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:13:50 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:13:50.559Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:14:18.400Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:14:19.105Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:14:19.107Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:14:18 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:14:19.121Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:14:18 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:14:19.440Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:14:35.182Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:14:35.875Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:14:35.876Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:14:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:14:35.892Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:14:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:14:36.407Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:14:54.831Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:14:55.614Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:14:55 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:14:55.624Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:14:55.625Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:14:55 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:14:55.847Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:15:59.745Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:16:00.379Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:16:00.406Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:16:00 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:16:00.442Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:16:00 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:16:00.794Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:16:10.525Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:16:11.138Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:16:11.139Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:16:10 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:16:11.151Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:16:10 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:16:11.408Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:17:38.798Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:17:39.519Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:17:39.538Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:17:39 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:17:39.564Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:17:39 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:17:39.851Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:17:50.291Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:17:50.835Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:17:50.837Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:17:50 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:17:50.841Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:17:50 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:17:51.174Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:18:35.539Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:18:36.066Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:18:36.073Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:18:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:18:36.078Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:18:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:18:36.413Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:19:31.678Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:19:32.150Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:19:32 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:19:32.157Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:19:32.159Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:19:32 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:19:32.382Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:19:36.532Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:19:37.138Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:19:37.149Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:19:37 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:19:37.176Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:19:37 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:19:37.537Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:20:05.752Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:20:06.362Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:20:06.373Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:20:06 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:20:06.386Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:20:06 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:20:06.676Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:20:57.910Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:20:58.402Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:20:58.406Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:20:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:20:58.442Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:20:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:20:58.702Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:35:53.761Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:35:54.285Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:35:54.286Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:35:53 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:35:54.288Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:35:53 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:35:54.585Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:35:53 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:35:54.657Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:05.221Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:05.914Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:36:05.915Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:05 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:05.925Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:05 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:06.175Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:25.042Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:36:25.726Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:25.749Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:25 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:25.769Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:25 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:26.161Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:35.353Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:36:35.938Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:35.946Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:35.947Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:36.261Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:50.468Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:36:50.962Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:36:50.963Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:50 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:50.987Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:36:50 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:36:51.196Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:38:03.333Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T11:38:03.976Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T11:38:03.981Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:38:03 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:38:03.994Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 13:38:03 - employeeId:undefined","level":"info","timestamp":"2021-12-01T11:38:04.207Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:05:20.859Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:05:21.567Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:05:21.580Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:05:21 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:05:21.606Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:05:21 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:05:21.971Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:18:43.009Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:18:43.828Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:18:43.835Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:18:43 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:18:43.837Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:18:43 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:18:44.261Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:18:51.369Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:18:52.088Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:18:51 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:18:52.089Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:18:52.090Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:18:51 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:18:52.370Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:19:07.043Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:19:07.954Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:19:07.958Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:19:07 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:19:08.010Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:19:07 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:19:08.440Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:19:40.901Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:19:41.305Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:19:41.306Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:19:41 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:19:41.315Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:19:41 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:19:41.471Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:19:41 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:19:41.580Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:19:58.524Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:19:59.104Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:19:59.118Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:19:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:19:59.124Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:19:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:19:59.357Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:20:30.495Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:20:31.077Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:20:31.083Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:20:30 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:20:31.098Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:20:30 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:20:31.569Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:20:34.501Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:20:35.190Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:20:35.192Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:20:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:20:35.203Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:20:35 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:20:35.940Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:20:59.878Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:21:00.307Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:21:00.316Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:21:00 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:21:00.330Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:21:00 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:21:00.507Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:21:03.379Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:21:03.853Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:21:03.868Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:21:03 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:21:03.880Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:21:03 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:21:04.125Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:32:31.574Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:32:32.524Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:32:32.527Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:32:32 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:32:32.536Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:32:32 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:32:32.869Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:49:01.008Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T12:49:01.854Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:49:01 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:49:01.866Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T12:49:01.867Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-01 14:49:01 - employeeId:undefined","level":"info","timestamp":"2021-12-01T12:49:02.141Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:03:27.671Z"}
+{"message":"tring to login - email: Rafe.mulla@gmail.com - Wed Dec 01 2021 11:11:27 GMT+0000","level":"info","timestamp":"2021-12-01T22:20:15.099Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Logged User :rafe  Role : User","level":"info","timestamp":"2021-12-01T22:20:15.197Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:20:15.697Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:20:17.993Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:20:18.001Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:20:17 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:20:18.031Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:20:17 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:20:18.114Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:20:38.547Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:20:39.661Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:20:39.663Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:20:39 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:20:39.700Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:20:39 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:20:39.947Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:20:58.215Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:20:58.824Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:20:58.825Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:20:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:20:58.833Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:20:58 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:20:58.959Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:25:45.386Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:25:46.065Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:25:46.090Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:25:45 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:25:46.112Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:25:45 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:25:46.359Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:40:47.212Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:40:48.218Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:40:48 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:40:48.283Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:40:48.292Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:40:48 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:40:48.437Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:47:50.421Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:47:51.287Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:47:51.288Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:47:51 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:47:51.310Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:47:51 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:47:51.687Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:51:53.378Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:51:54.108Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:51:53 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:51:54.139Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:51:54.152Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:51:53 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:51:54.392Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:56:44.908Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:56:46.079Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:56:46.092Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:56:45 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:56:46.105Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:56:45 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:56:46.418Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:59:58.989Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T22:59:59.852Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T22:59:59.857Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:59:59 - employeeId:undefined","level":"info","timestamp":"2021-12-01T22:59:59.881Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 00:59:59 - employeeId:undefined","level":"info","timestamp":"2021-12-01T23:00:00.643Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T23:01:39.173Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-01T23:01:39.825Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-01T23:01:39.829Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 01:01:39 - employeeId:undefined","level":"info","timestamp":"2021-12-01T23:01:39.841Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 01:01:39 - employeeId:undefined","level":"info","timestamp":"2021-12-01T23:01:40.016Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T06:57:53.824Z"}
+{"message":"tring to login - email: Rafe.mulla@gmail.com - Wed Dec 01 2021 11:11:27 GMT+0000","level":"info","timestamp":"2021-12-02T07:06:23.151Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Logged User :rafe  Role : User","level":"info","timestamp":"2021-12-02T07:06:23.246Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:06:23.741Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T07:06:26.558Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T07:06:26.618Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:06:29.905Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:06:29 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:06:29.914Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:06:29.919Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:06:29 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:06:30.010Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:08:12.739Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:08:13.685Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:08:13.700Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:08:13 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:08:13.729Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:08:13 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:08:13.822Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:08:34.395Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:08:35.181Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:08:35.199Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:08:34 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:08:35.219Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:08:34 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:08:35.521Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:12:10.364Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:12:11.058Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:12:11.065Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:12:10 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:12:11.110Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:12:10 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:12:11.317Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:42:49.370Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:42:50.348Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 - get Projects Faild- Too many connections ","level":"error","timestamp":"2021-12-02T07:42:50.357Z"}
+{"message":"Wed Dec 01 2021 11:11:27 GMT+0000 -  Get records for - pageSize:30 - currentMonth: 2021-12-02 09:42:49 - employeeId:undefined Failed - Too many connections ","level":"error","timestamp":"2021-12-02T07:42:50.384Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 - get Projects Faild- Too many connections ","level":"error","timestamp":"2021-12-02T07:42:53.729Z"}
+{"message":"Wed Dec 01 2021 11:11:27 GMT+0000 - fetch employee  Failed - Too many connections ","level":"error","timestamp":"2021-12-02T07:42:54.422Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 - get Projects Faild- Too many connections ","level":"error","timestamp":"2021-12-02T07:42:54.436Z"}
+{"message":"Wed Dec 01 2021 11:11:27 GMT+0000 -  Get records for - pageSize:30 - currentMonth: 2021-12-02 09:42:54 - employeeId:undefined Failed - Too many connections ","level":"error","timestamp":"2021-12-02T07:42:54.460Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T07:43:04.206Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:44:04.014Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:44:04.835Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:44:04.837Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:44:04 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:44:04.853Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:44:04 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:44:05.014Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:44:41.768Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:44:42.468Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:44:42.473Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:44:42 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:44:42.477Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:44:42 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:44:42.750Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:45:13.831Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:45:14 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:45:14.683Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:45:14.685Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:45:14.688Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:45:14 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:45:14.964Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:45:17.516Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:45:18.193Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:45:18.213Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:45:17 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:45:18.239Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:45:17 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:45:18.499Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:49:30.412Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:49:32.415Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:49:32.417Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:49:32 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:49:32.434Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:49:32 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:49:32.790Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:49:42.911Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:49:43.646Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:49:44.038Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:49:43 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:49:44.052Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:49:43 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:49:44.274Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:51:44.263Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:51:44.999Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:51:45.001Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:51:44 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:51:45.016Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:51:44 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:51:45.214Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:54:12.867Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:54:13.545Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:54:13.551Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:54:13 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:54:13.557Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:54:13 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:54:13.805Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:54:18.295Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:54:18.884Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:54:18.893Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:54:18 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:54:18.909Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:54:18 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:54:19.105Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:55:50.977Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:55:51.682Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:55:51.684Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:55:51 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:55:51.703Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:55:51 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:55:52.022Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:56:43.299Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T07:56:43.861Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T07:56:43.862Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:56:43 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:56:43.877Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 09:56:43 - employeeId:undefined","level":"info","timestamp":"2021-12-02T07:56:44.088Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:08:25.298Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:08:26.251Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:08:26.257Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:08:26 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:08:26.305Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:08:26 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:08:26.716Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:08:50.105Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:08:51.310Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:08:51.319Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:08:51 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:08:51.331Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:08:51 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:08:51.595Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:09:05.547Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:09:06.219Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:09:06.232Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:09:06 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:09:06.234Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:09:06 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:09:06.417Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:10:34.264Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:10:35.358Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:10:35.367Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:10:35 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:10:35.368Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:10:35 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:10:35.516Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:31:56.226Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:31:57.114Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:31:57.129Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:31:56 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:31:57.151Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:31:56 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:31:57.414Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:32:50.846Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:32:51.591Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:32:51 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:32:51.602Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:32:51.609Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:32:51 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:32:52.070Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:34:24.474Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:34:25.682Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:34:25.694Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:34:25 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:34:25.723Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:34:25 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:34:26.416Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:34:38.694Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:34:39.518Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:34:39.531Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:34:39 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:34:39.532Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:34:39 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:34:39.800Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:35:26.687Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:35:27.541Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:35:27.542Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:35:27 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:35:27.553Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:35:27 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:35:27.790Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:35:35.714Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:35:36.393Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:35:36.394Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:35:36 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:35:36.408Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:35:36 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:35:36.574Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:39:09.896Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:39:10.600Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:39:10.601Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:39:10 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:39:10.633Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:39:10 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:39:10.859Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:42:04.025Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T08:42:04.616Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T08:42:04.674Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:42:04 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:42:04.687Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 10:42:04 - employeeId:undefined","level":"info","timestamp":"2021-12-02T08:42:04.854Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:23:23.647Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:23:24.219Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:23:24.221Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:23:24 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:23:24.228Z"}
+{"message":"currentTime: Thu Dec 02 2021 07:43:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:23:24 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:23:24.441Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T09:24:05.032Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T09:24:08.842Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T09:24:13.612Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T09:24:20.973Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:26:04.330Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:26:05.181Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:26:05.189Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:26:05 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:26:05.212Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:26:05 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:26:05.489Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:26:28.944Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:26:30.322Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:26:30.325Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:26:30 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:26:30.329Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:26:30 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:26:30.711Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:26:43.481Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:26:45.600Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:26:45.634Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:26:45 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:26:45.667Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:26:45 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:26:46.234Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:27:54.297Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:28:05.610Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:28:05.621Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:28:05 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:28:05.623Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:28:05 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:28:05.803Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:28:12.541Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:28:13.328Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:28:13.330Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:28:13 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:28:13.341Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:28:13 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:28:13.565Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:29:05.339Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:29:06.315Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:29:06.327Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:29:06 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:29:06.357Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:29:06 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:29:06.712Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:31:33.050Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:31:33.737Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:32:06.821Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:32:07.461Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:32:07 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:32:07.469Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:32:07.470Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:32:07 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:32:07.978Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:32:49.553Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:32:50.089Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:32:50.339Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:32:51.044Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:32:51.051Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:32:50 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:32:51.095Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:24:20 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:32:50 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:32:51.357Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T09:33:37.799Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T09:35:01.670Z"}
+{"message":"Server started!","level":"info","timestamp":"2021-12-02T09:35:04.574Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:36:54.837Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:36:55.052Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:36:55.778Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:36:56.419Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:36:56.423Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:36:56 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:36:56.472Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:36:56 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:36:56.701Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:41:14.075Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:41:14.405Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:41:14.618Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:41:15.280Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:41:15.281Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:41:15 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:41:15.301Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:41:15 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:41:15.522Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:42:36.827Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:42:37.900Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:42:37.903Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:42:37 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:42:37.914Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:42:37 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:42:38.207Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:42:45.067Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:42:45.854Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:42:45 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:42:45.863Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:42:45.867Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:42:45 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:42:46.122Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:43:25.610Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:43:26.193Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:43:26 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:43:26.199Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:43:26.200Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:43:26 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:43:26.450Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:44:43.688Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T09:44:44.474Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T09:44:44.482Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:44:44 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:44:44.489Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 11:44:44 - employeeId:undefined","level":"info","timestamp":"2021-12-02T09:44:44.680Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:06:08.395Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:06:09.207Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:06:09.209Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:06:08 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:06:09.241Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:06:08 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:06:09.621Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:06:40.722Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:06:41.522Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:06:41.528Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:06:41 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:06:41.532Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:06:41 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:06:41.730Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:07:19.453Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:07:20.364Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:07:20.366Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:07:20 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:07:20.369Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:07:20 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:07:20.628Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:07:26.376Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:07:27.097Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:07:27.103Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:07:26 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:07:27.108Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:07:26 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:07:27.256Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:08:10.011Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:08:10.622Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:08:10 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:08:10.629Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:08:10.642Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:08:10 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:08:10.841Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:10:28.165Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:10:29.097Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:10:29.100Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:10:28 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:10:29.146Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:10:28 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:10:29.531Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:10:37.983Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:10:38.612Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:10:38.615Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:10:38 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:10:38.636Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:10:38 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:10:38.809Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:11:29.076Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:11:29.734Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:11:29.740Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:11:29 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:11:29.741Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:11:29 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:11:29.952Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:12:20.937Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:12:21.659Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:12:21.668Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:12:21 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:12:21.675Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:12:21 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:12:21.808Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:27:52.265Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:27:53.061Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:27:53.071Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:27:52 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:27:53.085Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:27:52 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:27:53.259Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T10:27:55.209Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T10:27:55.234Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:27:58.109Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:27:58.118Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:27:58 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:27:58.125Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:27:58 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:27:58.246Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:27:59.218Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:28:00.776Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:28:03.189Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T10:28:04.759Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T10:28:04.799Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:28:06.103Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:28:06 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:28:06.112Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:28:06.113Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:28:06 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:28:06.240Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:41:02.340Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T10:41:02.996Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T10:41:02.997Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:41:02 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:41:03.010Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 12:41:02 - employeeId:undefined","level":"info","timestamp":"2021-12-02T10:41:03.233Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:03:58.432Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T11:03:58.980Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:03:58.984Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:03:58 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:03:58.992Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:03:58 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:03:59.177Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:04:02.829Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T11:04:03.429Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:04:03 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:04:03.447Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:04:03.473Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:04:03 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:04:03.608Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:05:09.029Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T11:05:09.913Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:05:09 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:05:09.915Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:05:09.919Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:05:09 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:05:10.053Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:55:35.763Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T11:55:36.595Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T11:55:36.605Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:55:36 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:55:36.623Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 13:55:36 - employeeId:undefined","level":"info","timestamp":"2021-12-02T11:55:36.877Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T12:27:02.501Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 14:27:03 - employeeId:undefined","level":"info","timestamp":"2021-12-02T12:27:03.431Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T12:27:03.432Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T12:27:03.434Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 14:27:03 - employeeId:undefined","level":"info","timestamp":"2021-12-02T12:27:03.567Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T12:27:24.414Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T12:27:25.224Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T12:27:25.250Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 14:27:25 - employeeId:undefined","level":"info","timestamp":"2021-12-02T12:27:25.282Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 14:27:25 - employeeId:undefined","level":"info","timestamp":"2021-12-02T12:27:25.565Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T12:38:42.520Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T12:38:43.286Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T12:38:43.287Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 14:38:43 - employeeId:undefined","level":"info","timestamp":"2021-12-02T12:38:43.294Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 14:38:43 - employeeId:undefined","level":"info","timestamp":"2021-12-02T12:38:43.454Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T21:46:15.234Z"}
+{"message":"tring to login - email: Rafe.mulla@gmail.com - Thu Dec 02 2021 09:35:04 GMT+0000","level":"info","timestamp":"2021-12-02T21:56:01.447Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Logged User :rafe  Role : User","level":"info","timestamp":"2021-12-02T21:56:01.589Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T21:56:02.039Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T21:56:08.214Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### fetch employee succses","level":"info","timestamp":"2021-12-02T21:56:09.300Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T21:56:09.318Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 23:56:09 - employeeId:undefined","level":"info","timestamp":"2021-12-02T21:56:09.323Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get records done - pageSize:30 - currentMonth: 2021-12-02 23:56:09 - employeeId:undefined","level":"info","timestamp":"2021-12-02T21:56:09.413Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T21:56:10.437Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T21:56:10.513Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T21:59:01.342Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T21:59:01.832Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T21:59:01.879Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:01:59.351Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T22:02:00.062Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T22:02:00.130Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:02:04.745Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T22:02:05.430Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T22:02:05.465Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:02:39.297Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T22:02:40.351Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T22:02:40.391Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:03:29.854Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T22:03:30.665Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T22:03:30.715Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:03:41.104Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get All Salary done - currentMonth: undefined","level":"info","timestamp":"2021-12-02T22:03:41.772Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Get  Salary by month done - currentMonth: 2021-12-01 00:00:00","level":"info","timestamp":"2021-12-02T22:03:41.850Z"}
+{"message":"tring to login - email: Rafe.mulla@gmail.com - Thu Dec 02 2021 09:35:04 GMT+0000","level":"info","timestamp":"2021-12-02T22:06:13.916Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### Logged User :rafe  Role : User","level":"info","timestamp":"2021-12-02T22:06:13.962Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:06:14.291Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:13:16.468Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:13:16.797Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:17:51.885Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:17:52.224Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:17:55.335Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:17:55.963Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:17:58.562Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:17:58.893Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:18:04.053Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:18:04.275Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:18:25.078Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:18:25.519Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:19:26.174Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:19:26.528Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:19:37.097Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:19:37.383Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:23:29.600Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:23:29.956Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:24:10.954Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:24:11.268Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:24:49.567Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:24:49.855Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:24:58.810Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:24:59.241Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:25:04.334Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:25:04.864Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:27:25.882Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:27:26.260Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:27:51.228Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:27:51.681Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:28:13.712Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:28:14.334Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:28:25.498Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:28:25.869Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:28:34.400Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:28:34.887Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:29:04.825Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:29:05.183Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:29:35.806Z"}
+{"message":"currentTime: Thu Dec 02 2021 09:35:04 GMT+0000 ###### get Projects sucssfully","level":"info","timestamp":"2021-12-02T22:29:36.154Z"}

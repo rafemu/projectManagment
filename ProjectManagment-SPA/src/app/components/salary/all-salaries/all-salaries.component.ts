@@ -23,12 +23,12 @@ export class AllSalariesComponent implements OnInit {
 
 
   constructor() {
-console.log(this.salaries)
    }
 
   ngOnInit(): void {
   }
   ngOnChanges(): void {
+    console.log(this.salaries)
     this.dataSource = new MatTableDataSource<any>(this.salaries);
   }
 

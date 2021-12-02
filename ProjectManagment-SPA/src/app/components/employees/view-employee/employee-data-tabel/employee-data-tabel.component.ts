@@ -18,7 +18,6 @@ export class EmployeeDataTabelComponent implements OnInit {
   private employeeId?: number;
 
   displayedColumns = [
-    // 'id',
     'date',
     'day',
     'firstName',

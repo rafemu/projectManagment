@@ -1568,3 +1568,10 @@
 {"message":"Sun Nov 28 2021 09:57:41 GMT+0000 -  update record for employees - 17 - currentMonth: 2021-11-28 - Failed - update worked place faild ","level":"error","timestamp":"2021-11-28T09:57:46.346Z"}
 {"message":"Sun Nov 28 2021 09:58:05 GMT+0000 -  update record for employees - 17 - currentMonth: 2021-11-28 - Failed - update worked place faild ","level":"error","timestamp":"2021-11-28T09:58:08.304Z"}
 {"message":"Sun Nov 28 2021 10:23:06 GMT+0000 -  Calculate Salary for month - 2021-11-01 00:00:00  - Failed - recordId is not defined ","level":"error","timestamp":"2021-11-28T10:23:07.638Z"}
+{"message":"Wed Dec 01 2021 09:30:51 GMT+0000 -  Calculate Salary for month - 2021-11-01 00:00:00  - Failed - v is not defined ","level":"error","timestamp":"2021-12-01T09:30:55.445Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 - get Projects Faild- Too many connections ","level":"error","timestamp":"2021-12-02T07:42:50.357Z"}
+{"message":"Wed Dec 01 2021 11:11:27 GMT+0000 -  Get records for - pageSize:30 - currentMonth: 2021-12-02 09:42:49 - employeeId:undefined Failed - Too many connections ","level":"error","timestamp":"2021-12-02T07:42:50.384Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 - get Projects Faild- Too many connections ","level":"error","timestamp":"2021-12-02T07:42:53.729Z"}
+{"message":"Wed Dec 01 2021 11:11:27 GMT+0000 - fetch employee  Failed - Too many connections ","level":"error","timestamp":"2021-12-02T07:42:54.422Z"}
+{"message":"currentTime: Wed Dec 01 2021 11:11:27 GMT+0000 - get Projects Faild- Too many connections ","level":"error","timestamp":"2021-12-02T07:42:54.436Z"}
+{"message":"Wed Dec 01 2021 11:11:27 GMT+0000 -  Get records for - pageSize:30 - currentMonth: 2021-12-02 09:42:54 - employeeId:undefined Failed - Too many connections ","level":"error","timestamp":"2021-12-02T07:42:54.460Z"}
