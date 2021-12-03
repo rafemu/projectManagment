@@ -97,7 +97,9 @@ async function deletePaidById(paidId) {
   return rows.affectedRows;
 }
 
-async function getProjects(pageSize, currentPage) {
+async function getProjects(pageSize, currentPage,searchValue) {
+  const serchV = searchValue ? `WHERE ${process.env.DB_SCHEMA}.projects.projectName  LIKE '%${searchValue}%' ` : ""
+
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";
@@ -126,6 +128,7 @@ ${process.env.DB_SCHEMA}.projects
           ${process.env.DB_SCHEMA}.project_quotation ON projects.id = ${process.env.DB_SCHEMA}.project_quotation.projectId
        LEFT JOIN 
           ${process.env.DB_SCHEMA}.project_pays ON projects.id = ${process.env.DB_SCHEMA}.project_pays.projectId
+          ${serchV}
 group by id,projectName,agreement,quotation
 order by projects.createdAt desc
        ${limitQuery}

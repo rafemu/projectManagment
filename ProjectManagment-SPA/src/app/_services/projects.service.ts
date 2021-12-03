@@ -28,10 +28,10 @@ export class ProjectsService {
     this.projectById$ = this.projectByIdSubject.asObservable();
   }
 
-  getAllProjects(projectsPerPage?: number, currentPage?: number) {
-    const queryParams = `?pagesize=${projectsPerPage}&page=${currentPage}`;
+  getAllProjects(projectsPerPage?: number, currentPage?: number,searchValue?: string) {
+    const queryParams =`?pagesize=${projectsPerPage}&page=${currentPage}`;
     return this.httpClient
-      .get(`${BaseURL}/projects` + queryParams)
+      .post(`${BaseURL}/projects/getProjects` + queryParams,{searchValue})
       .pipe(
         map((projects: any) => {
           return {

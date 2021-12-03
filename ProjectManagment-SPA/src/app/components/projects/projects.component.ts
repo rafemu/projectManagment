@@ -86,7 +86,8 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   applyFilter(filterValue: string) {
-    this.dataSourceProjects.filter = filterValue.trim().toLowerCase();
+    // this.dataSourceProjects.filter = filterValue.trim().toLowerCase();
+    this._projectServices.getAllProjects(this.projectPerPage, this.currentPage,filterValue);
   }
 
   openDialog(action: string, obj: any) {

@@ -23,10 +23,10 @@ export class EmployeesService {
     this.employee$ = this.employeeSubject.asObservable();
   }
 
-  getAllemployee(employeePerPage?: number, currentPage?: number) {
+  getAllemployee(employeePerPage?: number, currentPage?: number,searchValue?: string) {
     const queryParams = `?pagesize=${employeePerPage}&page=${currentPage}`;
     return this.httpClient
-      .get(`${BaseURL}/employee` + queryParams)
+      .post(`${BaseURL}/employee/getEmployees` + queryParams,{searchValue})
       .pipe(
         map((employee: any) => {
           console.log(employee)

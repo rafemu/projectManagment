@@ -63,12 +63,13 @@ router.post(
   }
 );
 
-router.get("/", async (req, res, next) => {
+router.post("/getEmployees", async (req, res, next) => {
+  console.log('hello')
   const pageSize = +req.query.pagesize;
   const currentPage = +req.query.page;
   try {
     currentPage
-      ? (employees = await getEmployees(pageSize, currentPage))
+      ? (employees = await getEmployees(pageSize, currentPage,req.body.searchValue))
       : (employees = await getEmployees());
     if (!employees) throw new Error("no employees");
     const total = await getEmployeesCount();

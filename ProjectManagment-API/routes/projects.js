@@ -77,12 +77,12 @@ router.put(
 );
 
 //get projects
-router.get("/", async (req, res, next) => {
+router.post("/getProjects", async (req, res, next) => {
   const pageSize = +req.query.pagesize;
   const currentPage = +req.query.page;
   try {
     currentPage
-      ? (projects = await getProjects(pageSize, currentPage))
+      ? (projects = await getProjects(pageSize, currentPage,req.body.searchValue))
       : (projects = await getProjects());
     if (!projects) throw new Error("No Projects");
     const total = await getProjectsCount();

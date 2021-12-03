@@ -42,7 +42,8 @@ async function addDailyWage(employeeId, dailyWage, startFrom) {
   return rows;
 }
 
-async function getEmployees(pageSize, currentPage) {
+async function getEmployees(pageSize, currentPage,searchValue) {
+  const serchV = searchValue ? `WHERE ${process.env.DB_SCHEMA}.employee.firstName  LIKE '%${searchValue}%' ` : ""
   const currentDate = moment().format('YYYY-MM-DD hh:mm:ss')
   console.log('currentDate',currentDate)
   const limitQuery = currentPage
@@ -79,6 +80,7 @@ LIMIT 1) AS startFromDate
  FROM ${process.env.DB_SCHEMA}.employee 
  left join ${process.env.DB_SCHEMA}.employeeDailyWage
  on ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id 
+ ${serchV}
  GROUP BY id 
   order by dailyWage
 desc

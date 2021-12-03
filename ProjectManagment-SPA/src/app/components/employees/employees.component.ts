@@ -72,7 +72,12 @@ export class EmployeesComponent implements OnInit {
   }
 
   applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    //this.dataSource.filter = filterValue.trim().toLowerCase();
+    this._employeeService.getAllemployee(
+      this.employeesPerPage,
+      this.currentPage,
+      filterValue
+    );
   }
 
   openDialog(action: string, obj: any) {
