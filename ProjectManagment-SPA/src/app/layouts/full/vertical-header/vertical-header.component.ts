@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
-import { TranslateService } from '@ngx-translate/core';
-
+// import { TranslateService } from '@ngx-translate/core';
+// 
 @Component({
   selector: 'app-vertical-header',
   templateUrl: './vertical-header.component.html',
@@ -107,12 +107,12 @@ export class VerticalAppHeaderComponent {
 
 
 
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
-  }
+  // constructor(private translate: TranslateService) {
+  //   translate.setDefaultLang('en');
+  // }
 
-  changeLanguage(lang: any) {
-    this.translate.use(lang.code)
-    this.selectedLanguage = lang;
-  }
+  // changeLanguage(lang: any) {
+  //   this.translate.use(lang.code)
+  //   this.selectedLanguage = lang;
+  // }
 }

@@ -29,7 +29,7 @@ export class EmployeesComponent implements OnInit {
   displayedColumns = [
     'id',
     'firstName',
-    'lastName',
+    // 'lastName',
     'phone',
     'wagePerDay',
     'bankAccount',
@@ -51,7 +51,6 @@ export class EmployeesComponent implements OnInit {
     );
    this.subEmployee$ =  this._employeeService.employee$.subscribe((employee) => {
       this.employee = employee.employee;
-      console.log(this.employee)
       this.totalEmployees = employee.totalemployee;
       this.dataSource = new MatTableDataSource<IEmployee>(this.employee);
     });
@@ -111,7 +110,6 @@ export class EmployeesComponent implements OnInit {
       } else if (result.event === 'Delete') {
         this._employeeService.deleteEmployee(obj.id).subscribe((result) => {
           if (result) {
-            console.log('projectDeleted', result);
             this._employeeService.getAllemployee(
               this.employeesPerPage,
               this.currentPage
@@ -132,7 +130,6 @@ export class EmployeesComponent implements OnInit {
     dialogRef.afterClosed().subscribe((result) => {
       if (typeof result === 'undefined') return;
       if (result.event === 'addWage') {
-        console.log(result)
         this._employeeService.addDailyWage(result.data).subscribe((result) => {
           if (result) {
             this._employeeService.getAllemployee(

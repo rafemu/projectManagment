@@ -29,7 +29,6 @@ export class EmployeesService {
       .post(`${BaseURL}/employee/getEmployees` + queryParams,{searchValue})
       .pipe(
         map((employee: any) => {
-          console.log(employee)
           return {
             employee: employee.result.map((employee: IEmployee) => {
               return {
@@ -55,6 +54,11 @@ export class EmployeesService {
           totalemployee: employees.totalemployee,
         });
       });
+  }
+
+  getEmployeeById(employeeId:any){
+    console.log(employeeId)
+    return this.httpClient.get(`${BaseURL}/employee/${employeeId}`);
   }
 
   addEmployee(data: IEmployee) {

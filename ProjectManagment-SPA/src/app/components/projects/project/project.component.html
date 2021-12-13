@@ -1,15 +1,13 @@
-<!-- ============================================================== -->
-<!-- Simple four boxes Row -->
-<!-- ============================================================== -->
-<div fxLayout="row" fxLayoutWrap="wrap">
+
+<!-- <div fxLayout="row" fxLayoutWrap="wrap"> -->
   <!-- column -->
   <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
     <mat-card>
       <mat-card-content>
         <!-- Row -->
-        <div fxLayout="row" fxLayoutWrap="wrap">
+        <div fxLayout="row" fxLayoutWrap="wrap" >
           <!-- column -->
-          <div fxFlex.gt-sm="100" fxFlex.gt-xs="100">
+          <div fxFlex>
             <app-project-details [project]="project"></app-project-details>
           </div>
         </div>
@@ -34,5 +32,3 @@
       </mat-card-content>
     </mat-card>
   </div>
-  <!-- column -->
-</div>

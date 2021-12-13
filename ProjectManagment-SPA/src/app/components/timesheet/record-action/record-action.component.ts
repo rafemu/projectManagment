@@ -43,7 +43,7 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   // toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
 
   // employeeControl = new FormControl([]);
-   availableEmployees: IEmployee[]  = []
+  availableEmployees: IEmployee[] = [];
 
   action: string;
   local_data: any;
@@ -116,7 +116,9 @@ export class RecordActionComponent implements OnInit, OnDestroy {
     this.filteredEmployees = this.form.get('employeeId').valueChanges.pipe(
       startWith(null),
       map((employee: string | null) =>
-        employee ? this._filterEmployee(employee) : this.availableEmployees.slice()
+        employee
+          ? this._filterEmployee(employee)
+          : this.availableEmployees.slice()
       )
     );
   }
@@ -140,7 +142,6 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   initForm() {
-    console.log(this.local_data);
     this.form = this.formBuilder.group({
       date: new FormControl(this.recordDate, {
         validators: [Validators.required],
@@ -195,18 +196,20 @@ export class RecordActionComponent implements OnInit, OnDestroy {
 
     this.recordsService
       .getRecordsByDate(newDate.toISOString().split('T')[0])
-      .subscribe((result) =>{
-       console.log(result)
-       if(Array.isArray(result))this.filteredEmployees =  this.form.get('employeeId').valueChanges.pipe(
-        startWith(null),
-        map((employee: string | null) =>
-        this.allEmployees.filter(employee=>!result.find(e=>employee.id === e.employeeId))
-        )
-      );
-       
-       
-       console.log(this.availableEmployees)
-       });
+      .subscribe((result) => {
+        if (Array.isArray(result))
+          this.filteredEmployees = this.form
+            .get('employeeId')
+            .valueChanges.pipe(
+              startWith(null),
+              map((employee: string | null) =>
+                this.allEmployees.filter(
+                  (employee) =>
+                    !result.find((e) => employee.id === e.employeeId)
+                )
+              )
+            );
+      });
   }
 
   doAction() {
@@ -229,7 +232,6 @@ export class RecordActionComponent implements OnInit, OnDestroy {
       notes: this.form.value.notes,
       createdAt: moment().format('YYYY-MM-DD'),
     };
-    console.log(record);
     if (this.form.invalids) return;
     this.dialogRef.close({ event: this.action, data: record });
   }
@@ -253,7 +255,6 @@ export class RecordActionComponent implements OnInit, OnDestroy {
   }
 
   remove(fruit: any): void {
-    console.log(fruit);
     const index = this.selectedProjects.indexOf(fruit);
 
     if (index >= 0) {

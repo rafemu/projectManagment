@@ -19,7 +19,6 @@ export class EmployeeWorkedDaysComponent implements OnInit {
     'date',
     'day',
     'firstName',
-    'projectName',
     'startAt',
     'endAt',
     'duration',
@@ -28,13 +27,20 @@ export class EmployeeWorkedDaysComponent implements OnInit {
     'notes',
     
   ];
+  tableFooterColumns: string[] = ['total'];
+
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.recordsByProject)
   }
   ngOnChanges(): void {
     this.dataSource = new MatTableDataSource<any>(this.recordsByProject);
+  }
+
+  getTotalOftotal() {
+    return this.recordsByProject
+      .map((t:any) => t.payPerDay)
+      .reduce((acc:any, value:any) => acc + Number(value), 0);
   }
 
 }

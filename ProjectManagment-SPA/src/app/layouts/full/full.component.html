@@ -66,9 +66,9 @@
                 <!-- ============================================================== -->
                 <!-- Right sidebar toggle - style you can find in rightsidebar.component.scss -->
                 <!-- ============================================================== -->
-                <button (click)="end.toggle()" mat-icon-button class="ml-xs overflow-visible">
+                <!-- <button (click)="end.toggle()" mat-icon-button class="ml-xs overflow-visible">
                     <mat-icon>settings</mat-icon>
-                </button>
+                </button> -->
             </div>
 
         </mat-toolbar>
@@ -100,7 +100,7 @@
             <!-- ============================================================== -->
             <!-- Right Sidebar - style you can find in rightsidebar.component.scss -->
             <!-- ============================================================== -->
-            <mat-sidenav #end position="end" class="chat-panel" mode="over" opened="false">
+            <!-- <mat-sidenav #end position="end" class="chat-panel" mode="over" opened="false">
                 <div class="scroll">
                     <mat-nav-list>
 
@@ -143,15 +143,15 @@
 
                         <mat-list-item>
                             <mat-checkbox color="warn" [(ngModel)]="dark" (change)="darkClick()">Dark
-                            </mat-checkbox>
+                            </mat-checkbox> -->
 
 
                             <!-- <mat-checkbox color="warn" [(ngModel)]="dark" (change)="green = blue = danger = false">Dark</mat-checkbox> -->
-
+<!-- 
                         </mat-list-item>
                     </mat-nav-list>
                 </div>
-            </mat-sidenav>
+            </mat-sidenav> -->
 
             <!-- ============================================================== -->
             <!-- Page container - style you can find in pages.scss -->
@@ -162,6 +162,7 @@
                 <div class="page-content">
                     <router-outlet>
                         <app-spinner></app-spinner>
+                        <app-my-loader></app-my-loader>
                     </router-outlet>
 
                 </div>

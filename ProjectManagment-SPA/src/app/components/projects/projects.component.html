@@ -29,7 +29,7 @@
               <td mat-cell *matCellDef="let element;let i = index"> {{i+1}} </td>
             </ng-container>
             
-            <ng-container matColumnDef="clientFullName">
+            <ng-container matColumnDef="clientFullName" sticky>
               <th mat-header-cell *matHeaderCellDef> project Name </th>
               <td mat-cell *matCellDef="let element">
                 <div [routerLink]="['/projects',element.id]" class="d-flex">

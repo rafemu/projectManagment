@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { delay, map } from 'rxjs/operators';
 import { BaseURL } from '.';
 import { IPaids } from '../_interfaces/paids.interface';
 import { IProject } from '../_interfaces/project.interface';
@@ -158,7 +158,6 @@ export class ProjectsService {
   addProjectQuotation(quotationData:any){
     
     const { projectId, notes,quotation, imagePath } = quotationData;
-    console.log(quotationData)
     const quotData = new FormData();
     quotData.append('projectId', projectId);
     quotData.append('quotation', quotation);
@@ -200,7 +199,6 @@ export class ProjectsService {
   updatePaid(paidData: IPaids,paidId:string) {
     const { paidDate, paid,projectId, checkImg, notes, method } = paidData;
     const paidsData = new FormData();
-    console.log(paidData)
     paidsData.append('paidDate', paidDate.toString());
     paidsData.append('projectId', projectId.toString());
     paidsData.append('paid', paid.toString());

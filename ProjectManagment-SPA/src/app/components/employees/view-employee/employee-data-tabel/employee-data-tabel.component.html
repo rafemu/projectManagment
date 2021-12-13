@@ -2,6 +2,8 @@
 
 
     <div fxFlex.gt-md="33.3" fxFlex.gt-lg="33.3" fxFlex="100">
+      {{employeeData?.firstName}}       {{employeeData?.lastName}}
+
       <mat-card style="height: 87%;">
           <mat-card-header class="course-header" style="background-color: #fc4b6c">
           <mat-card-title>
@@ -158,6 +160,7 @@
                   <i class="fa fa-trash text-danger"></i>
                 </a>
               </td>
+              
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

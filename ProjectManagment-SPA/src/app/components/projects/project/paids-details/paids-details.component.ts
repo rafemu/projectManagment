@@ -37,14 +37,12 @@ displayedColumns = [
 
   openDialog(action: string, obj: any) {
     obj.action = action;
-    console.log(action)
     const dialogRef = this.dialog.open(AddPaidsComponent, {
       data: obj,
       disableClose:true
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(result)
       if (typeof result === 'undefined') return;
       if (result.event === 'Add') {
         this.AddPaidsEvent.emit(result.data)
@@ -67,7 +65,5 @@ displayedColumns = [
   
   ngOnChanges(): void {
     this.dataSource = new MatTableDataSource<any>(this.projectPiads?.paids);
-    console.log(this.projectPiads)
-
   }
 }

@@ -79,7 +79,6 @@ export class RecordsService {
       )
       .subscribe((recordsAndTotal) => {
         this.recordsArray = recordsAndTotal.records;
-        console.log(this.recordsArray)
         this.recordsSubject.next({
           records: [...this.recordsArray],
           totaleRecords: recordsAndTotal.totalRecords,
@@ -93,7 +92,6 @@ export class RecordsService {
       .get(`${BaseURL}/timesSheet/${projectId}` + queryParams)
       .pipe(
         map((record: any) => {
-          console.log(record)
           return {
             records: record.map((record: any) => {
               const {
@@ -140,7 +138,6 @@ export class RecordsService {
   }
 
   addNewRecord(recordDetails: IRecord) {
-    console.log(recordDetails)
     return this.httpClient.post(
       `${BaseURL}/timesSheet/addRecords`,
       recordDetails

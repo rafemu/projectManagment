@@ -1,60 +1,63 @@
-<div fxFlex.gt-sm="100" fxFlex.gt-xs="100" fxFlex="100">
-    <mat-card>
-        <!-- Row -->
-        <div class="social-widget">
-            <div class="soc-header box-twitter">
-                {{project?.projectName}}
-            </div>
-            <div fxLayout="row" fxLayoutWrap="wrap" class="text-center">
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">client Full Name</h3>
-                    <span class="text-muted">{{project?.clientFullName}}</span>
-                </div>
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">client Phone</h3>
-                    <span class="text-muted">{{project?.clientPhone}}</span>
-                </div>
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">location</h3>
-                    <span class="text-muted">{{project?.location}}</span>
-                </div>
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">agreement</h3>
-                    <img (click)="openAgreement(project)" class="mat-card-avatar" [src]="project?.agreement" />
-                </div>
-                <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" class="p-20">
-                    <h3 class="font-medium  m-0">create dAt</h3>
-                    <span class="text-muted">{{project?.createdAt|  momentPipe:'YYYY-MM-DD'}}</span>
-                </div>
-            </div>
 
-            <div fxLayout="row" fxLayoutWrap="wrap" class="text-center">
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">quotation</h3>
-                    <span class="text-muted">{{project?.quotation  | currency: "ILS":"symbol"}}</span>
-
-                    <br>
-                    <a (click)="openDialog('Add',project)" *ngIf="!project?.quotation" class="m-r-10 cursor-pointer"><i class="fa fa-plus text-info"></i></a>
-                    <a (click)="openDialog('Update',project)" *ngIf="project?.quotation" class="m-r-10 cursor-pointer"><i class="fa fa-pencil"></i></a>
-                  
-                </div>
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">paid</h3>
-                    <span class="text-muted">{{project?.paid  | currency: "ILS":"symbol"}}</span>
-                </div>
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">unPaid</h3>
-                    <span class="text-muted">{{project?.quotation - project?.paid  | currency: "ILS":"symbol"}}</span>
-                </div>
-                <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 b-r">
-                    <h3 class="font-medium m-0">haregem</h3>
-                    <span class="text-muted">{{project?.haregem}}</span>
-                </div>
-                <div fxFlex.gt-sm="50" fxFlex.gt-xs="50" class="p-20">
-                    <h3 class="font-medium  m-0">updated dAt</h3>
-                    <span class="text-muted">{{project?.updatedAt  |  momentPipe:'YYYY-MM-DD' }}</span>
-                </div>
-            </div>
-        </div>
+       <mat-card>
+            <mat-card-header class="course-header" style="background-color: #ffb22b; text-align: center;">
+                <mat-card-title>
+                  <span class="course-name"> {{project?.projectName}}</span>
+                </mat-card-title>
+              </mat-card-header>
+            <mat-grid-list #grid rowHeight="2:1">
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20 ">
+                        <h3 class="font-medium m-0">לקוח : </h3>
+                        <span class="text-muted">{{project?.clientFullName}}</span>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20">
+                        <h3 class="font-medium m-0">מס׳ פלאפון</h3>
+                        <span class="text-muted">{{project?.clientPhone}}</span>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20">
+                        <h3 class="font-medium m-0">מיקום</h3>
+                        <span class="text-muted">{{project?.location}}</span>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20">
+                        <h3 class="font-medium m-0">הסכם</h3>
+                        <img (click)="openAgreement(project)" class="mat-card-avatar" [src]="project?.agreement" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20">
+                        <h3 class="font-medium  m-0">תאריך התחלה</h3>
+                        <span class="text-muted">{{project?.createdAt|  momentPipe:'YYYY-MM-DD'}}</span>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20">
+                        <h3 class="font-medium m-0">סכום</h3>
+                        <span class="text-muted">{{project?.quotation  | currency: "ILS":"symbol"}}</span>
+    
+                        <br>
+                        <a (click)="openDialog('Add',project)" *ngIf="!project?.quotation" class="m-r-10 cursor-pointer"><i class="fa fa-plus text-info"></i></a>
+                        <a (click)="openDialog('Update',project)" *ngIf="project?.quotation" class="m-r-10 cursor-pointer"><i class="fa fa-pencil"></i></a>
+                      
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20">
+                        <h3 class="font-medium m-0">שולם</h3>
+                        <span class="text-muted">{{project?.paid  | currency: "ILS":"symbol"}}</span>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div fxFlex.gt-sm="100" fxFlex.gt-xs="100" class="p-20">
+                        <h3 class="font-medium m-0">לא שולם</h3>
+                        <span class="text-muted">{{project?.quotation - project?.paid  | currency: "ILS":"symbol"}}</span>
+                    </div>
+                </mat-grid-tile>
+              </mat-grid-list>
     </mat-card>
-</div>

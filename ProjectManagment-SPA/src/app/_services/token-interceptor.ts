@@ -27,7 +27,7 @@ export class TokenInterceptor implements HttpInterceptor {
     if (token) {
       if (this.helper.isTokenExpired(token)) {
         this.tokenService.deleteToken();
-        this.router.navigate(['']);
+        this.router.navigateByUrl('/');
       } else {
         req = req.clone({ headers: req.headers.set('x-access-token', token) });
       }

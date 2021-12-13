@@ -54,13 +54,12 @@ export class ProjectComponent implements OnInit {
   }
 
   AddPaids(event: any) {
-    this.projectService.addProjectPaids(event,this.projectId).subscribe((result) => {
+    this.projectService.addProjectPaids(event,this.projectId).subscribe((result:any) => {
       if (result) return this.getProjectPaids(this.projectId);
     });
   }
 
   UpdatePaids(event:any){
-    console.log(event)
 const {data , id} = event
     this.projectService.updatePaid(data,id).subscribe((result) => {
       if (result) return this.getProjectPaids(this.projectId);

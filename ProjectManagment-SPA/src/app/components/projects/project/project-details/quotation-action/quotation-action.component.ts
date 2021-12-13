@@ -44,7 +44,6 @@ export class QuotationActionComponent implements OnInit {
   }
 
   filForm() {
-    console.log(this.projectdData)
     this.form.setValue({
       quotation: this.projectdData['quotation'],
       notes: this.projectdData['quotationNotes'],
@@ -59,7 +58,6 @@ export class QuotationActionComponent implements OnInit {
       notes: notes,
       imagePath: this.selectedImg,
     };
-    console.log(quotationValues)
     if (this.form.invalids) return;
     this.dialogRef.close({ event: this.action, data: quotationValues });
   }
@@ -81,7 +79,6 @@ onSelectFile(event: any) {
 
         } else {
           this.selectedImg = event.target.files[0];
-          console.log(this.selectedImg)
           this.projectdData.agreement = reader.result;
         }
       }

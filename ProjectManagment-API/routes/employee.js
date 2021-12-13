@@ -64,7 +64,6 @@ router.post(
 );
 
 router.post("/getEmployees", async (req, res, next) => {
-  console.log('hello')
   const pageSize = +req.query.pagesize;
   const currentPage = +req.query.page;
   try {
@@ -82,17 +81,18 @@ router.post("/getEmployees", async (req, res, next) => {
   }
 });
 
-// router.get("/:id",getValidationFunctionEmployee('getEmployeeById'), async (req, res, next) => {
-//   const id = req.params.id;
-//   console.log('dfgdfwd',id)
-//   try {
-//     const result = await getEmployeeById(id);
-//     if (!result) throw new Error("no employees");
-//     res.json(result);
-//   } catch (ex) {
-//     return next({ message: "global error", status: 401 });
-//   }
-// });
+router.get("/:employeeId",getValidationFunctionEmployee('getEmployeeById'), async (req, res, next) => {
+  const id = req.params.employeeId;
+  console.log('dfgdfwd',id)
+  try {
+    const result = await getEmployeeById(id);
+    if (!result) throw new Error("no employees");
+    console.log(result)
+    res.json(result);
+  } catch (ex) {
+    return next({ message: ex.message, status: 401 });
+  }
+});
 
 router.put(
   "/:employeeId",

@@ -15,12 +15,14 @@ import { HorizontalMenuItems } from './menu-items/horizontal-menu-items';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MomentPipe } from '../_pipes/moment.pipe';
 import { ProjectsPipe } from '../_pipes/projects.pipe';
+// import { MatTableResponsiveDirective } from '../_directive/table/mat-table-responsive.directive';
 
 @NgModule({
   declarations: [
     AccordionAnchorDirective,
     AccordionLinkDirective,
     AccordionDirective,
+    // MatTableResponsiveDirective,
     MomentPipe,
     ProjectsPipe,
   ],
@@ -40,13 +42,13 @@ import { ProjectsPipe } from '../_pipes/projects.pipe';
     FlexLayoutModule,
     MomentPipe,
     ProjectsPipe,
+    // MatTableResponsiveDirective
   ],
   providers: [
     TokenService,
     MenuItems,
     HorizontalMenuItems,
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
-    // { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
   ],
 })
 export class SharedModule {}

@@ -7,6 +7,7 @@ import {
 	OnInit
 } from '@angular/core';
 import { MenuItems } from '../../shared/menu-items/menu-items';
+import { CommonModule } from '@angular/common';
 
 
 import { PerfectScrollbarConfigInterface, PerfectScrollbarDirective } from 'ngx-perfect-scrollbar';
@@ -45,7 +46,9 @@ export class FullComponent implements OnDestroy {
 		media: MediaMatcher,
 		public menuItems: MenuItems
 	) {
-		this.mobileQuery = media.matchMedia('(min-width: 1100px)');
+		// this.mobileQuery = media.matchMedia('(min-width: 1100px)');
+		this.mobileQuery = media.matchMedia('(min-width: 600px)');
+
 		this._mobileQueryListener = () => changeDetectorRef.detectChanges();
 		// tslint:disable-next-line: deprecation
 		this.mobileQuery.addListener(this._mobileQueryListener);

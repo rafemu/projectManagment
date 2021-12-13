@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
-import { TranslateService } from '@ngx-translate/core';
+// import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/_services/auth.service';
 @Component({
@@ -107,10 +107,10 @@ export class HorizontalAppHeaderComponent {
 
 
 
-  constructor(private translate: TranslateService,
+  constructor(
     private _authService: AuthService,
     private router: Router,) {
-    translate.setDefaultLang('en');
+    // translate.setDefaultLang('en');
   }
 
   logOut() {
@@ -118,8 +118,8 @@ export class HorizontalAppHeaderComponent {
     this.router.navigateByUrl('/');
   }
 
-  changeLanguage(lang: any) {
-    this.translate.use(lang.code)
-    this.selectedLanguage = lang;
-  }
+  // changeLanguage(lang: any) {
+  //   this.translate.use(lang.code)
+  //   this.selectedLanguage = lang;
+  // }
 }

@@ -212,7 +212,7 @@ router.put(
 
 router.post(
   "/quotation/:projectId",
-  getValidationFunction("getPaidById"),
+  getValidationFunction("getProjectById"),
   upload,
   async (req, res, next) => {
     try {
@@ -244,7 +244,7 @@ router.post(
 
 router.put(
   "/updateQuotation/:projectId",
-  getValidationFunction("getPaidById"),
+  getValidationFunction("getProjectById"),
   upload,
   async (req, res, next) => {
     // const { projectId } = req.params.projectId;
@@ -282,7 +282,7 @@ router.put(
 
 router.delete(
   "/:projectId",
-  getValidationFunction("getPaidById"),
+  getValidationFunction("getProjectById"),
   async (req, res, next) => {
     const projectId = req.params.projectId;
     try {

@@ -3,22 +3,18 @@ const connection = require("../database/index");
 const moment = require('moment');
 
 async function getEmployeeById(employeeId) {
+  console.log(employeeId)
   const getEmployeeQuery = `
-SELECT ${process.env.DB_SCHEMA}.employee.id,
+  SELECT ${process.env.DB_SCHEMA}.employee.id As id,
   ${process.env.DB_SCHEMA}.employee.firstName,
   ${process.env.DB_SCHEMA}.employee.lastName,
   ${process.env.DB_SCHEMA}.employee.phone,
   ${process.env.DB_SCHEMA}.employee.bankBranch,
   ${process.env.DB_SCHEMA}.employee.createdAt,
   ${process.env.DB_SCHEMA}.employee.updatedAt,
-  ${process.env.DB_SCHEMA}.employeeDailyWage.dailyWage
+  ${process.env.DB_SCHEMA}.employee.bankAccount
  FROM ${process.env.DB_SCHEMA}.employee 
- left join ${process.env.DB_SCHEMA}.employeeDailyWage
- on ${process.env.DB_SCHEMA}.employeeDailyWage.employeeId = ${process.env.DB_SCHEMA}.employee.id 
- where ${process.env.DB_SCHEMA}.employee.id = ?
-  order by ${process.env.DB_SCHEMA}.employeeDailyWage.dailyWage
-desc
-LIMIT 1
+where ${process.env.DB_SCHEMA}.employee.id = ?
   `;
   const [rows] = await (
     await connection()
@@ -45,7 +41,6 @@ async function addDailyWage(employeeId, dailyWage, startFrom) {
 async function getEmployees(pageSize, currentPage,searchValue) {
   const serchV = searchValue ? `WHERE ${process.env.DB_SCHEMA}.employee.firstName  LIKE '%${searchValue}%' ` : ""
   const currentDate = moment().format('YYYY-MM-DD hh:mm:ss')
-  console.log('currentDate',currentDate)
   const limitQuery = currentPage
     ? `LIMIT ${pageSize * (currentPage - 1) + "," + pageSize}`
     : "";

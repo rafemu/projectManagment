@@ -4,7 +4,9 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const cors = require("cors");
+
 const api = express();
+
 const logger = require("./logger");
 
 const auth = require("./routes/login")
@@ -30,7 +32,7 @@ validateEnvParams();
 
 api.use(express.static("images"));
 api.use(express.static(path.join(__dirname, "images")));
-
+api.use('/',express.static("public/project"))
 
 api.use(cors());
 api.use(bodyParser.json());

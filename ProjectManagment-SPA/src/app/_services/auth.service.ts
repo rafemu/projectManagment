@@ -43,7 +43,6 @@ export class AuthService {
     )
     .pipe(
       tap((user:any) => {
-        console.log(user);
         const { userData, accessToken } = user;
         // localStorage.setItem('pmr_token', JSON.stringify(userData));
         if (accessToken) {

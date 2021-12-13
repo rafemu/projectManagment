@@ -99,7 +99,6 @@ export class TimeSheetComponent implements OnInit {
   }
 
   openDialog(action: string, obj: any) {
-    console.log(obj)
     obj.action = action;
     const dialogRef = this.dialog.open(RecordActionComponent, {
       data: obj,
@@ -109,12 +108,10 @@ export class TimeSheetComponent implements OnInit {
     dialogRef.afterClosed().subscribe((result) => {
       if (typeof result === 'undefined') return;
       if (result.event === 'Add') {
-        console.log(result)
         this.recordsService.addNewRecord(result.data).subscribe((result) => {
           this.getAllRecords()
         });
       } else if (result.event === 'Update') {
-        console.log(result)
         this.recordsService.updateRecord(result.data).subscribe(result=>{
           this.getAllRecords();
         })

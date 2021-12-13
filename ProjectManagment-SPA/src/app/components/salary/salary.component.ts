@@ -31,15 +31,12 @@ export class SalaryComponent implements OnInit {
 
   getSalarisByMonth(event:any){
     if(!event) return;
-    console.log(event)
     this.getSalaryByMonth(event)
   }
 
   getSalaryByMonth(month:string) {
     this.recordsServices.getSalaryByMonth(month).subscribe((res: any) => {
-      console.log(res)
       this.salaryByMonth = res.result;
-      console.log(this.salaryByMonth)
     });
   }
 

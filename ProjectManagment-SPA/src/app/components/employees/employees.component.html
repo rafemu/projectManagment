@@ -27,7 +27,7 @@
               (click)="openWageDialog('addWage', {})"
               color="primary"
             >
-              Update Daily Wage
+              Daily Wage
             </button>
           </div>
         </div>
@@ -45,15 +45,15 @@
             [dataSource]="dataSource"
             class="table employee-list no-wrap"
           >
-            <ng-container matColumnDef="id">
+            <ng-container matColumnDef="id" sticky>
               <th mat-header-cell *matHeaderCellDef>#</th>
               <td mat-cell *matCellDef="let element; let i = index">
                 {{ i + 1 }}
               </td>
             </ng-container>
 
-            <ng-container matColumnDef="firstName">
-              <th mat-header-cell *matHeaderCellDef>first Name</th>
+            <ng-container matColumnDef="firstName" sticky>
+              <th mat-header-cell *matHeaderCellDef>Full Name</th>
               <td mat-cell *matCellDef="let element">
                 <div [routerLink]="['/employees', element.id]" class="d-flex">
                   <div class="m-l-15">

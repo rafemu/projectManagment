@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "copy": "cp -a ./dist/. ../ProjectManagment-API/public/",
+    "deploy": "npm run build && npm run copy",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

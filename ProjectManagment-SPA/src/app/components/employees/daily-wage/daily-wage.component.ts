@@ -71,7 +71,6 @@ export class DailyWageComponent implements OnInit {
       //.split('T')[0],
     };
     if (this.form.invalids) return;
-    console.log(dailyWageData)
     this.dialogRef.close({ event: this.action, data: dailyWageData });
   }
 

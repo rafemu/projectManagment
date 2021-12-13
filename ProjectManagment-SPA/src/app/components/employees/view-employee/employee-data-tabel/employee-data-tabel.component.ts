@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
 import moment from 'moment';
+import { IEmployee } from 'src/app/_interfaces/emplyee.interface';
+import { EmployeesService } from 'src/app/_services/employees.service';
 import { RecordsService } from 'src/app/_services/records.service';
 
 @Component({
@@ -14,6 +16,7 @@ export class EmployeeDataTabelComponent implements OnInit {
   public employeeRecod: any = [];
   public currentMonth!: string;
   public monthDays: any[] = [];
+  public employeeData?:any;
   public dataSource: MatTableDataSource<any>;
   private employeeId?: number;
 
@@ -32,6 +35,7 @@ export class EmployeeDataTabelComponent implements OnInit {
 
   constructor(
     private recordsService: RecordsService,
+    private employeeService:EmployeesService,
     private router: ActivatedRoute
   ) {
     this.dataSource = new MatTableDataSource<any>(this.employeeRecod);
@@ -50,6 +54,8 @@ export class EmployeeDataTabelComponent implements OnInit {
       this.records = record.records;
       this.filterDates();
     });
+
+    this.getEmployeeDetails(this.employeeId)
   }
 
   getSelectedDate(event:any){ 
@@ -59,13 +65,11 @@ export class EmployeeDataTabelComponent implements OnInit {
   }
 
   submit(){
-    console.log(this.currentMonth)
     this.getRecordsByDate(this.currentMonth)
     this.filterDates()
   }
 
   filterDates() {
-    console.log(this.monthDays)
     this.monthDays = this.getDaysOfMonth(
       moment(this.currentMonth).year(),
       moment(this.currentMonth).month() + 1
@@ -126,5 +130,9 @@ export class EmployeeDataTabelComponent implements OnInit {
       event,
       this.employeeId
     );
+  }
+
+  getEmployeeDetails(employeeId:any){
+    this.employeeService.getEmployeeById(employeeId).subscribe(result=>this.employeeData = result)
   }
 }
